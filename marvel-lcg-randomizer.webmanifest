@@ -1,0 +1,13 @@
+{
+    "name": "Marvel Champions Randomizer",
+    "short_name": "Marvel LCG Random",
+    "description": "Generate a random encounter deck for Marvel Champions The Card Game.",
+    "icons": [
+        {
+            "src": "favicon.jpg",
+            "sizes": "192x192",
+            "type": "image/jpg"
+        }
+    ],
+    "display": "fullscreen"
+}
