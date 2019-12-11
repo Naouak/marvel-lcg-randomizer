@@ -61,7 +61,7 @@
 
                 const numberOfModules = scenario.minModules !== undefined ? scenario.minModules : 1;
 
-                this.selectedModules = Array.from({length: numberOfModules}, () => Math.floor(Math.random() * this.scenarios.length));
+                this.selectedModules = Array.from({length: numberOfModules}, () => Math.floor(Math.random() * this.modules.length));
                 this.selectedDifficulty = difficulties[Math.floor(Math.random() * difficulties.length)];
             },
         },
