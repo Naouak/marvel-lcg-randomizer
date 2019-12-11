@@ -13,5 +13,13 @@ export const scenarios = [
         name: 'Ultron - The Crimson Cowl',
         img: 'https://lcgcdn.s3.amazonaws.com/mc/MC01en_137A.jpg',
         pack: "Core Set",
-    }
+    },
+    // // For when wrecking Crew is Actually released
+    // {
+    //     name: 'Wrecking Crew',
+    //     img: '',
+    //     pack: 'Wrecking Crew',
+    //     minModules: 0,
+    //     maxModules: 0,
+    // }
 ];
