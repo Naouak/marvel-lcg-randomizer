@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Setup Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - name: configure vue
+      run: |
+        echo "module.exports = {publicPath: '/marvel-lcg-randomizer/'};" > vue.config.js
+    - name: NPM CI
+      run: npm ci
+    - name: Build
+      run: npm run build
+    - name: GH Pages deploy
+      uses: Cecilapp/GitHub-Pages-deploy@2.0.0
+      env:
+        EMAIL: tardiel@gmail.com               # must be a verified email
+        GH_TOKEN: ${{ secrets.ACCESS_TOKEN }} # https://github.com/settings/tokens
+        BUILD_DIR: dist/                     # "_site/" by default
