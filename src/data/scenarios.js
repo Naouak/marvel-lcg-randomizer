@@ -16,8 +16,13 @@ export const scenarios = [
     },
     {
         name: 'Green Goblin - Risky Business',
-        img: 'images/scenarios/mc02en_card_hostile-takeover.png',
+        img: 'images/scenarios/3P1fPDH.png',
         pack: "Green Goblin",
+    },
+    {
+        name: 'Green Goblin - Mutagen Formula',
+        img: 'images/scenarios/zBayud2.png',
+        pack: 'Green Goblin',
     },
     {
         name: 'Wrecking Crew',

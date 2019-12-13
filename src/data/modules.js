@@ -26,7 +26,22 @@ export const modules = [
     },
     {
         name: "Goblin Gimmicks",
-        img: "images/missing.png",
+        img: "images/modules/IUVMYv5.png",
+        pack: "Green Goblin"
+    },
+    {
+        name: "A Mess of Things",
+        img: "images/modules/0PYOEfh.png",
+        pack: "Green Goblin"
+    },
+    {
+        name: "Power Drain",
+        img: "images/modules/QTUeXkO.png",
+        pack: "Green Goblin"
+    },
+    {
+        name: "Running Interference",
+        img: "images/modules/zP2bl2j.png",
         pack: "Green Goblin"
     },
 ];
