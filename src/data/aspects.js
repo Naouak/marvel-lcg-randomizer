@@ -1,30 +1,33 @@
 export const aspects = [
     {
         name: 'Aggression',
-        img: 'https://lcgcdn.s3.amazonaws.com/mc/MC01en_55.jpg',
+        img: 'images/aspects/MC01en_55.jpg',
         packs: [
             "Core Set",
+            "Thor",
         ]
     },
     {
         name: 'Justice',
-        img: 'https://lcgcdn.s3.amazonaws.com/mc/MC01en_62.jpg',
+        img: 'images/aspects/MC01en_62.jpg',
         packs: [
             "Core Set",
         ]
     },
     {
         name: 'Leadership',
-        img: 'https://lcgcdn.s3.amazonaws.com/mc/MC01en_72.jpg',
+        img: 'images/aspects/MC01en_72.jpg',
         packs: [
             "Core Set",
+            "Captain America",
         ]
     },
     {
         name: 'Protection',
-        img: 'https://lcgcdn.s3.amazonaws.com/mc/MC01en_79.jpg',
+        img: 'images/aspects/MC01en_79.jpg',
         packs: [
             "Core Set",
+            "Ms. Marvel",
         ]
     },
 ];

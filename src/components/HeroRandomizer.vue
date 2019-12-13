@@ -1,6 +1,11 @@
 <template>
     <div class="hero-randomizer">
         <h1 class="title" @click="shown=!shown">Players' Deck</h1>
+
+        <div class="warning" v-if="heroes.length < numberOfPlayer">
+            Not enough Heroes for all the players.
+        </div>
+
         <div class="decks" v-if="shown">
             <div class="hero-deck" :key="index" v-for="({hero, aspect}, index) in selectedDecks">
                 <div>
@@ -49,8 +54,13 @@
             randomize(){
                 const heroes = shuffleArray(this.heroes);
                 const aspects = shuffleArray(this.aspects);
-                this.availableDecks = Array.from({length: 4}, (n, i) => ({hero: heroes[i], aspect: aspects[i]}));
+                this.availableDecks = Array.from({length: Math.min(4, heroes.length)}, (n, i) => ({hero: heroes[i], aspect: aspects[i]}));
             },
+        },
+        watch: {
+            heroes(){
+                this.randomize();
+            }
         },
         created(){
             this.randomize();
@@ -82,5 +92,11 @@
 
     .name{
         padding: 10px;
+    }
+
+    .warning{
+        font-weight: bold;
+        color: red;
+        margin: 10px;
     }
 </style>
