@@ -1,24 +1,7 @@
-# marvel-lcg-randomizer
+# Marvel Champions: The Card Game Randomizer
 
-## Project setup
-```
-yarn install
-```
+Generate a scenario and a team for a game of Marvel Champions.
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+# Thanks
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+ * /u/Charlie_Kane for Green Goblins Scenario and Modules
