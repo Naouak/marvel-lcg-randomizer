@@ -13,6 +13,8 @@
         <ScenarioRandomizer ref="scenarioRandomizer" :scenarios="availableScenarios" :modules="availableModules"/>
         <hr>
         <HeroRandomizer ref="heroRandomizer" :heroes="availableHeroes" :aspects="data.aspects" :number-of-player="numberOfPlayer"/>
+        <hr>
+        <Changelog/>
     </div>
 </template>
 
@@ -25,15 +27,15 @@
     import HeroRandomizer from "@/components/HeroRandomizer";
     import PlayerSelector from "@/components/PlayerSelector";
     import PackSelector from "@/components/PackSelector";
+    import Changelog from "@/components/Changelog";
 
     const dataStorage = window.localStorage;
 
-    const packs = [
-        ...scenarios.map(a => a.pack),
-        ...heroes.map(a => a.pack),
-        ...modules.map(a => a.pack),
-        ...aspects.map(a => a.packs).flat(),
-    ].filter((a,i,arr) => arr.indexOf(a)===i);
+    const packs = {
+        Heroes: heroes.map(a => a.pack).filter((a, i, arr) => arr.indexOf(a) === i),
+        Scenarios: scenarios.map(a => a.pack).filter((a, i, arr) => arr.indexOf(a) === i),
+        Modules: modules.map(a => a.pack).filter((a, i, arr) => arr.indexOf(a) === i),
+    };
 
     let selectedPacks = null;
     try{
@@ -79,6 +81,7 @@
             }
         },
         components: {
+            Changelog,
             PackSelector,
             PlayerSelector,
             HeroRandomizer,

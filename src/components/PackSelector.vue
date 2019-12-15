@@ -1,14 +1,19 @@
 <template>
     <div class="packs-selector">
-        <div @click="shown=!shown">Available packs:
-        <span v-if="!shown">
-            {{value.join(",")}}
-        </span>
-        </div>
-        <div v-if="shown">
-            <label :key="pack" v-for="pack in packs">
-                <input type="checkbox" :checked="value.indexOf(pack) >= 0" @input="togglePack(pack, $event.target.checked)">{{pack}}
-            </label>
+        <button @click="shown=!shown">
+            Available packs:
+            <span v-if="!shown">
+                {{value.join(",")}}
+            </span>
+        </button>
+        <div class="packs" v-if="shown">
+            <div class="pack-type-column" :key="type" v-for="(packets, type) in packs">
+                <h3>{{type}}</h3>
+                <label :key="pack" v-for="pack in packets">
+                    <input type="checkbox" :checked="value.indexOf(pack) >= 0" @input="togglePack(pack, $event.target.checked)">{{pack}}
+                </label>
+            </div>
+
         </div>
     </div>
 </template>
@@ -50,5 +55,11 @@
 
     label{
         display: block;
+    }
+
+    .packs{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
     }
 </style>

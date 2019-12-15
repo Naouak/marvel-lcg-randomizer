@@ -1,0 +1,48 @@
+<template>
+    <div class="changelog">
+        <h2 @click="shown=!shown">Changelog</h2>
+
+        <div v-if="shown">
+            <div class="changelog-entry">
+                <h3>On december 15th 2019</h3>
+                <ul>
+                    <li>Add saving of the selected packs you own in your browser</li>
+                    <li>Add the changelog list</li>
+                    <li>Display pack selection by categories (Heroes, Modules, Scenarios)</li>
+                </ul>
+            </div>
+            <div class="changelog-entry">
+                <h3>On december 13th 2019</h3>
+                <ul>
+                    <li>Add Support for Multiple packs</li>
+                    <li>Add scenarios and modules from Green Goblins and Wrecking Crew</li>
+                    <li>Add Heroes Ms. Marvel, Captain America and Thor</li>
+                </ul>
+            </div>
+            <div class="changelog-entry">
+                <h3>On december 12th 2019 (and before)</h3>
+                <ul>
+                    <li>Add Scenario randomization</li>
+                    <li>Add Hero randomization</li>
+                    <li>Add Number of player selection</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</template>
+
+<script>
+    export default {
+        name: "Changelog",
+        data: () => ({
+            shown: false
+        })
+    }
+</script>
+
+<style scoped>
+    .changelog{
+        text-align: left;
+    }
+</style>
