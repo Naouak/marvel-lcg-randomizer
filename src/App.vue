@@ -26,12 +26,22 @@
     import PlayerSelector from "@/components/PlayerSelector";
     import PackSelector from "@/components/PackSelector";
 
+    const dataStorage = window.localStorage;
+
     const packs = [
         ...scenarios.map(a => a.pack),
         ...heroes.map(a => a.pack),
         ...modules.map(a => a.pack),
         ...aspects.map(a => a.packs).flat(),
     ].filter((a,i,arr) => arr.indexOf(a)===i);
+
+    let selectedPacks = null;
+    try{
+        selectedPacks = JSON.parse(dataStorage.getItem("selectedPacks")) || ["Core Set"];
+    } catch {
+        selectedPacks = ["Core Set"];
+        dataStorage.removeItem("selectedPacks");
+    }
 
     export default {
         name: 'app',
@@ -43,9 +53,14 @@
                 aspects,
                 packs,
             },
-            selectedPacks: ["Core Set"],
+            selectedPacks: selectedPacks,
             numberOfPlayer: 1
         }),
+        watch: {
+          selectedPacks(){
+              dataStorage.setItem("selectedPacks", JSON.stringify(this.selectedPacks));
+          },
+        },
         computed: {
             availableScenarios() {
                 return this.data.scenarios.filter(s => this.selectedPacks.indexOf(s.pack)>=0);
