@@ -26,7 +26,7 @@ export const modules = [
     },
     {
         name: "Goblin Gimmicks",
-        img: "images/modules/IUVMYv5.png",
+        img: "images/modules/mc02en_card_goblin-glider.png",
         pack: "Green Goblin"
     },
     {
