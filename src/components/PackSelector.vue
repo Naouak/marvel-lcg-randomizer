@@ -1,11 +1,12 @@
 <template>
-    <div class="packs-selector">
-        <button @click="shown=!shown">
-            Available packs:
-            <span v-if="!shown">
-                {{value.join(",")}}
-            </span>
-        </button>
+    <div class="packs-selector panel">
+        <div @click="shown=!shown" class="panel-insert">
+            Available packs
+
+        </div>
+        <div @click="shown=!shown" v-if="!shown" class="packs-selected">
+            Current Selection: {{value.join(",")}}
+        </div>
         <div class="packs" v-if="shown">
             <div class="pack-type-column" :key="type" v-for="(packets, type) in packs">
                 <h3>{{type}}</h3>
@@ -48,10 +49,6 @@
 </script>
 
 <style scoped>
-    .packs-selector{
-        margin: 10px;
-        text-align: left;
-    }
 
     label{
         display: block;
@@ -61,5 +58,9 @@
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+    }
+
+    .packs-selected{
+        padding-top: 5px;
     }
 </style>

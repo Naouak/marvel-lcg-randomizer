@@ -1,6 +1,6 @@
 <template>
-    <div class="changelog">
-        <h2 @click="shown=!shown">Changelog</h2>
+    <div class="changelog panel">
+        <div @click="shown=!shown" class="panel-insert">Changelog</div>
 
         <div v-if="shown">
             <div class="changelog-entry">
@@ -9,6 +9,7 @@
                     <li>Add saving of the selected packs you own in your browser</li>
                     <li>Add the changelog list</li>
                     <li>Display pack selection by categories (Heroes, Modules, Scenarios)</li>
+                    <li>A bit of redesign</li>
                 </ul>
             </div>
             <div class="changelog-entry">
@@ -36,7 +37,7 @@
     export default {
         name: "Changelog",
         data: () => ({
-            shown: false
+            shown: true,
         })
     }
 </script>

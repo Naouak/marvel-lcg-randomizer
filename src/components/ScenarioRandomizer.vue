@@ -1,22 +1,22 @@
 <template>
-    <div class="scenario-randomizer">
-        <h1 class="title" @click="shown=!shown">Scenario Randomizer</h1>
+    <div class="scenario-randomizer panel">
+        <div class="title panel-insert" @click="shown=!shown">Scenario</div>
         <div class="content" v-if="shown">
             <div class="random-scenario">
                 <div>
                     <img :src="scenarios[selectedScenario].img" :alt="scenarios[selectedScenario].name">
-                    <div>
+                    <div class="panel-insert-content">
                         {{scenarios[selectedScenario].name}}({{scenarios[selectedScenario].pack}})
                     </div>
                 </div>
                 <div v-bind:key="index" v-for="(mod, index) in selectedModules">
                     <img :src="modules[mod].img" :alt="modules[mod].name"/>
-                    <div>
+                    <div class="panel-insert-content">
                         {{modules[mod].name}}({{modules[mod].pack}})
                     </div>
                 </div>
             </div>
-            <div class="difficulty">
+            <div class="difficulty panel-insert-content">
                 Difficulty:
                 <span class="difficulty-value">
                     {{selectedDifficulty}}
@@ -77,24 +77,6 @@
 </script>
 
 <style scoped>
-    .scenario-randomizer{
-        margin-top: 30px;
-    }
-
-    h1{
-        margin: 0;
-    }
-
-    button{
-        font-size: 3vmax;
-        margin: 30px;
-        padding: 20px;
-    }
-
-    .title{
-        font-size: 3vmax;
-    }
-
     .random-scenario img{
         box-sizing: border-box;
         width: 100%;
@@ -112,11 +94,11 @@
         display: inline-block;
     }
 
-    .difficulty{
-        font-size: 3vmax;
-    }
-
     .difficulty-value{
         font-weight: bold;
+    }
+
+    .content{
+        text-align: center;
     }
 </style>

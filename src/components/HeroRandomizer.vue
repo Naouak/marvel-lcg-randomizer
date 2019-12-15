@@ -1,6 +1,6 @@
 <template>
-    <div class="hero-randomizer">
-        <h1 class="title" @click="shown=!shown">Players' Deck</h1>
+    <div class="hero-randomizer panel">
+        <div class="title panel-insert" @click="shown=!shown">Players' Deck</div>
 
         <div class="warning" v-if="heroes.length < numberOfPlayer">
             Not enough Heroes for all the players.
@@ -8,16 +8,14 @@
 
         <div class="decks" v-if="shown">
             <div class="hero-deck" :key="index" v-for="({hero, aspect}, index) in selectedDecks">
-                <div>
-                    <h2>Player {{index+1}}</h2>
-                    <div class="cards">
-                        <img :src="hero.alterEgoImg" :alt="hero.alterEgo" />
-                        <img :src="hero.heroImg" :alt="hero.hero" />
-                        <img :src="aspect.img" :alt="aspect.name">
-                    </div>
-                    <div class="name">
-                        {{hero.alterEgo}} / {{hero.hero}}({{hero.pack}}) + {{aspect.name}}
-                    </div>
+                <h2 class="panel-insert-content">Player {{index+1}}</h2>
+                <div class="cards">
+                    <img :src="hero.alterEgoImg" :alt="hero.alterEgo" />
+                    <img :src="hero.heroImg" :alt="hero.hero" />
+                    <img :src="aspect.img" :alt="aspect.name">
+                </div>
+                <div class="name panel-insert-content">
+                    {{hero.alterEgo}} / {{hero.hero}}({{hero.pack}}) + {{aspect.name}}
                 </div>
             </div>
         </div>
@@ -69,18 +67,6 @@
 </script>
 
 <style scoped>
-    .hero-randomizer{
-        margin-top: 30px;
-    }
-
-    h1{
-        margin: 0;
-    }
-
-    .title{
-        font-size: 3vmax;
-    }
-
     .cards{
         display: flex;
         justify-content: space-around;
@@ -92,11 +78,16 @@
 
     .name{
         padding: 10px;
+        text-align: center;
     }
 
     .warning{
         font-weight: bold;
         color: red;
         margin: 10px;
+    }
+
+    .hero-deck{
+        margin-top: 20px;
     }
 </style>

@@ -1,6 +1,6 @@
 <template>
-    <div class="player-selector">
-        Number of player
+    <div class="player-selector panel">
+        <p class="panel-insert">Select the number of players</p>
         <div class="player-buttons">
             <button :disabled="value===1" @click="$emit('input', 1)">Solo</button>
             <button :disabled="value===2" @click="$emit('input', 2)">Duo</button>
@@ -31,16 +31,17 @@
 </script>
 
 <style scoped>
-    .player-selector{
-        margin: 10px;
+    p{
+        text-align: left;
     }
 
-.player-buttons{
-    display: flex;
-    justify-content: stretch;
-}
-
-    .player-buttons > button{
-        flex-grow: 1;
+    .player-buttons{
+        display: flex;
+        justify-content: stretch;
     }
+
+    .player-buttons button{
+        width: 25%;
+    }
+
 </style>

@@ -8,12 +8,8 @@
         <PlayerSelector v-model="numberOfPlayer"/>
 
         <PackSelector :packs="data.packs" v-model="selectedPacks" />
-
-        <hr>
         <ScenarioRandomizer ref="scenarioRandomizer" :scenarios="availableScenarios" :modules="availableModules"/>
-        <hr>
         <HeroRandomizer ref="heroRandomizer" :heroes="availableHeroes" :aspects="data.aspects" :number-of-player="numberOfPlayer"/>
-        <hr>
         <Changelog/>
     </div>
 </template>
@@ -91,12 +87,31 @@
 </script>
 
 <style>
+    @font-face {
+        font-family: 'FTY SPEEDY CASUAL NCV';
+        src: url('./assets/fonts/FTYSPEEDYCASUALNCV.woff2') format('woff2'),
+        url('./assets/fonts/FTYSPEEDYCASUALNCV.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'FTY SPEEDY CASUAL 001 NCV';
+        src: url('./assets/fonts/FTYSPEEDYCASUAL001NCV.woff2') format('woff2'),
+        url('./assets/fonts/FTYSPEEDYCASUAL001NCV.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
 
     .app {
-        font-family: 'Avenir', Helvetica, Arial, sans-serif;
+        font-family: 'FTY SPEEDY CASUAL NCV', 'Avenir', Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
+
+        max-width: 768px;
+        margin: auto;
     }
 
     img.logo {
@@ -104,9 +119,68 @@
     }
 
     .randomize-button{
-        font-size: 3vmax;
         padding: 10px;
         margin: 10px;
+    }
+
+    .panel {
+        border: solid black 2px;
+        margin: 15px 10px;
+        background: #d0c8d2;
+        text-align: left;
+        padding: 5px;
+    }
+
+    .panel-insert{
+        border: solid black 2px;
+        background: #fff2bd;
+        display: inline-block;
+        text-align: center;
+        padding: 10px 5px 5px 10px;
+        margin: -7px 10px 0 -7px;
+        position: relative;
+        border-right: 0;
+        font-size: 1.5em;
+    }
+
+    .panel-insert-content{
+        border: solid black 2px;
+        background: #fff2bd;
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+        margin: 10px;
+        position: relative;
+    }
+
+    .panel-insert:before{
+        transform: skewX(-10deg);
+        border: solid black 2px;
+        border-left: 0;
+        background: #fff2bd;
+        content: " ";
+        position: absolute;
+        right: -5px;
+        top: 0;
+        bottom: 0;
+        width: 10px;
+        margin: -2px;
+    }
+
+
+    button{
+        flex-grow: 1;
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 5px;
+        border: solid 1px grey;
+    }
+
+    button:disabled{
+        color: white;
+        background: green;
+        font-weight: bold;
+
     }
 
 </style>
