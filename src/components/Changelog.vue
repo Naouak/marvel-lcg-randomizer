@@ -4,6 +4,10 @@
 
         <div v-if="shown">
             <div class="changelog-entry">
+                <h3>On december 23rd 2019</h3>
+                <ul>
+                    <li>Refactored the randomization for a bit more of future proofing.</li>
+                </ul>
                 <h3>On december 15th 2019</h3>
                 <ul>
                     <li>Add saving of the selected packs you own in your browser</li>

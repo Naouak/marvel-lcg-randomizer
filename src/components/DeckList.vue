@@ -2,7 +2,7 @@
     <div class="hero-randomizer panel">
         <div class="title panel-insert" @click="shown=!shown">Players' Deck</div>
 
-        <div class="warning" v-if="heroes.length < numberOfPlayer">
+        <div class="warning" v-if="availableDecks.length < numberOfPlayer">
             Not enough Heroes for all the players.
         </div>
 
@@ -23,24 +23,19 @@
 </template>
 
 <script>
-    import {shuffleArray} from "@/helpers";
-
     export default {
-        name: "HeroRandomizer",
+        name: "DeckList",
 
         props: {
             numberOfPlayer: {
                 default: 1,
             },
-            heroes: {
-                default: () => [],
-            },
-            aspects: {
-                default: () => ['Justice', 'LeaderShip', 'Aggression', 'Protection']
-            },
+            availableDecks: {
+                default: [],
+                required: true,
+            }
         },
         data: () => ({
-            availableDecks: [],
             shown: true,
         }),
         computed: {
@@ -48,21 +43,6 @@
                 return this.availableDecks.slice(0, this.numberOfPlayer);
             }
         },
-        methods: {
-            randomize(){
-                const heroes = shuffleArray(this.heroes);
-                const aspects = shuffleArray(this.aspects);
-                this.availableDecks = Array.from({length: Math.min(4, heroes.length)}, (n, i) => ({hero: heroes[i], aspect: aspects[i]}));
-            },
-        },
-        watch: {
-            heroes(){
-                this.randomize();
-            }
-        },
-        created(){
-            this.randomize();
-        }
     };
 </script>
 

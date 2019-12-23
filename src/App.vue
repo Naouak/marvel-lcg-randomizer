@@ -8,22 +8,25 @@
         <PlayerSelector v-model="numberOfPlayer"/>
 
         <PackSelector :packs="data.packs" v-model="selectedPacks" />
-        <ScenarioRandomizer ref="scenarioRandomizer" :scenarios="availableScenarios" :modules="availableModules"/>
-        <HeroRandomizer ref="heroRandomizer" :heroes="availableHeroes" :aspects="data.aspects" :number-of-player="numberOfPlayer"/>
+        <Scenario :scenario="selectedScenario" />
+        <DeckList :available-decks="selectedDecks" :number-of-player="numberOfPlayer"/>
         <Changelog/>
     </div>
 </template>
 
 <script>
-    import ScenarioRandomizer from './components/ScenarioRandomizer';
+    import Scenario from './components/Scenario';
     import {scenarios} from './data/scenarios';
     import {modules} from './data/modules';
     import {heroes} from './data/heroes';
     import {aspects} from "@/data/aspects";
-    import HeroRandomizer from "@/components/HeroRandomizer";
+    import DeckList from "@/components/DeckList";
     import PlayerSelector from "@/components/PlayerSelector";
     import PackSelector from "@/components/PackSelector";
     import Changelog from "@/components/Changelog";
+    import Randomizer from "@/randomizer";
+
+    const difficulties = ["standard", "expert"];
 
     const dataStorage = window.localStorage;
 
@@ -32,6 +35,8 @@
         Scenarios: scenarios.map(a => a.pack).filter((a, i, arr) => arr.indexOf(a) === i),
         Modules: modules.map(a => a.pack).filter((a, i, arr) => arr.indexOf(a) === i),
     };
+
+    const randomizer = new Randomizer();
 
     let selectedPacks = null;
     try{
@@ -50,14 +55,21 @@
                 heroes,
                 aspects,
                 packs,
+                difficulties,
             },
             selectedPacks: selectedPacks,
+            selectedScenario: null,
+            selectedDecks: [],
             numberOfPlayer: 1
         }),
         watch: {
           selectedPacks(){
               dataStorage.setItem("selectedPacks", JSON.stringify(this.selectedPacks));
+              this.randomize();
           },
+        },
+        created(){
+            this.randomize();
         },
         computed: {
             availableScenarios() {
@@ -69,19 +81,22 @@
             availableHeroes() {
                 return this.data.heroes.filter(s => this.selectedPacks.indexOf(s.pack)>=0);
             },
+            availableDifficulties() {
+                return this.data.difficulties;
+            },
         },
         methods: {
             randomize(){
-                this.$refs.scenarioRandomizer.randomize();
-                this.$refs.heroRandomizer.randomize();
+                this.selectedScenario = randomizer.randomizeScenario(this.availableScenarios, this.availableModules, this.availableDifficulties);
+                this.selectedDecks = randomizer.randomizeHeroes(this.availableHeroes, this.data.aspects);
             }
         },
         components: {
             Changelog,
             PackSelector,
             PlayerSelector,
-            HeroRandomizer,
-            ScenarioRandomizer,
+            DeckList,
+            Scenario,
         }
     }
 </script>
