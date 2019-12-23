@@ -1,11 +1,15 @@
 import {shuffleArray} from "@/helpers";
 
 export default class Randomizer {
-    randomizeScenario(scenarios, availableModules, defaultDifficulties){
+    randomizeScenario(scenarios, availableModules, defaultDifficulties, {additionalModules = 0 } = { additionalModules: 0}){
         const scenario = shuffleArray(scenarios).shift();
+        const encounterDecks = scenario.decks || [{name: "encounter"}];
 
-        const numberOfModules = scenario.minModules !== undefined ? scenario.minModules : 1;
-        const modules = shuffleArray(availableModules).slice(0,numberOfModules);
+        const shuffledModules = shuffleArray(availableModules);
+        const modules = encounterDecks.map((deck) => {
+            const numberOfModules = (deck.minModules !== undefined ? deck.minModules : 1 ) + additionalModules;
+            return {deck, modules: shuffledModules.splice(0, numberOfModules)};
+        });
 
         const difficulties = scenario.difficulties || defaultDifficulties;
         const difficulty = difficulties[Math.floor(Math.random() * difficulties.length)];

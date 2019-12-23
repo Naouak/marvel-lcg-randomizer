@@ -6,7 +6,8 @@
             <div class="changelog-entry">
                 <h3>On december 23rd 2019</h3>
                 <ul>
-                    <li>Refactored the randomization for a bit more of future proofing.</li>
+                    <li>Refactored the randomization for a bit more of future proofing</li>
+                    <li>Add support for first customization option: Extra modules</li>
                 </ul>
                 <h3>On december 15th 2019</h3>
                 <ul>

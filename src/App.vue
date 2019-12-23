@@ -7,22 +7,25 @@
         <button class="randomize-button" @click="randomize">Randomize</button>
         <PlayerSelector v-model="numberOfPlayer"/>
 
-        <PackSelector :packs="data.packs" v-model="selectedPacks" />
-        <Scenario :scenario="selectedScenario" />
+        <PackSelector :packs="data.packs" v-model="selectedPacks"/>
+        <RandomizationOptions v-model="randomizationOptions"/>
+
+        <Scenario :scenario="selectedScenario"/>
         <DeckList :available-decks="selectedDecks" :number-of-player="numberOfPlayer"/>
         <Changelog/>
     </div>
 </template>
 
 <script>
-    import Scenario from './components/Scenario';
     import {scenarios} from './data/scenarios';
     import {modules} from './data/modules';
     import {heroes} from './data/heroes';
     import {aspects} from "@/data/aspects";
-    import DeckList from "@/components/DeckList";
     import PlayerSelector from "@/components/PlayerSelector";
+    import RandomizationOptions from "@/components/RandomizationOptions";
     import PackSelector from "@/components/PackSelector";
+    import Scenario from './components/Scenario';
+    import DeckList from "@/components/DeckList";
     import Changelog from "@/components/Changelog";
     import Randomizer from "@/randomizer";
 
@@ -39,7 +42,7 @@
     const randomizer = new Randomizer();
 
     let selectedPacks = null;
-    try{
+    try {
         selectedPacks = JSON.parse(dataStorage.getItem("selectedPacks")) || ["Core Set"];
     } catch {
         selectedPacks = ["Core Set"];
@@ -60,34 +63,38 @@
             selectedPacks: selectedPacks,
             selectedScenario: null,
             selectedDecks: [],
-            numberOfPlayer: 1
+            numberOfPlayer: 1,
+            randomizationOptions: {},
         }),
         watch: {
-          selectedPacks(){
-              dataStorage.setItem("selectedPacks", JSON.stringify(this.selectedPacks));
-              this.randomize();
-          },
+            selectedPacks() {
+                dataStorage.setItem("selectedPacks", JSON.stringify(this.selectedPacks));
+                this.randomize();
+            },
+            randomizationOptions() {
+                this.randomize();
+            }
         },
-        created(){
+        created() {
             this.randomize();
         },
         computed: {
             availableScenarios() {
-                return this.data.scenarios.filter(s => this.selectedPacks.indexOf(s.pack)>=0);
+                return this.data.scenarios.filter(s => this.selectedPacks.indexOf(s.pack) >= 0);
             },
             availableModules() {
-                return this.data.modules.filter(s => this.selectedPacks.indexOf(s.pack)>=0);
+                return this.data.modules.filter(s => this.selectedPacks.indexOf(s.pack) >= 0);
             },
             availableHeroes() {
-                return this.data.heroes.filter(s => this.selectedPacks.indexOf(s.pack)>=0);
+                return this.data.heroes.filter(s => this.selectedPacks.indexOf(s.pack) >= 0);
             },
             availableDifficulties() {
                 return this.data.difficulties;
             },
         },
         methods: {
-            randomize(){
-                this.selectedScenario = randomizer.randomizeScenario(this.availableScenarios, this.availableModules, this.availableDifficulties);
+            randomize() {
+                this.selectedScenario = randomizer.randomizeScenario(this.availableScenarios, this.availableModules, this.availableDifficulties, this.randomizationOptions);
                 this.selectedDecks = randomizer.randomizeHeroes(this.availableHeroes, this.data.aspects);
             }
         },
@@ -97,6 +104,7 @@
             PlayerSelector,
             DeckList,
             Scenario,
+            RandomizationOptions,
         }
     }
 </script>
@@ -133,7 +141,7 @@
         height: 100px;
     }
 
-    .randomize-button{
+    .randomize-button {
         padding: 10px;
         margin: 10px;
     }
@@ -146,7 +154,7 @@
         padding: 5px;
     }
 
-    .panel-insert{
+    .panel-insert {
         border: solid black 2px;
         background: #fff2bd;
         display: inline-block;
@@ -158,7 +166,7 @@
         font-size: 1.5em;
     }
 
-    .panel-insert-content{
+    .panel-insert-content {
         border: solid black 2px;
         background: #fff2bd;
         display: inline-block;
@@ -168,7 +176,7 @@
         position: relative;
     }
 
-    .panel-insert:before{
+    .panel-insert:before {
         transform: skewX(-10deg);
         border: solid black 2px;
         border-left: 0;
@@ -183,7 +191,7 @@
     }
 
 
-    button{
+    button {
         flex-grow: 1;
         box-sizing: border-box;
         padding: 10px;
@@ -191,7 +199,7 @@
         border: solid 1px grey;
     }
 
-    button:disabled{
+    button:disabled {
         color: white;
         background: green;
         font-weight: bold;

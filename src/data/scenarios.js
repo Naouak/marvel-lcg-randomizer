@@ -28,7 +28,23 @@ export const scenarios = [
         name: 'Wrecking Crew',
         img: 'images/scenarios/mc03en_breakout.png',
         pack: 'Wrecking Crew',
-        minModules: 0,
-        maxModules: 0,
-    }
+        decks: [
+            {
+                name: "Bulldozer",
+                minModules: 0,
+            },
+            {
+                name: "Piledriver",
+                minModules: 0,
+            },
+            {
+                name: "Thunderball",
+                minModules: 0,
+            },
+            {
+                name: "Wrecker",
+                minModules: 0,
+            },
+        ],
+    },
 ];
