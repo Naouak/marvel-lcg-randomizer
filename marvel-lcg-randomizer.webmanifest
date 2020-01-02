@@ -9,5 +9,6 @@
             "type": "image/jpg"
         }
     ],
-    "display": "fullscreen"
+    "display": "fullscreen",
+    "start_url": "/"
 }
