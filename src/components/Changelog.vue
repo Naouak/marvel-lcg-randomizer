@@ -4,6 +4,12 @@
 
         <div v-if="shown">
             <div class="changelog-entry">
+                <h3>On january 2nd 2020</h3>
+                <ul>
+                    <li>Add offline availability</li>
+                </ul>
+            </div>
+            <div class="changelog-entry">
                 <h3>On december 23rd 2019</h3>
                 <ul>
                     <li>Refactored the randomization for a bit more of future proofing</li>
