@@ -13,6 +13,7 @@
                     <li>Add custom options to generate only scenario or decks</li>
                     <li>Add difficulty selector</li>
                     <li>Add Wrecking Crew custom difficulties</li>
+                    <li>Add Nightmare difficulty in selectable difficulties (All 3 levels of a villains)</li>
                 </ul>
             </div>
             <div class="changelog-entry">

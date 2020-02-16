@@ -3,7 +3,7 @@
         <div class="panel-insert">
             Selected difficulties
         </div>
-        <div v-if="!shown" class="difficluties-selected">
+        <div v-if="!shown" class="difficulties-selected">
             {{value.join(", ")}}
         </div>
         <div class="difficulties" v-if="shown">
@@ -13,8 +13,6 @@
                     <input type="checkbox" :checked="value.indexOf(difficulty) >= 0" @input="toggleDifficulty(difficulty, $event.target.checked)">{{difficulty}}
                 </label>
             </div>
-
-            <div>Note: Selected difficulties will not apply on Wrecking Crew Scenario.</div>
         </div>
 
         <div class="toggle">
@@ -28,7 +26,7 @@
 
 <script>
     export default {
-        name: "Difficulty Selector",
+        name: "DifficultySelector",
         props: {
             value: {
                 default: ["Standard", "Expert"],

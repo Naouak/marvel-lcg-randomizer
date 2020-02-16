@@ -33,7 +33,7 @@
     import Contribute from "./components/Contribute";
     import DifficultySelector from "./components/DifficultySelector";
 
-    const difficulties = ["standard", "expert"];
+    const difficulties = ["standard", "expert", "nightmare"];
 
     const dataStorage = window.localStorage;
 
@@ -71,7 +71,7 @@
             randomizationOptions: {
                 scenario: 1,
                 decks: 1,
-                selectedDifficulties: difficulties.slice(0),
+                selectedDifficulties: ["standard", "expert"],
             },
         }),
         watch: {
