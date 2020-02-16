@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "17ec8f477b5c065b33b1",
-    "url": "/marvel-lcg-randomizer/css/app.2b8438fb.css"
+    "revision": "36647e212eedd7fccbb6",
+    "url": "/marvel-lcg-randomizer/css/app.9c92a8af.css"
   },
   {
     "revision": "ac4d27e6308fae015c02ffdfdec15cfc",
@@ -200,16 +200,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/img/logo.7184bee2.jpg"
   },
   {
-    "revision": "73bc9dd9586c6ff77ba89d87452fa51f",
+    "revision": "e7ac2a64982030fa8839be6fade54f05",
     "url": "/marvel-lcg-randomizer/index.html"
   },
   {
-    "revision": "17ec8f477b5c065b33b1",
-    "url": "/marvel-lcg-randomizer/js/app.d05d854c.js"
+    "revision": "36647e212eedd7fccbb6",
+    "url": "/marvel-lcg-randomizer/js/app.62f783be.js"
   },
   {
-    "revision": "025c4e6a0a8fc3697331",
-    "url": "/marvel-lcg-randomizer/js/chunk-vendors.44e8a185.js"
+    "revision": "56626a190bd5f9bfa06e",
+    "url": "/marvel-lcg-randomizer/js/chunk-vendors.11c2f2f7.js"
   },
   {
     "revision": "248722733c0ebf53d056418b2eb5dce0",
