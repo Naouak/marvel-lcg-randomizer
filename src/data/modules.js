@@ -31,17 +31,17 @@ export const modules = [
     },
     {
         name: "A Mess of Things",
-        img: "images/modules/0PYOEfh.png",
+        img: "images/modules/02037.jpg",
         pack: "Green Goblin"
     },
     {
         name: "Power Drain",
-        img: "images/modules/QTUeXkO.png",
+        img: "images/modules/02041.jpg",
         pack: "Green Goblin"
     },
     {
         name: "Running Interference",
-        img: "images/modules/zP2bl2j.png",
+        img: "images/modules/02046.jpg",
         pack: "Green Goblin"
     },
 ];

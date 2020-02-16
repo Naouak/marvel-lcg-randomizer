@@ -7,6 +7,7 @@
                 <h3>On february 16th 2020</h3>
                 <ul>
                     <li>Add Black Widow and Doctor Strange</li>
+                    <li>Update Green Goblin and Wrecking Crew pictures</li>
                 </ul>
             </div>
             <div class="changelog-entry">
