@@ -11,7 +11,7 @@ export default class Randomizer {
             return {deck, modules: shuffledModules.splice(0, numberOfModules)};
         });
 
-        const scenarioDifficulties = scenario.difficulties
+        const scenarioDifficulties = (scenario.difficulties || [])
             // Select custom difficulties only by selected difficulties
             .filter(([diff,]) => (defaultDifficulties.indexOf(diff.toLowerCase()) >= 0))
             .map(([,d]) => d);
