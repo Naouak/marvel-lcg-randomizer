@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b334d573669e1c7f7f6c",
-    "url": "/marvel-lcg-randomizer/css/app.cb424fd4.css"
+    "revision": "e8a4db2512c474f2a3a2",
+    "url": "/marvel-lcg-randomizer/css/app.bf2f0984.css"
   },
   {
     "revision": "ac4d27e6308fae015c02ffdfdec15cfc",
@@ -104,6 +104,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/images/heroes/mc06en_a1_thor.png"
   },
   {
+    "revision": "554be3bdcddd616d33cc4ede99eabb01",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc07en_black-widow.png"
+  },
+  {
+    "revision": "20397c04a9a27d288fa198a5d1dd7131",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc07en_natasha-romanoff.png"
+  },
+  {
+    "revision": "d98e59c84b398d6c7602373156b388ac",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc08en_doctor-strange.png"
+  },
+  {
+    "revision": "6fb5a0c9fd3b01d03bc1bd376a8e6e72",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc08en_stephen-strange.png"
+  },
+  {
     "revision": "fdc1e4f0f52fb6e9f924a91d6526c86d",
     "url": "/marvel-lcg-randomizer/images/missing.png"
   },
@@ -184,12 +200,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/img/logo.7184bee2.jpg"
   },
   {
-    "revision": "20009414fc2315af3807e3f4ad1d1155",
+    "revision": "d8130344f0c0323db9e3d1f64eafe17f",
     "url": "/marvel-lcg-randomizer/index.html"
   },
   {
-    "revision": "b334d573669e1c7f7f6c",
-    "url": "/marvel-lcg-randomizer/js/app.a69e0fb8.js"
+    "revision": "e8a4db2512c474f2a3a2",
+    "url": "/marvel-lcg-randomizer/js/app.4738e5b6.js"
   },
   {
     "revision": "025c4e6a0a8fc3697331",
