@@ -8,6 +8,7 @@
                 <ul>
                     <li>Add Black Widow and Doctor Strange</li>
                     <li>Update Green Goblin and Wrecking Crew pictures</li>
+                    <li>Add contribute note at the bottom of the page</li>
                 </ul>
             </div>
             <div class="changelog-entry">

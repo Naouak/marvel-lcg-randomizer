@@ -13,6 +13,7 @@
         <Scenario :scenario="selectedScenario"/>
         <DeckList :available-decks="selectedDecks" :number-of-player="numberOfPlayer"/>
         <Changelog/>
+        <Contribute/>
     </div>
 </template>
 
@@ -28,6 +29,7 @@
     import DeckList from "@/components/DeckList";
     import Changelog from "@/components/Changelog";
     import Randomizer from "@/randomizer";
+    import Contribute from "./components/Contribute";
 
     const difficulties = ["standard", "expert"];
 
@@ -99,6 +101,7 @@
             }
         },
         components: {
+            Contribute,
             Changelog,
             PackSelector,
             PlayerSelector,
