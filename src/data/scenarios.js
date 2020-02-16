@@ -25,7 +25,7 @@ export const scenarios = [
         pack: 'Green Goblin',
     },
     {
-        name: 'Wrecking Crew',
+        name: 'Wrecking Crew - Breakout',
         img: 'images/scenarios/MC03en_1A.jpg',
         pack: 'Wrecking Crew',
         decks: [
@@ -45,6 +45,24 @@ export const scenarios = [
                 name: "Wrecker",
                 minModules: 0,
             },
+        ],
+        difficulties: [
+            "Standard (All Villains A)",
+            "Bulldozer A, Piledriver A, Thunderball A, Wrecker B",
+            "Bulldozer A, Piledriver A, Thunderball B, Wrecker A",
+            "Bulldozer A, Piledriver B, Thunderball A, Wrecker A",
+            "Bulldozer B, Piledriver A, Thunderball A, Wrecker A",
+            "Bulldozer A, Piledriver A, Thunderball B, Wrecker B",
+            "Bulldozer A, Piledriver B, Thunderball A, Wrecker B",
+            "Bulldozer A, Piledriver B, Thunderball B, Wrecker A",
+            "Bulldozer B, Piledriver A, Thunderball A, Wrecker B",
+            "Bulldozer B, Piledriver A, Thunderball B, Wrecker A",
+            "Bulldozer B, Piledriver B, Thunderball A, Wrecker A",
+            "Bulldozer A, Piledriver B, Thunderball B, Wrecker B",
+            "Bulldozer B, Piledriver A, Thunderball B, Wrecker B",
+            "Bulldozer B, Piledriver B, Thunderball A, Wrecker B",
+            "Bulldozer B, Piledriver B, Thunderball B, Wrecker A",
+            "Expert (All Villains B)",
         ],
     },
 ];

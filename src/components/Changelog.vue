@@ -12,6 +12,7 @@
                     <li>Add first player indicator in deck list</li>
                     <li>Add custom options to generate only scenario or decks</li>
                     <li>Add difficulty selector</li>
+                    <li>Add Wrecking Crew custom difficulties</li>
                 </ul>
             </div>
             <div class="changelog-entry">

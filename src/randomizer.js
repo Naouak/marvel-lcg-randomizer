@@ -12,7 +12,7 @@ export default class Randomizer {
         });
 
         const difficulties = scenario.difficulties || defaultDifficulties;
-        const difficulty = difficulties[Math.floor(Math.random() * difficulties.length)];
+        const difficulty = difficulties[Math.floor(Math.random() * difficulties.length)] || "No difficulty available";
 
         return {
             scenario,

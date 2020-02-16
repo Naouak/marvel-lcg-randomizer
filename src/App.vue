@@ -71,7 +71,7 @@
             randomizationOptions: {
                 scenario: 1,
                 decks: 1,
-                selectedDifficulties: [],
+                selectedDifficulties: difficulties.slice(0),
             },
         }),
         watch: {

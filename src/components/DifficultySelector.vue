@@ -6,12 +6,15 @@
         <div v-if="!shown" class="difficluties-selected">
             {{value.join(", ")}}
         </div>
-        <div class="packs" v-if="shown">
-            <div class="pack-type-column" :key="difficulty" v-for="difficulty in difficulties">
+        <div class="difficulties" v-if="shown">
+            <h3>Difficulties</h3>
+            <div class="difficulty-type-column" :key="difficulty" v-for="difficulty in difficulties">
                 <label>
                     <input type="checkbox" :checked="value.indexOf(difficulty) >= 0" @input="toggleDifficulty(difficulty, $event.target.checked)">{{difficulty}}
                 </label>
             </div>
+
+            <div>Note: Selected difficulties will not apply on Wrecking Crew Scenario.</div>
         </div>
 
         <div class="toggle">
@@ -56,16 +59,6 @@
 
     label{
         display: block;
-    }
-
-    .packs{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-    }
-
-    .packs-selected{
-        padding-top: 5px;
     }
 
     .toggle{
