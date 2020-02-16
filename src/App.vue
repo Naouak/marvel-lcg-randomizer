@@ -8,6 +8,7 @@
         <PlayerSelector v-model="numberOfPlayer"/>
 
         <PackSelector :packs="data.packs" v-model="selectedPacks"/>
+        <DifficultySelector :difficulties="data.difficulties" v-model="randomizationOptions.selectedDifficulties" />
         <RandomizationOptions v-model="randomizationOptions"/>
 
         <Scenario v-if="randomizationOptions.scenario" :scenario="selectedScenario"/>
@@ -30,6 +31,7 @@
     import Changelog from "@/components/Changelog";
     import Randomizer from "@/randomizer";
     import Contribute from "./components/Contribute";
+    import DifficultySelector from "./components/DifficultySelector";
 
     const difficulties = ["standard", "expert"];
 
@@ -69,6 +71,7 @@
             randomizationOptions: {
                 scenario: 1,
                 decks: 1,
+                selectedDifficulties: [],
             },
         }),
         watch: {
@@ -76,8 +79,11 @@
                 dataStorage.setItem("selectedPacks", JSON.stringify(this.selectedPacks));
                 this.randomize();
             },
-            randomizationOptions() {
-                this.randomize();
+            randomizationOptions: {
+                handler() {
+                    this.randomize();
+                },
+                deep: true,
             }
         },
         created() {
@@ -94,7 +100,7 @@
                 return this.data.heroes.filter(s => this.selectedPacks.indexOf(s.pack) >= 0);
             },
             availableDifficulties() {
-                return this.data.difficulties;
+                return this.data.difficulties.filter(s => this.randomizationOptions.selectedDifficulties.indexOf(s) >= 0);
             },
         },
         methods: {
@@ -104,6 +110,7 @@
             }
         },
         components: {
+            DifficultySelector,
             Contribute,
             Changelog,
             PackSelector,

@@ -11,6 +11,7 @@
                     <li>Add contribute note at the bottom of the page</li>
                     <li>Add first player indicator in deck list</li>
                     <li>Add custom options to generate only scenario or decks</li>
+                    <li>Add difficulty selector</li>
                 </ul>
             </div>
             <div class="changelog-entry">
