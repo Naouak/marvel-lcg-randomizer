@@ -11,6 +11,17 @@
                 Extra Modules
             </div>
 
+            <div>
+                <label>
+                    <input type="checkbox" name="scenario" id="scenario" v-model="value.scenario"> Generate Scenario
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" name="scenario" id="decks" v-model="value.decks"> Generate Player Decks
+                </label>
+            </div>
+
             <div @click="shown=!shown" class="panel-insert-content">
                 Hide Options
             </div>

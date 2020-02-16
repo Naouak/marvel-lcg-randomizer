@@ -10,8 +10,8 @@
         <PackSelector :packs="data.packs" v-model="selectedPacks"/>
         <RandomizationOptions v-model="randomizationOptions"/>
 
-        <Scenario :scenario="selectedScenario"/>
-        <DeckList :available-decks="selectedDecks" :number-of-player="numberOfPlayer"/>
+        <Scenario v-if="randomizationOptions.scenario" :scenario="selectedScenario"/>
+        <DeckList v-if="randomizationOptions.decks" :available-decks="selectedDecks" :number-of-player="numberOfPlayer"/>
         <Changelog/>
         <Contribute/>
     </div>
@@ -66,7 +66,10 @@
             selectedScenario: null,
             selectedDecks: [],
             numberOfPlayer: 1,
-            randomizationOptions: {},
+            randomizationOptions: {
+                scenario: 1,
+                decks: 1,
+            },
         }),
         watch: {
             selectedPacks() {

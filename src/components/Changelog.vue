@@ -10,6 +10,7 @@
                     <li>Update Green Goblin and Wrecking Crew pictures</li>
                     <li>Add contribute note at the bottom of the page</li>
                     <li>Add first player indicator in deck list</li>
+                    <li>Add custom options to generate only scenario or decks</li>
                 </ul>
             </div>
             <div class="changelog-entry">
