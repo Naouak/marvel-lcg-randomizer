@@ -12,6 +12,7 @@ export const aspects = [
         img: 'images/aspects/MC01en_62.jpg',
         packs: [
             "Core Set",
+            "Black widow",
         ]
     },
     {
@@ -28,6 +29,7 @@ export const aspects = [
         packs: [
             "Core Set",
             "Ms. Marvel",
+            "Doctor Strange",
         ]
     },
 ];

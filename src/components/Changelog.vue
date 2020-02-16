@@ -4,6 +4,12 @@
 
         <div v-if="shown">
             <div class="changelog-entry">
+                <h3>On february 16th 2020</h3>
+                <ul>
+                    <li>Add Black Widow and Doctor Strange</li>
+                </ul>
+            </div>
+            <div class="changelog-entry">
                 <h3>On january 2nd 2020</h3>
                 <ul>
                     <li>Add offline availability</li>

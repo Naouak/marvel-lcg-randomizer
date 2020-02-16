@@ -54,5 +54,19 @@ export const heroes = [
         alterEgo: 'Odinson',
         alterEgoImg: 'images/heroes/mc06en_a1_odinson.png',
         pack: 'Thor',
+    },
+    {
+        hero: 'Black Widow',
+        heroImg: 'images/heroes/mc07en_black-widow.png',
+        alterEgo: 'Natasha Romanoff',
+        alterEgoImg: 'images/heroes/mc07en_natasha-romanoff.png',
+        pack: 'Black Widow',
+    },
+    {
+        hero: 'Doctor Strange',
+        heroImg: 'images/heroes/mc08en_doctor-strange.png',
+        alterEgo: 'Stephen Strange',
+        alterEgoImg: 'images/heroes/mc08en_stephen-strange.png',
+        pack: 'Doctor Strange',
     }
 ];
