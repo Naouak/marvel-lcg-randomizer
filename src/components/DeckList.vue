@@ -8,7 +8,7 @@
 
         <div class="decks" v-if="shown">
             <div class="hero-deck" :key="index" v-for="({hero, aspect}, index) in selectedDecks">
-                <h2 class="panel-insert-content">Player {{index+1}}</h2>
+                <h2 class="panel-insert-content">Player {{index+1}} <span v-if="index===0">(First Player)</span></h2>
                 <div class="cards">
                     <img :src="hero.alterEgoImg" :alt="hero.alterEgo" />
                     <img :src="hero.heroImg" :alt="hero.hero" />
