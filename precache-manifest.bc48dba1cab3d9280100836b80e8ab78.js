@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1e3e7f7679b11829b0ac",
+    "revision": "d4de6505ee136a7e21e9",
     "url": "/marvel-lcg-randomizer/css/app.9c92a8af.css"
   },
   {
@@ -200,12 +200,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/img/logo.7184bee2.jpg"
   },
   {
-    "revision": "36c8acc88d6d9265b99abda90c28fb7c",
+    "revision": "8f42b651d88baf0c9424fc66f66338a3",
     "url": "/marvel-lcg-randomizer/index.html"
   },
   {
-    "revision": "1e3e7f7679b11829b0ac",
-    "url": "/marvel-lcg-randomizer/js/app.899f2c5e.js"
+    "revision": "d4de6505ee136a7e21e9",
+    "url": "/marvel-lcg-randomizer/js/app.279c8bc3.js"
   },
   {
     "revision": "56626a190bd5f9bfa06e",
