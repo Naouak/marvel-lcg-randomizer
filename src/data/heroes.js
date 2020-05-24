@@ -68,5 +68,12 @@ export const heroes = [
         alterEgo: 'Stephen Strange',
         alterEgoImg: 'images/heroes/mc08en_stephen-strange.png',
         pack: 'Doctor Strange',
+    },
+    {
+        hero: 'Hulk',
+        heroImg: 'images/heroes/mc09en-hulk.png',
+        alterEgo: 'Bruce Banner',
+        alterEgoImg: 'images/heroes/mc09en_bruce-banner.png',
+        pack: 'Hulk',
     }
 ];
