@@ -7,6 +7,8 @@
                 <h3>On may 24th 2020</h3>
                 <ul>
                     <li>Add Hulk, Hawkeye(missing the alter-ego visual) and Spider-woman</li>
+                    <li>Add support for multiple aspects heroes (Spider-woman / Jessica Drew - The Rise of Red Skull)</li>
+                    <li>Fix difficulties</li>
                 </ul>
             </div>
             <div class="changelog-entry">

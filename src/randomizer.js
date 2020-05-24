@@ -16,7 +16,7 @@ export default class Randomizer {
             .filter(([diff,]) => (defaultDifficulties.indexOf(diff.toLowerCase()) >= 0))
             .map(([,d]) => d);
 
-        const difficulties =  scenarioDifficulties || defaultDifficulties;
+        const difficulties =  scenarioDifficulties.length? scenarioDifficulties:defaultDifficulties;
         const difficulty = difficulties[Math.floor(Math.random() * difficulties.length)] || "No difficulty available";
 
         return {
