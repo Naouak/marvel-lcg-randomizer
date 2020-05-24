@@ -75,5 +75,20 @@ export const heroes = [
         alterEgo: 'Bruce Banner',
         alterEgoImg: 'images/heroes/mc09en_bruce-banner.png',
         pack: 'Hulk',
-    }
+    },
+    {
+        hero: 'Hawkeye',
+        heroImg: 'images/heroes/mc10en_hawkeye.png',
+        alterEgo: 'Clint Barton',
+        alterEgoImg: 'images/missing.png',
+        pack: 'The Rise of Red Skull',
+    },
+    {
+        hero: 'Spider-woman',
+        heroImg: 'images/heroes/mc10en_spider-woman.png',
+        alterEgo: 'Jessica Drew',
+        alterEgoImg: 'images/heroes/mc10en_jessica-drew.png',
+        pack: 'The Rise of Red Skull',
+        numberOfAspects: 2,
+    },
 ];

@@ -6,7 +6,7 @@
             <div class="changelog-entry">
                 <h3>On may 24th 2020</h3>
                 <ul>
-                    <li>Add Hulk</li>
+                    <li>Add Hulk, Hawkeye(missing the alter-ego visual) and Spider-woman</li>
                 </ul>
             </div>
             <div class="changelog-entry">

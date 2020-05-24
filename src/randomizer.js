@@ -29,6 +29,30 @@ export default class Randomizer {
     randomizeHeroes(availableHeroes, availableAspects){
         const heroes = shuffleArray(availableHeroes);
         const aspects = shuffleArray(availableAspects);
-        return Array.from({length: Math.min(4, heroes.length)}, (n, i) => ({hero: heroes[i], aspect: aspects[i]}));
+        aspects.push(...shuffleArray(availableAspects));
+        // Prevents two of the same aspect in a row
+        for(let i = 0; i < aspects.length - 2; i++){
+            if(aspects[i] === aspects[i+1]){
+                [aspects[i+1], aspects[i+2]] = [aspects[i+2], aspects[i+1]];
+            }
+        }
+
+        const selectedHeroes = [];
+
+        for(let i = 0; i < Math.min(4, heroes.length); i++){
+            const currentAspects = [];
+            const numberOfAspects = heroes[i].numberOfAspects || 1;
+
+            for(let j = 0; j < numberOfAspects; j++){
+                currentAspects.push(aspects.shift());
+            }
+
+            selectedHeroes.push({
+                hero: heroes[i],
+                aspects: currentAspects,
+            });
+        }
+
+        return selectedHeroes;
     }
 }

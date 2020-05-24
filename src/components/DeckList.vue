@@ -7,15 +7,21 @@
         </div>
 
         <div class="decks" v-if="shown">
-            <div class="hero-deck" :key="index" v-for="({hero, aspect}, index) in selectedDecks">
+            <div class="hero-deck" :key="index" v-for="({hero, aspects}, index) in selectedDecks">
                 <h2 class="panel-insert-content">Player {{index+1}} <span v-if="index===0">(First Player)</span></h2>
                 <div class="cards">
-                    <img :src="hero.alterEgoImg" :alt="hero.alterEgo" />
-                    <img :src="hero.heroImg" :alt="hero.hero" />
-                    <img :src="aspect.img" :alt="aspect.name">
+                    <div class="card">
+                        <img :src="hero.alterEgoImg" :alt="hero.alterEgo" />
+                    </div>
+                    <div class="card">
+                        <img :src="hero.heroImg" :alt="hero.hero" />
+                    </div>
+                    <div class="card" v-for="aspect in aspects" :key="aspect.name">
+                        <img :src="aspect.img" :alt="aspect.name">
+                    </div>
                 </div>
                 <div class="name panel-insert-content">
-                    {{hero.alterEgo}} / {{hero.hero}}({{hero.pack}}) + {{aspect.name}}
+                    {{hero.alterEgo}} / {{hero.hero}}({{hero.pack}}) + {{aspects.map(a => a.name).join(' + ')}}
                 </div>
             </div>
         </div>
@@ -52,8 +58,14 @@
         justify-content: space-around;
     }
 
+    .card{
+        flex: .3;
+        padding: 6px;
+    }
+
     .cards img{
-        width: 30%;
+        width: 100%;
+        height: auto;
     }
 
     .name{
