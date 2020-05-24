@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d4de6505ee136a7e21e9",
-    "url": "/marvel-lcg-randomizer/css/app.9c92a8af.css"
+    "revision": "4857ddee03bc3793ad0c",
+    "url": "/marvel-lcg-randomizer/css/app.d8a6f57f.css"
   },
   {
     "revision": "ac4d27e6308fae015c02ffdfdec15cfc",
@@ -120,6 +120,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/images/heroes/mc08en_stephen-strange.png"
   },
   {
+    "revision": "b3113f7aa69522f3a310ae721e200c3f",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc09en-hulk.png"
+  },
+  {
+    "revision": "d3b77fe0b5cdd04dbdaf2c0d1b713a70",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc09en_bruce-banner.png"
+  },
+  {
     "revision": "fdc1e4f0f52fb6e9f924a91d6526c86d",
     "url": "/marvel-lcg-randomizer/images/missing.png"
   },
@@ -200,12 +208,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/img/logo.7184bee2.jpg"
   },
   {
-    "revision": "8f42b651d88baf0c9424fc66f66338a3",
+    "revision": "a8ee2c3120f1f918d4475ac2df7aaf63",
     "url": "/marvel-lcg-randomizer/index.html"
   },
   {
-    "revision": "d4de6505ee136a7e21e9",
-    "url": "/marvel-lcg-randomizer/js/app.279c8bc3.js"
+    "revision": "4857ddee03bc3793ad0c",
+    "url": "/marvel-lcg-randomizer/js/app.dd33c26c.js"
   },
   {
     "revision": "56626a190bd5f9bfa06e",
