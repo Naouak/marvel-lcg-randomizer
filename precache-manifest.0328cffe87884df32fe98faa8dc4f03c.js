@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4857ddee03bc3793ad0c",
-    "url": "/marvel-lcg-randomizer/css/app.d8a6f57f.css"
+    "revision": "e92d26c37b4430bdf6b3",
+    "url": "/marvel-lcg-randomizer/css/app.83b83fcd.css"
   },
   {
     "revision": "ac4d27e6308fae015c02ffdfdec15cfc",
@@ -128,6 +128,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/images/heroes/mc09en_bruce-banner.png"
   },
   {
+    "revision": "3acd17cdb81099220dd4c340c91a5c35",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc10en_hawkeye.png"
+  },
+  {
+    "revision": "635076bf8493c557f33e2fb0f9cbee60",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc10en_jessica-drew.png"
+  },
+  {
+    "revision": "9937d2b445a8c1325aa583b5b414d386",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc10en_spider-woman.png"
+  },
+  {
     "revision": "fdc1e4f0f52fb6e9f924a91d6526c86d",
     "url": "/marvel-lcg-randomizer/images/missing.png"
   },
@@ -208,16 +220,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/img/logo.7184bee2.jpg"
   },
   {
-    "revision": "a8ee2c3120f1f918d4475ac2df7aaf63",
+    "revision": "355dc144c88704d84963b8bb1dfafde3",
     "url": "/marvel-lcg-randomizer/index.html"
   },
   {
-    "revision": "4857ddee03bc3793ad0c",
-    "url": "/marvel-lcg-randomizer/js/app.dd33c26c.js"
+    "revision": "e92d26c37b4430bdf6b3",
+    "url": "/marvel-lcg-randomizer/js/app.9a925593.js"
   },
   {
-    "revision": "56626a190bd5f9bfa06e",
-    "url": "/marvel-lcg-randomizer/js/chunk-vendors.11c2f2f7.js"
+    "revision": "d15d0c2303f6a7092c36",
+    "url": "/marvel-lcg-randomizer/js/chunk-vendors.7bae290e.js"
   },
   {
     "revision": "248722733c0ebf53d056418b2eb5dce0",
