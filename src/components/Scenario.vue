@@ -13,7 +13,7 @@
                     <div class="deck" v-if="modules.length > 0">
                         <div class="deck-name" v-if="scenario.modules.length > 1">Deck {{deck.name}}</div>
                         <div class="modules">
-                            <div :key="index2" v-for="(mod, index2) in modules">
+                            <div class="module" :key="index2" v-for="(mod, index2) in modules">
                                 <img :src="mod.img" :alt="mod.name"/>
                                 <div class="panel-insert-content">
                                     {{mod.name}}({{mod.pack}})
@@ -64,8 +64,8 @@
         flex-wrap: wrap;
     }
 
-    .modules > div{
-        flex-basis: 50%;
+    .modules .module{
+        flex: 1;
         margin: 20px 0;
         display: inline-block;
     }
