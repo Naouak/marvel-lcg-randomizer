@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e959330006afcfba0843",
-    "url": "/marvel-lcg-randomizer/css/app.83b83fcd.css"
+    "revision": "5ffc399c6708161dcfa3",
+    "url": "/marvel-lcg-randomizer/css/app.f87f1e80.css"
   },
   {
     "revision": "ac4d27e6308fae015c02ffdfdec15cfc",
@@ -180,6 +180,34 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/images/modules/MC01en_183.jpg"
   },
   {
+    "revision": "9ab64cf0c6d15b679005c2c0c2a66c20",
+    "url": "/marvel-lcg-randomizer/images/modules/MC10en_145.jpg"
+  },
+  {
+    "revision": "f1263aaeceb58ae66636e2b7c6c44be8",
+    "url": "/marvel-lcg-randomizer/images/modules/MC10en_148.jpg"
+  },
+  {
+    "revision": "c59c057cc17b8829b9913a2c433525a3",
+    "url": "/marvel-lcg-randomizer/images/modules/MC10en_152.jpg"
+  },
+  {
+    "revision": "19689a8c4c3082184e35f76ee7efcaf6",
+    "url": "/marvel-lcg-randomizer/images/modules/MC10en_72.jpg"
+  },
+  {
+    "revision": "701a905aaded3022696e70190beccf1f",
+    "url": "/marvel-lcg-randomizer/images/modules/MC11en_30.jpg"
+  },
+  {
+    "revision": "20973be7ccd6432be97c0f36e3b4b567",
+    "url": "/marvel-lcg-randomizer/images/modules/MC11en_40.jpg"
+  },
+  {
+    "revision": "17d368e2726dc30514a9b64634e61b34",
+    "url": "/marvel-lcg-randomizer/images/modules/MC11en_47.jpg"
+  },
+  {
     "revision": "6a940f1a1528f952c85448dd3165eb47",
     "url": "/marvel-lcg-randomizer/images/modules/mc02en_card_goblin-glider.png"
   },
@@ -208,6 +236,30 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/images/scenarios/MC03en_1A.jpg"
   },
   {
+    "revision": "3a3feec3be2bc29b7211dcf63104f9bb",
+    "url": "/marvel-lcg-randomizer/images/scenarios/MC10en_112A.jpg"
+  },
+  {
+    "revision": "634ef0bfed9e3d30d22061147d7ec320",
+    "url": "/marvel-lcg-randomizer/images/scenarios/MC10en_128A.jpg"
+  },
+  {
+    "revision": "417aaaa4f0d07cdaef9d2f66b536d76c",
+    "url": "/marvel-lcg-randomizer/images/scenarios/MC10en_61A.jpg"
+  },
+  {
+    "revision": "e24bf631187ff144df927798778bf0f4",
+    "url": "/marvel-lcg-randomizer/images/scenarios/MC10en_79A.jpg"
+  },
+  {
+    "revision": "98d4344b0956df932b72e4edc7a00fda",
+    "url": "/marvel-lcg-randomizer/images/scenarios/MC10en_96A.jpg"
+  },
+  {
+    "revision": "d6817c0b0150a6c9f2c82c5de66ca7b1",
+    "url": "/marvel-lcg-randomizer/images/scenarios/MC11en_7A.jpg"
+  },
+  {
     "revision": "e4bea7d399a0400947ba22fe6ae5c6c4",
     "url": "/marvel-lcg-randomizer/images/scenarios/mc02en_card_hostile-takeover.png"
   },
@@ -220,12 +272,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/img/logo.7184bee2.jpg"
   },
   {
-    "revision": "7ad08cb13e1967bc30b87c171fc09e96",
+    "revision": "c41ce1d2df7b75254548273a1d50f66a",
     "url": "/marvel-lcg-randomizer/index.html"
   },
   {
-    "revision": "e959330006afcfba0843",
-    "url": "/marvel-lcg-randomizer/js/app.ee4ac3fe.js"
+    "revision": "5ffc399c6708161dcfa3",
+    "url": "/marvel-lcg-randomizer/js/app.126f8ab9.js"
   },
   {
     "revision": "d15d0c2303f6a7092c36",
