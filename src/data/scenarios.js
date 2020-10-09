@@ -66,4 +66,34 @@ export const scenarios = [
             ["Nightmare", "Nightmare (All Villains A+B)"],
         ],
     },
+    {
+        name: "Crossbones - Attack on Mount Athena",
+        pack: "The Rise of Red Skull",
+        img: "images/scenarios/MC10en_61A.jpg",
+    },
+    {
+        name: "Absorbing Man - None Shall Pass",
+        pack: "The Rise of Red Skull",
+        img: "images/scenarios/MC10en_79A.jpg"
+    },
+    {
+        name: "Taskmaster - Hunting Down Heroes",
+        pack: "The Rise of Red Skull",
+        img: "images/scenarios/MC10en_96A.jpg",
+    },
+    {
+        name: "Zola - The Island of Dr. Zola",
+        pack: "The Rise of Red Skull",
+        img: "images/scenarios/MC10en_112A.jpg",
+    },
+    {
+        name: "Red Skull - The Rise of Red Skull",
+        pack: "The Rise of Red Skull",
+        img: "images/scenarios/MC10en_128A.jpg",
+    },
+    {
+        name: "Kang - Kang's Arrival",
+        pack: "The Once and Future Kang",
+        img: "images/scenarios/MC11en_7A.jpg",
+    },
 ];
