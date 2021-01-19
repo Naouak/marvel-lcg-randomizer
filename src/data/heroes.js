@@ -91,4 +91,11 @@ export const heroes = [
         pack: 'The Rise of Red Skull',
         numberOfAspects: 2,
     },
+    {
+        hero: 'Ant-Man',
+        heroImg: 'images/heroes/mc11en_ant-man.png',
+        alterEgo: 'Scott Lang',
+        alterEgoImg: 'images/heroes/mc11en_scott-lang.png',
+        pack: 'Ant-Man',
+    },
 ];

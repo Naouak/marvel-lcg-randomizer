@@ -4,6 +4,12 @@
 
         <div v-if="shown">
             <div class="changelog-entry">
+                <h3>On january 18th 2021</h3>
+                <ul>
+                    <li>Add Ant-Man</li>
+                </ul>
+            </div>
+            <div class="changelog-entry">
                 <h3>On october 9th 2020</h3>
                 <ul>
                     <li>Add The Rise of Red Skull and Kang scenarios and modules</li>
