@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5b39f9c5af8a83665d00",
+    "revision": "bf93283d4dec0025abae",
     "url": "/marvel-lcg-randomizer/css/app.f47b845b.css"
   },
   {
@@ -216,6 +216,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/images/modules/MC11en_47.jpg"
   },
   {
+    "revision": "d20d1b566329cdb9913ab47557931ad9",
+    "url": "/marvel-lcg-randomizer/images/modules/gen_con_2020_ronan.jpg"
+  },
+  {
     "revision": "6a940f1a1528f952c85448dd3165eb47",
     "url": "/marvel-lcg-randomizer/images/modules/mc02en_card_goblin-glider.png"
   },
@@ -280,12 +284,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/img/logo.7184bee2.jpg"
   },
   {
-    "revision": "135916b615908b6c281780ef834f59fd",
+    "revision": "c0ae4a2e11d60970cebff07b9d5b71bb",
     "url": "/marvel-lcg-randomizer/index.html"
   },
   {
-    "revision": "5b39f9c5af8a83665d00",
-    "url": "/marvel-lcg-randomizer/js/app.ebfb2b07.js"
+    "revision": "bf93283d4dec0025abae",
+    "url": "/marvel-lcg-randomizer/js/app.6e483719.js"
   },
   {
     "revision": "d15d0c2303f6a7092c36",
