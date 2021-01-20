@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5ffc399c6708161dcfa3",
-    "url": "/marvel-lcg-randomizer/css/app.f87f1e80.css"
+    "revision": "5b39f9c5af8a83665d00",
+    "url": "/marvel-lcg-randomizer/css/app.f47b845b.css"
   },
   {
     "revision": "ac4d27e6308fae015c02ffdfdec15cfc",
@@ -140,6 +140,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/images/heroes/mc10en_spider-woman.png"
   },
   {
+    "revision": "bf3a6c0a2dbd1ab622c0eb0bd9b8cb57",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc11en_ant-man.png"
+  },
+  {
+    "revision": "ed3453c16b44b5ee5fd0320a03c1e5b2",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc11en_scott-lang.png"
+  },
+  {
     "revision": "fdc1e4f0f52fb6e9f924a91d6526c86d",
     "url": "/marvel-lcg-randomizer/images/missing.png"
   },
@@ -272,12 +280,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/img/logo.7184bee2.jpg"
   },
   {
-    "revision": "c41ce1d2df7b75254548273a1d50f66a",
+    "revision": "135916b615908b6c281780ef834f59fd",
     "url": "/marvel-lcg-randomizer/index.html"
   },
   {
-    "revision": "5ffc399c6708161dcfa3",
-    "url": "/marvel-lcg-randomizer/js/app.126f8ab9.js"
+    "revision": "5b39f9c5af8a83665d00",
+    "url": "/marvel-lcg-randomizer/js/app.ebfb2b07.js"
   },
   {
     "revision": "d15d0c2303f6a7092c36",
