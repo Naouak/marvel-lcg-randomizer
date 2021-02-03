@@ -105,4 +105,11 @@ export const heroes = [
         alterEgoImg: 'images/heroes/mc13en_nadia-van-dyne.png',
         pack: 'Wasp',
     },
+    {
+        hero: 'Quicksilver',
+        heroImg: 'images/heroes/mc14en_quicksilver-hero.png',
+        alterEgo: 'Pietro Maximoff',
+        alterEgoImg: 'images/heroes/mc14en_pietro-maximoff-alter-ego.png',
+        pack: 'Quicksilver',
+    },
 ];
