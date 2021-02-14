@@ -79,5 +79,9 @@ export const modules = [
         img: "images/modules/MC11en_30.jpg",
         pack: "The Once and Future Kang",
     },
-
+    {
+        name: "Kree Fanatic",
+        img: "images/modules/gen_con_2020_ronan.jpg",
+        pack: "Ronan the Accuser (Print and Play)",
+    },
 ];
