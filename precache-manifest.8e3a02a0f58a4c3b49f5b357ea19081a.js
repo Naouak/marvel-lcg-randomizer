@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6638d92f2d7846a790e7",
-    "url": "/marvel-lcg-randomizer/css/app.c6372678.css"
+    "revision": "71c7b51d1db9759b29c9",
+    "url": "/marvel-lcg-randomizer/css/app.dbea4a6a.css"
   },
   {
     "revision": "ac4d27e6308fae015c02ffdfdec15cfc",
@@ -156,6 +156,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/images/heroes/mc13en_wasp.png"
   },
   {
+    "revision": "38aee1c8c102fe8fd0e949568cd663e2",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc14en_pietro-maximoff-alter-ego.png"
+  },
+  {
+    "revision": "e2a3b7473a81a0f28b3d0aad702a09ee",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc14en_quicksilver-hero.png"
+  },
+  {
+    "revision": "5e872bed1c08f9931242ba20c8fa5986",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc15en_scarlet-witch.png"
+  },
+  {
+    "revision": "30e4994a13ee96323606ef13ee922da6",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc15en_wanda-maximoff.png"
+  },
+  {
     "revision": "fdc1e4f0f52fb6e9f924a91d6526c86d",
     "url": "/marvel-lcg-randomizer/images/missing.png"
   },
@@ -292,12 +308,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/img/logo.7184bee2.jpg"
   },
   {
-    "revision": "4243a0dfe901ecd5abbff4790af4e994",
+    "revision": "ed07129935221a50f702514075aa6c3a",
     "url": "/marvel-lcg-randomizer/index.html"
   },
   {
-    "revision": "6638d92f2d7846a790e7",
-    "url": "/marvel-lcg-randomizer/js/app.69facec7.js"
+    "revision": "71c7b51d1db9759b29c9",
+    "url": "/marvel-lcg-randomizer/js/app.d53184ed.js"
   },
   {
     "revision": "d15d0c2303f6a7092c36",
