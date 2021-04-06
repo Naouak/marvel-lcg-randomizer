@@ -96,4 +96,29 @@ export const scenarios = [
         pack: "The Once and Future Kang",
         img: "images/scenarios/MC11en_7A.jpg",
     },
+    {
+        name: "Brotherhood of Badoon",
+        pack: "Galaxy's Most Wanted",
+        img: "images/scenarios/MC16en_61A.jpg",
+    },
+    {
+        name: "Collector 1 – Infiltrate the Museum",
+        pack: "Galaxy's Most Wanted",
+        img: "images/scenarios/MC16en_73A.jpg",
+    },
+    {
+        name: "Collector 2 – Escape the Museum",
+        pack: "Galaxy's Most Wanted",
+        img: "images/scenarios/MC16en_82A.jpg",
+    },
+    {
+        name: "Nebula",
+        pack: "Galaxy's Most Wanted",
+        img: "images/scenarios/MC16en_91A.jpg",
+    },
+    {
+        name: "Ronan",
+        pack: "Galaxy's Most Wanted",
+        img: "images/scenarios/MC16en_106A.jpg",
+    }
 ];

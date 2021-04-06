@@ -80,7 +80,7 @@ export const heroes = [
         hero: 'Hawkeye',
         heroImg: 'images/heroes/mc10en_hawkeye.png',
         alterEgo: 'Clint Barton',
-        alterEgoImg: 'images/missing.png',
+        alterEgoImg: 'images/heroes/mc10en_clint-barton.png',
         pack: 'The Rise of Red Skull',
     },
     {
@@ -119,4 +119,19 @@ export const heroes = [
         alterEgoImg: 'images/heroes/mc15en_wanda-maximoff.png',
         pack: 'Scarlet Witch',
     },
+    {
+        hero: 'Groot',
+        heroImg: 'images/heroes/mc16en_groot-hero.png',
+        alterEgo: 'Groot',
+        alterEgoImg: 'images/heroes/mc16en_groot-alter-ego.png',
+        pack: 'Galaxy\'s Most Wanted',
+    },
+    {
+        hero: 'Rocket Racoon',
+        heroImg: 'images/heroes/mc16en_rocket-racoon-hero.png',
+        alterEgo: 'Rocket Racoon',
+        alterEgoImg: 'images/heroes/mc16en_rocket-racoon-alter-ego.png',
+        pack: 'Galaxy\'s Most Wanted',
+    }
+
 ];

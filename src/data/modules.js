@@ -26,7 +26,7 @@ export const modules = [
     },
     {
         name: "Goblin Gimmicks",
-        img: "images/modules/mc02en_card_goblin-glider.png",
+        img: "images/modules/mc02en_card_goblin-glider.jpg",
         pack: "Green Goblin"
     },
     {
@@ -84,4 +84,29 @@ export const modules = [
         img: "images/modules/gen_con_2020_ronan.jpg",
         pack: "Ronan the Accuser (Print and Play)",
     },
+    {
+        name: "Band of Badoon",
+        img: "images/modules/MC16en_117.jpg",
+        pack: "Galaxy's Most Wanted",
+    },
+    {
+        name: "Galactic Artifacts",
+        img: "images/modules/MC16en_122.jpg",
+        pack: "Galaxy's Most Wanted",
+    },
+    {
+        name: "Kree Militants",
+        img: "images/modules/MC16en_131.jpg",
+        pack: "Galaxy's Most Wanted",
+    },
+    {
+        name: "Menagerie Medley",
+        img: "images/modules/MC16en_135.jpg",
+        pack: "Galaxy's Most Wanted",
+    },
+    {
+        name: "Space Pirates",
+        img: "images/modules/MC16en_138.jpg",
+        pack: "Galaxy's Most Wanted",
+    }
 ];
