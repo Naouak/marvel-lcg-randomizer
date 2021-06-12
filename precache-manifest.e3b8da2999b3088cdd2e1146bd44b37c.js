@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "83a2bc12db8fa3eeb833",
-    "url": "/marvel-lcg-randomizer/css/app.3241c179.css"
+    "revision": "b48fb22b7a34e1fcb960",
+    "url": "/marvel-lcg-randomizer/css/app.c43bec1b.css"
   },
   {
     "revision": "ac4d27e6308fae015c02ffdfdec15cfc",
@@ -192,6 +192,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/images/heroes/mc16en_rocket-racoon-hero.png"
   },
   {
+    "revision": "15bc5c8d4044f32ea9ef7dba7c3b477f",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc17en_peter-quill.png"
+  },
+  {
+    "revision": "e373e3cf11ec3a8533154a7fda4b8260",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc17en_star-lord-hero.png"
+  },
+  {
+    "revision": "eef85a6f28567f18cfc3f13372a63c8e",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc18en_gamora-alter-ego.png"
+  },
+  {
+    "revision": "8d070827919526855672e7116e272069",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc18en_gamora-hero.png"
+  },
+  {
     "revision": "fdc1e4f0f52fb6e9f924a91d6526c86d",
     "url": "/marvel-lcg-randomizer/images/missing.png"
   },
@@ -368,12 +384,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/img/logo.7184bee2.jpg"
   },
   {
-    "revision": "7ee618a5de8662365512c8bf51405691",
+    "revision": "698ee196b7567dcafde426456769e4b0",
     "url": "/marvel-lcg-randomizer/index.html"
   },
   {
-    "revision": "83a2bc12db8fa3eeb833",
-    "url": "/marvel-lcg-randomizer/js/app.f0cba2ad.js"
+    "revision": "b48fb22b7a34e1fcb960",
+    "url": "/marvel-lcg-randomizer/js/app.d6028328.js"
   },
   {
     "revision": "d15d0c2303f6a7092c36",
