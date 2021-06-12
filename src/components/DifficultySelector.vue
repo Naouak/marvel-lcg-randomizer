@@ -59,6 +59,10 @@
         display: block;
     }
 
+    .difficulties-selected{
+        padding-top: 5px;
+    }
+
     .toggle{
         text-align: right;
     }
