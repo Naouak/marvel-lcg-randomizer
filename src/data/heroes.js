@@ -132,6 +132,20 @@ export const heroes = [
         alterEgo: 'Rocket Racoon',
         alterEgoImg: 'images/heroes/mc16en_rocket-racoon-alter-ego.png',
         pack: 'Galaxy\'s Most Wanted',
+    },
+    {
+        hero: 'Star-Lord',
+        heroImg: 'images/heroes/mc17en_star-lord-hero.png',
+        alterEgo: 'Peter Quill',
+        alterEgoImg: 'images/heroes/mc17en_peter-quill.png',
+        pack: 'Star-Lord',
+    },
+    {
+        hero: 'Gamora',
+        heroImg: 'images/heroes/mc18en_gamora-hero.png',
+        alterEgo: 'Gamora',
+        alterEgoImg: 'images/heroes/mc18en_gamora-alter-ego.png',
+        pack: 'Gamora',
     }
 
 ];
