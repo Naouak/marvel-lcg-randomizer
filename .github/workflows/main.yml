@@ -26,6 +26,6 @@ jobs:
     - name: GH Pages deploy
       uses: Cecilapp/GitHub-Pages-deploy@2.0.0
       env:
-        EMAIL: tardiel@gmail.com               # must be a verified email
+        EMAIL: daniel.machado.fernandez@gmail.com               # must be a verified email
         GH_TOKEN: ${{ secrets.ACCESS_TOKEN }} # https://github.com/settings/tokens
         BUILD_DIR: dist/                     # "_site/" by default
