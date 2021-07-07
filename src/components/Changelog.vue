@@ -4,6 +4,32 @@
 
         <div v-if="shown">
             <div class="changelog-entry">
+                <h3>On june 12th 2021</h3>
+                <ul>
+                    <li>Add Star-Lord</li>
+                    <li>Add Gamora</li>
+                </ul>
+            </div>
+            <div class="changelog-entry">
+                <h3>On april 6th 2021</h3>
+                <ul>
+                    <li>Add Galaxy's Most Wanted</li>
+                    <li>Add Hawkeye alter ego</li>
+                </ul>
+            </div>            
+            <div class="changelog-entry">
+                <h3>On march 3rd 2021</h3>
+                <ul>
+                    <li>Add Scarlet Witch</li>
+                </ul>
+            </div>
+            <div class="changelog-entry">
+                <h3>On february 3rd 2021</h3>
+                <ul>
+                    <li>Add Quicksilver</li>
+                </ul>
+            </div>
+            <div class="changelog-entry">
                 <h3>On january 21st 2021</h3>
                 <ul>
                     <li>Add Wasp</li>
