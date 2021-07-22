@@ -146,6 +146,20 @@ export const heroes = [
         alterEgo: 'Gamora',
         alterEgoImg: 'images/heroes/mc18en_gamora-alter-ego.png',
         pack: 'Gamora',
+    },
+    {
+        hero: 'Drax',
+        heroImg: 'images/heroes/mc19en_drax-hero.png',
+        alterEgo: 'Drax',
+        alterEgoImg: 'images/heroes/mc19en_drax-alter-ego.png',
+        pack: 'Drax',
+    },
+    {
+        hero: 'Venom',
+        heroImg: 'images/heroes/mc20en_venom.png',
+        alterEgo: 'Flash Thompson',
+        alterEgoImg: 'images/heroes/mc20en_flash-thompson.png',
+        pack: 'Venom',
     }
 
 ];
