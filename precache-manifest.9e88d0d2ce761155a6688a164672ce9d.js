@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b48fb22b7a34e1fcb960",
-    "url": "/marvel-lcg-randomizer/css/app.c43bec1b.css"
+    "revision": "7a4cb684b3236f4ed383",
+    "url": "/marvel-lcg-randomizer/css/app.c0d63495.css"
   },
   {
     "revision": "ac4d27e6308fae015c02ffdfdec15cfc",
@@ -208,6 +208,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/images/heroes/mc18en_gamora-hero.png"
   },
   {
+    "revision": "25c7d06acba7113d3a6e40febfe9ea15",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc19en_drax-alter-ego.png"
+  },
+  {
+    "revision": "0201b425e5ddf69185118ad47b451ed6",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc19en_drax-hero.png"
+  },
+  {
+    "revision": "1496b8d9b6b050df24c586b1b015d1ef",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc20en_flash-thompson.png"
+  },
+  {
+    "revision": "c4777802a95cd7eaeec68b3357beb0a1",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc20en_venom.png"
+  },
+  {
     "revision": "fdc1e4f0f52fb6e9f924a91d6526c86d",
     "url": "/marvel-lcg-randomizer/images/missing.png"
   },
@@ -384,12 +400,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/img/logo.7184bee2.jpg"
   },
   {
-    "revision": "698ee196b7567dcafde426456769e4b0",
+    "revision": "08b6176c4f33ff4c3ec709c92cd0772e",
     "url": "/marvel-lcg-randomizer/index.html"
   },
   {
-    "revision": "b48fb22b7a34e1fcb960",
-    "url": "/marvel-lcg-randomizer/js/app.d6028328.js"
+    "revision": "7a4cb684b3236f4ed383",
+    "url": "/marvel-lcg-randomizer/js/app.c682ae0b.js"
   },
   {
     "revision": "d15d0c2303f6a7092c36",
