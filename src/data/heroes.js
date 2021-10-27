@@ -180,7 +180,7 @@ export const heroes = [
         hero: 'Nebula',
         heroImg: 'images/heroes/mc22en_nebula-hero.png',
         alterEgo: 'Nebula',
-        alterEgoImg: 'images/heroes/mc21en_nebula-alter-ego.png',
+        alterEgoImg: 'images/heroes/mc22en_nebula-alter-ego.png',
         pack: 'Nebula',
     },
 
