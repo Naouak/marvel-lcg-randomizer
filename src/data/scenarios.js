@@ -120,5 +120,30 @@ export const scenarios = [
         name: "Ronan",
         pack: "Galaxy's Most Wanted",
         img: "images/scenarios/MC16en_106A.jpg",
+    },
+    {
+        name: "Ebony Maw - Attack on Knowhere",
+        pack: "The Mad Titan's Shadow",
+        img: "images/scenarios/MC21en_74A.jpg",
+    },
+    {
+        name: "Proxima Midnight/Corvus Glaive - Under Siege",
+        pack: "The Mad Titan's Shadow",
+        img: "images/scenarios/MC21en_98A.jpg",
+    },
+    {
+        name: "Thanos - The Infinity Stones",
+        pack: "The Mad Titan's Shadow",
+        img: "images/scenarios/MC21en_114A.jpg",
+    },
+    {
+        name: "Hela - Odin's Torment",
+        pack: "The Mad Titan's Shadow",
+        img: "images/scenarios/MC21en_138A.jpg",
+    },
+    {
+        name: "Loki - All Hail King Loki",
+        pack: "The Mad Titan's Shadow",
+        img: "images/scenarios/MC21en_165A.jpg",
     }
 ];
