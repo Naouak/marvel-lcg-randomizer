@@ -3,6 +3,13 @@
         <div @click="shown=!shown" class="panel-insert">Changelog</div>
 
         <div v-if="shown">
+             <div class="changelog-entry">
+                <h3>On october 27th 2021</h3>
+                <ul>
+                    <li>Add Nebula</li>
+                    <li>Add The Mad Titan's Shadow</li>
+                </ul>
+            </div>
             <div class="changelog-entry">
                 <h3>On july 22th 2021</h3>
                 <ul>

@@ -160,6 +160,28 @@ export const heroes = [
         alterEgo: 'Flash Thompson',
         alterEgoImg: 'images/heroes/mc20en_flash-thompson.png',
         pack: 'Venom',
-    }
+    },
+    {
+        hero: 'Adam Warlock',
+        heroImg: 'images/heroes/mc21en_adam-warlock-hero.png',
+        alterEgo: 'Adam Warlock',
+        alterEgoImg: 'images/heroes/mc21en_adam-warlock-alter-ego.png',
+        pack: 'The Mad Titan\'s Shadow',
+        numberOfAspects: 4,
+    },
+    {
+        hero: 'Spectrum',
+        heroImg: 'images/heroes/mc21en_spectrum.png',
+        alterEgo: 'Monica Rambeau',
+        alterEgoImg: 'images/heroes/mc21en_monica-rambeau.png',
+        pack: 'The Mad Titan\'s Shadow',
+    },
+    {
+        hero: 'Nebula',
+        heroImg: 'images/heroes/mc22en_nebula-hero.png',
+        alterEgo: 'Nebula',
+        alterEgoImg: 'images/heroes/mc21en_nebula-alter-ego.png',
+        pack: 'Nebula',
+    },
 
 ];

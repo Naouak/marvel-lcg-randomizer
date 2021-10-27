@@ -108,5 +108,40 @@ export const modules = [
         name: "Space Pirates",
         img: "images/modules/MC16en_138.jpg",
         pack: "Galaxy's Most Wanted",
+    },
+    {
+        name: "The Black Order",
+        img: "images/modules/MC21en_85.jpg",
+        pack: "The Mad Titan's Shadow",
+    },
+    {
+        name: "Armies of Titan",
+        img: "images/modules/MC21en_89.jpg",
+        pack: "The Mad Titan's Shadow",
+    },
+    {
+        name: "Children of Thanos",
+        img: "images/modules/MC21en_125.jpg",
+        pack: "The Mad Titan's Shadow",
+    },
+    {
+        name: "Infinity Gauntlet",
+        img: "images/modules/MC21en_129.jpg",
+        pack: "The Mad Titan's Shadow",
+    },
+    {
+        name: "Legions of Hel",
+        img: "images/modules/MC21en_152.jpg",
+        pack: "The Mad Titan's Shadow",
+    },
+    {
+        name: "Frost Giants",
+        img: "images/modules/MC21en_156.jpg",
+        pack: "The Mad Titan's Shadow",
+    },
+    {
+        name: "Enchantress",
+        img: "images/modules/MC21en_177.jpg",
+        pack: "The Mad Titan's Shadow",
     }
 ];
