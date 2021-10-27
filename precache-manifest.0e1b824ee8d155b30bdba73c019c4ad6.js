@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3544cea567bb3d80994c",
-    "url": "/marvel-lcg-randomizer/css/app.c0d63495.css"
+    "revision": "69664a330fa58c8cdf87",
+    "url": "/marvel-lcg-randomizer/css/app.2e5eaf1d.css"
   },
   {
     "revision": "ac4d27e6308fae015c02ffdfdec15cfc",
@@ -224,6 +224,30 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/images/heroes/mc20en_venom.png"
   },
   {
+    "revision": "22cf38b4e0833b57d6633a0a74d0f79f",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc21en_adam-warlock-alter-ego.png"
+  },
+  {
+    "revision": "d7ff4e11c95cfb268e186a3793a95540",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc21en_adam-warlock-hero.png"
+  },
+  {
+    "revision": "b680b211cf743026236c5348e0b83b23",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc21en_monica-rambeau.png"
+  },
+  {
+    "revision": "4f48d797fe699f9b9ac932c24a6075de",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc21en_spectrum.png"
+  },
+  {
+    "revision": "bf4b9d1980cfb56f58c72b469639c9e5",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc22en_nebula-alter-ego.png"
+  },
+  {
+    "revision": "c2cb0dcaeef28729e3103b406dd83410",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc22en_nebula-hero.png"
+  },
+  {
     "revision": "fdc1e4f0f52fb6e9f924a91d6526c86d",
     "url": "/marvel-lcg-randomizer/images/missing.png"
   },
@@ -312,6 +336,34 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/images/modules/MC16en_138.jpg"
   },
   {
+    "revision": "bb908c4d3e8ecd85baeb39a6a6d6bfbe",
+    "url": "/marvel-lcg-randomizer/images/modules/MC21en_125.jpg"
+  },
+  {
+    "revision": "2c5388cbfa7fae2d3e354c77ecab0b5c",
+    "url": "/marvel-lcg-randomizer/images/modules/MC21en_129.jpg"
+  },
+  {
+    "revision": "792590f5cd66dffaa2d679928e1d330c",
+    "url": "/marvel-lcg-randomizer/images/modules/MC21en_152.jpg"
+  },
+  {
+    "revision": "a7b234089c889f4d0636e9f0bd776d0f",
+    "url": "/marvel-lcg-randomizer/images/modules/MC21en_156.jpg"
+  },
+  {
+    "revision": "9a317d223045bb39f06c5a2738e0ea93",
+    "url": "/marvel-lcg-randomizer/images/modules/MC21en_177.jpg"
+  },
+  {
+    "revision": "8456de110902c900438a20c8dbadcab4",
+    "url": "/marvel-lcg-randomizer/images/modules/MC21en_85.jpg"
+  },
+  {
+    "revision": "d0153eb0f11a9f809a9b44c7834491f7",
+    "url": "/marvel-lcg-randomizer/images/modules/MC21en_89.jpg"
+  },
+  {
     "revision": "d20d1b566329cdb9913ab47557931ad9",
     "url": "/marvel-lcg-randomizer/images/modules/gen_con_2020_ronan.jpg"
   },
@@ -388,6 +440,26 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/images/scenarios/MC16en_91A.jpg"
   },
   {
+    "revision": "8a1d48a35211bc96f2a2bce910f652c4",
+    "url": "/marvel-lcg-randomizer/images/scenarios/MC21en_114A.jpg"
+  },
+  {
+    "revision": "a6de030db4ed13dcf5b49672ac5fb07e",
+    "url": "/marvel-lcg-randomizer/images/scenarios/MC21en_138A.jpg"
+  },
+  {
+    "revision": "390f08cd66bf01f81fdc37f032626727",
+    "url": "/marvel-lcg-randomizer/images/scenarios/MC21en_165A.jpg"
+  },
+  {
+    "revision": "2b4105ab4d696cd6a5e67b2ef2237776",
+    "url": "/marvel-lcg-randomizer/images/scenarios/MC21en_74A.jpg"
+  },
+  {
+    "revision": "bf2f4b28c783a66d2309f8cd4cfc314c",
+    "url": "/marvel-lcg-randomizer/images/scenarios/MC21en_98A.jpg"
+  },
+  {
     "revision": "e4bea7d399a0400947ba22fe6ae5c6c4",
     "url": "/marvel-lcg-randomizer/images/scenarios/mc02en_card_hostile-takeover.png"
   },
@@ -400,12 +472,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/img/logo.7184bee2.jpg"
   },
   {
-    "revision": "b8bfd880f6762491b67fe17ada8681ef",
+    "revision": "c6f1976a381e32f1a053e9288b065822",
     "url": "/marvel-lcg-randomizer/index.html"
   },
   {
-    "revision": "3544cea567bb3d80994c",
-    "url": "/marvel-lcg-randomizer/js/app.dcc0fdda.js"
+    "revision": "69664a330fa58c8cdf87",
+    "url": "/marvel-lcg-randomizer/js/app.73fcc8ff.js"
   },
   {
     "revision": "d15d0c2303f6a7092c36",

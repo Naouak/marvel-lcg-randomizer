@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/marvel-lcg-randomizer/precache-manifest.0a54468e54613074e230b3a8b05e8590.js"
+  "/marvel-lcg-randomizer/precache-manifest.0e1b824ee8d155b30bdba73c019c4ad6.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "marvel-lcg-randomizer"});
