@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8715f7642664dd088242",
-    "url": "/marvel-lcg-randomizer/css/app.2e5eaf1d.css"
+    "revision": "ad0c5bfb81e569a4d6c3",
+    "url": "/marvel-lcg-randomizer/css/app.a217e036.css"
   },
   {
     "revision": "ac4d27e6308fae015c02ffdfdec15cfc",
@@ -248,6 +248,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/images/heroes/mc22en_nebula-hero.png"
   },
   {
+    "revision": "49d33ba89513a963df114100ba1ae034",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc23en_war-machine-alter-ego.png"
+  },
+  {
+    "revision": "f7ae2938b06c50f32ea4be0333c57caa",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc23en_war-machine-hero.png"
+  },
+  {
     "revision": "fdc1e4f0f52fb6e9f924a91d6526c86d",
     "url": "/marvel-lcg-randomizer/images/missing.png"
   },
@@ -472,12 +480,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/img/logo.7184bee2.jpg"
   },
   {
-    "revision": "bc531fccffbb8a6e1c5dfe1915a03036",
+    "revision": "9be06bb1abda8bf4ff132e8d271f3c78",
     "url": "/marvel-lcg-randomizer/index.html"
   },
   {
-    "revision": "8715f7642664dd088242",
-    "url": "/marvel-lcg-randomizer/js/app.dff4e7ca.js"
+    "revision": "ad0c5bfb81e569a4d6c3",
+    "url": "/marvel-lcg-randomizer/js/app.3fb7584e.js"
   },
   {
     "revision": "d15d0c2303f6a7092c36",
