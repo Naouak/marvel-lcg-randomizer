@@ -183,5 +183,11 @@ export const heroes = [
         alterEgoImg: 'images/heroes/mc22en_nebula-alter-ego.png',
         pack: 'Nebula',
     },
-
+    {
+        hero: 'War Machine',
+        heroImg: 'images/heroes/mc23en_war-machine-hero.png',
+        alterEgo: 'James Rhodes',
+        alterEgoImg: 'images/heroes/mc23en_war-machine-alter-ego.png',
+        pack: 'War Machine',
+    },
 ];

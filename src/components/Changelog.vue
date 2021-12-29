@@ -3,7 +3,13 @@
         <div @click="shown=!shown" class="panel-insert">Changelog</div>
 
         <div v-if="shown">
-             <div class="changelog-entry">
+            <div class="changelog-entry">
+                <h3>On december 3rd 2021</h3>
+                <ul>
+                    <li>Add War Machine</li>
+                </ul>
+            </div>
+            <div class="changelog-entry">
                 <h3>On october 27th 2021</h3>
                 <ul>
                     <li>Add Nebula</li>
@@ -30,7 +36,7 @@
                     <li>Add Galaxy's Most Wanted</li>
                     <li>Add Hawkeye alter ego</li>
                 </ul>
-            </div>            
+            </div>
             <div class="changelog-entry">
                 <h3>On march 3rd 2021</h3>
                 <ul>
