@@ -143,5 +143,50 @@ export const modules = [
         name: "Enchantress",
         img: "images/modules/MC21en_177.jpg",
         pack: "The Mad Titan's Shadow",
+    },
+    {
+        name: "Beasty Boys",
+        img: "images/modules/MC24en_14.jpg",
+        pack: "The Hood",
+    },
+    {
+        name: "Brothers Grimm",
+        img: "images/modules/MC24en_18.jpg",
+        pack: "The Hood",
+    },
+    {
+        name: "Crossfire's Crew",
+        img: "images/modules/MC24en_23.jpg",
+        pack: "The Hood",
+    },
+    {
+        name: "Mister Hyde",
+        img: "images/modules/MC24en_33.png",
+        pack: "The Hood",
+    },
+    {
+        name: "Ransacked Armory",
+        img: "images/modules/MC24en_37.png",
+        pack: "The Hood",
+    },
+    {
+        name: "Sinister Syndicate",
+        img: "images/modules/MC24en_42.jpg",
+        pack: "The Hood",
+    },
+    {
+        name: "State of Emergency",
+        img: "images/modules/MC24en_55.jpg",
+        pack: "The Hood",
+    },
+    {
+        name: "Streets of Mayhem",
+        img: "images/modules/MC24en_60.jpg",
+        pack: "The Hood",
+    },
+    {
+        name: "Wrecking Crew",
+        img: "images/modules/MC24en_64.jpg",
+        pack: "The Hood",
     }
 ];

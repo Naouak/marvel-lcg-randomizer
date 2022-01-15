@@ -33,7 +33,7 @@
     import Contribute from "./components/Contribute";
     import DifficultySelector from "./components/DifficultySelector";
 
-    const difficulties = ["standard", "expert", "nightmare"];
+    const difficulties = ["standard", "expert", "nightmare", "standard II", "expert II"];
 
     const dataStorage = window.localStorage;
 

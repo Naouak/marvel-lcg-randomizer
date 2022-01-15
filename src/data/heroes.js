@@ -190,4 +190,11 @@ export const heroes = [
         alterEgoImg: 'images/heroes/mc23en_war-machine-alter-ego.png',
         pack: 'War Machine',
     },
+    {
+        hero: 'Valkyrie',
+        heroImg: 'images/heroes/mc25en_card_valkyrie.png',
+        alterEgo: 'Brunnhilde',
+        alterEgoImg: 'images/heroes/mc25en_card_brunnhilde.png',
+        pack: 'Valkyrie',
+    },
 ];

@@ -102,12 +102,12 @@ export const scenarios = [
         img: "images/scenarios/MC16en_61A.jpg",
     },
     {
-        name: "Collector 1 – Infiltrate the Museum",
+        name: "Collector 1 - Infiltrate the Museum",
         pack: "Galaxy's Most Wanted",
         img: "images/scenarios/MC16en_73A.jpg",
     },
     {
-        name: "Collector 2 – Escape the Museum",
+        name: "Collector 2 - Escape the Museum",
         pack: "Galaxy's Most Wanted",
         img: "images/scenarios/MC16en_82A.jpg",
     },
@@ -145,5 +145,10 @@ export const scenarios = [
         name: "Loki - All Hail King Loki",
         pack: "The Mad Titan's Shadow",
         img: "images/scenarios/MC21en_165A.jpg",
+    },
+    {
+        name: "The Hood - Making Connections",
+        pack: "The Hood",
+        img: "images/scenarios/MC24en_4A.png",
     }
 ];
