@@ -150,5 +150,10 @@ export const scenarios = [
         name: "The Hood - Making Connections",
         pack: "The Hood",
         img: "images/scenarios/MC24en_4A.png",
+        decks: [
+            {
+                minModules: 7,
+            },
+        ]
     }
 ];
