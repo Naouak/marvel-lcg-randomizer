@@ -4,13 +4,13 @@
             Selected difficulties
         </div>
         <div v-if="!shown" class="difficulties-selected">
-            {{value.join(", ")}}
+          {{ modelValue.join(", ") }}
         </div>
         <div class="difficulties" v-if="shown">
             <h3>Difficulties</h3>
             <div class="difficulty-type-column" :key="difficulty" v-for="difficulty in difficulties">
                 <label>
-                    <input type="checkbox" :checked="value.indexOf(difficulty) >= 0" @input="toggleDifficulty(difficulty, $event.target.checked)">{{difficulty}}
+                    <input type="checkbox" :checked="modelValue.indexOf(difficulty) >= 0" @input="toggleDifficulty(difficulty, $event.target.checked)">{{difficulty}}
                 </label>
             </div>
         </div>
@@ -28,7 +28,7 @@
     export default {
         name: "DifficultySelector",
         props: {
-            value: {
+            modelValue: {
                 default: ["Standard", "Expert", "Standard II", "Expert II"],
             },
             difficulties: {
@@ -40,14 +40,14 @@
         }),
         methods: {
             toggleDifficulty(pack, checked){
-                const difficulties = this.value.slice(0);
+                const difficulties = this.modelValue.slice(0);
                 if(checked){
                     difficulties.push(pack);
                 } else {
                     difficulties.splice(difficulties.indexOf(pack), 1);
                 }
 
-                this.$emit("input", difficulties);
+                this.$emit("update:modelValue", difficulties);
             }
         }
     }

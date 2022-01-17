@@ -5,16 +5,26 @@
         </h1>
 
         <button class="randomize-button" @click="randomize">Randomize</button>
-        <PlayerSelector v-model="numberOfPlayer"/>
 
-        <PackSelector :packs="data.packs" v-model="selectedPacks"/>
-        <DifficultySelector :difficulties="data.difficulties" v-model="randomizationOptions.selectedDifficulties" />
-        <RandomizationOptions v-model="randomizationOptions"/>
+        <div class="columns">
+          <div class="column">
+            <PlayerSelector v-model="numberOfPlayer"/>
+            <PackSelector :packs="data.packs" v-model="selectedPacks"/>
+            <DifficultySelector :difficulties="data.difficulties" v-model="randomizationOptions.selectedDifficulties" />
+            <RandomizationOptions v-model="randomizationOptions"/>
+          </div>
+          <div class="column">
+            <ScenarioDisplay v-if="randomizationOptions.scenario" :scenario="selectedScenario"/>
+          </div>
+          <div class="column">
+            <DeckList v-if="randomizationOptions.decks" :available-decks="selectedDecks" :number-of-player="numberOfPlayer"/>
+          </div>
+        </div>
 
-        <Scenario v-if="randomizationOptions.scenario" :scenario="selectedScenario"/>
-        <DeckList v-if="randomizationOptions.decks" :available-decks="selectedDecks" :number-of-player="numberOfPlayer"/>
-        <Changelog/>
-        <Contribute/>
+
+
+        <ChangeLog/>
+        <ContributeText/>
     </div>
 </template>
 
@@ -26,11 +36,11 @@
     import PlayerSelector from "@/components/PlayerSelector";
     import RandomizationOptions from "@/components/RandomizationOptions";
     import PackSelector from "@/components/PackSelector";
-    import Scenario from './components/Scenario';
+    import ScenarioDisplay from './components/ScenarioDisplay.vue';
     import DeckList from "@/components/DeckList";
-    import Changelog from "@/components/Changelog";
+    import ChangeLog from "@/components/ChangeLog.vue";
     import Randomizer from "@/randomizer";
-    import Contribute from "./components/Contribute";
+    import ContributeText from "./components/ContributeText.vue";
     import DifficultySelector from "./components/DifficultySelector";
 
     const difficulties = ["standard", "expert", "nightmare", "standard II", "expert II"];
@@ -111,12 +121,12 @@
         },
         components: {
             DifficultySelector,
-            Contribute,
-            Changelog,
+            ContributeText,
+            ChangeLog,
             PackSelector,
             PlayerSelector,
             DeckList,
-            Scenario,
+            ScenarioDisplay,
             RandomizationOptions,
         }
     }
@@ -146,7 +156,7 @@
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
 
-        max-width: 768px;
+
         margin: auto;
     }
 
@@ -217,6 +227,18 @@
         background: green;
         font-weight: bold;
 
+    }
+
+    .columns{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .column{
+      width: 100%;
+      min-width: 360px;
+      max-width: 768px;
     }
 
 </style>

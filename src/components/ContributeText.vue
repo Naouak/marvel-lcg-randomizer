@@ -6,7 +6,7 @@
 
 <script>
     export default {
-        name: "Contribute"
+        name: "ContributeText"
     }
 </script>
 

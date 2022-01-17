@@ -36,7 +36,7 @@
 
 <script>
     export default {
-        name: "Scenario.vue",
+        name: "ScenarioDisplay",
         props: {
             scenario: {
                 required: true,
