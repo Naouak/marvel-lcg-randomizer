@@ -29,10 +29,10 @@
         name: "DifficultySelector",
         props: {
             value: {
-                default: ["Standard", "Expert"],
+                default: ["Standard", "Expert", "Standard II", "Expert II"],
             },
             difficulties: {
-                default: ["Standard", "Expert"],
+                default: ["Standard", "Expert", "Standard II", "Expert II"],
             }
         },
         data: () => ({

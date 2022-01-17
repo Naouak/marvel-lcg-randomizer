@@ -70,6 +70,11 @@ export const scenarios = [
         name: "Crossbones - Attack on Mount Athena",
         pack: "The Rise of Red Skull",
         img: "images/scenarios/MC10en_61A.jpg",
+        decks: [
+            {
+                minModules: 3,
+            },
+        ]
     },
     {
         name: "Absorbing Man - None Shall Pass",
@@ -90,6 +95,11 @@ export const scenarios = [
         name: "Red Skull - The Rise of Red Skull",
         pack: "The Rise of Red Skull",
         img: "images/scenarios/MC10en_128A.jpg",
+        decks: [
+            {
+                minModules: 2,
+            },
+        ]
     },
     {
         name: "Kang - Kang's Arrival",
@@ -102,12 +112,12 @@ export const scenarios = [
         img: "images/scenarios/MC16en_61A.jpg",
     },
     {
-        name: "Collector 1 – Infiltrate the Museum",
+        name: "Collector 1 - Infiltrate the Museum",
         pack: "Galaxy's Most Wanted",
         img: "images/scenarios/MC16en_73A.jpg",
     },
     {
-        name: "Collector 2 – Escape the Museum",
+        name: "Collector 2 - Escape the Museum",
         pack: "Galaxy's Most Wanted",
         img: "images/scenarios/MC16en_82A.jpg",
     },
@@ -125,6 +135,11 @@ export const scenarios = [
         name: "Ebony Maw - Attack on Knowhere",
         pack: "The Mad Titan's Shadow",
         img: "images/scenarios/MC21en_74A.jpg",
+        decks: [
+            {
+                minModules: 2,
+            },
+        ]
     },
     {
         name: "Proxima Midnight/Corvus Glaive - Under Siege",
@@ -135,15 +150,40 @@ export const scenarios = [
         name: "Thanos - The Infinity Stones",
         pack: "The Mad Titan's Shadow",
         img: "images/scenarios/MC21en_114A.jpg",
+        decks: [
+            {
+                minModules: 2,
+            },
+        ]
     },
     {
         name: "Hela - Odin's Torment",
         pack: "The Mad Titan's Shadow",
         img: "images/scenarios/MC21en_138A.jpg",
+        decks: [
+            {
+                minModules: 2,
+            },
+        ]
     },
     {
         name: "Loki - All Hail King Loki",
         pack: "The Mad Titan's Shadow",
         img: "images/scenarios/MC21en_165A.jpg",
+        decks: [
+            {
+                minModules: 2,
+            },
+        ]
+    },
+    {
+        name: "The Hood - Making Connections",
+        pack: "The Hood",
+        img: "images/scenarios/MC24en_4A.png",
+        decks: [
+            {
+                minModules: 7,
+            },
+        ]
     }
 ];
