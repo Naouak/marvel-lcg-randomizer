@@ -4,6 +4,13 @@
 
         <div v-if="shown">
             <div class="changelog-entry">
+              <h3>On january 17th 2022</h3>
+              <ul>
+                <li>Add Vision</li>
+                <li>Improve design on desktops and large screens</li>
+              </ul>
+            </div>
+            <div class="changelog-entry">
                 <h3>On january 15th 2022</h3>
                 <ul>
                     <li>Add Valkyrie</li>
@@ -138,7 +145,7 @@
 
 <script>
     export default {
-        name: "Changelog",
+        name: "ChangeLog",
         data: () => ({
             shown: true,
         })

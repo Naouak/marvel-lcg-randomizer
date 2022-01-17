@@ -197,4 +197,11 @@ export const heroes = [
         alterEgoImg: 'images/heroes/mc25en_card_brunnhilde.png',
         pack: 'Valkyrie',
     },
+    {
+        hero: 'Vision',
+        heroImg: 'images/heroes/mc26en_cardsingle_vision_hero.png',
+        alterEgo: 'Vision',
+        alterEgoImg: 'images/heroes/mc26en_cardsingle_vision_alterego.png',
+        pack: 'Vision',
+    },
 ];
