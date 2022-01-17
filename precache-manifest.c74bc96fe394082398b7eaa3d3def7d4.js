@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "030d51b5a730ccc0dec9",
-    "url": "/marvel-lcg-randomizer/css/app.a217e036.css"
+    "revision": "9c27067e2d4d154203d8",
+    "url": "/marvel-lcg-randomizer/css/app.747b5148.css"
   },
   {
     "revision": "ac4d27e6308fae015c02ffdfdec15cfc",
@@ -256,6 +256,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/images/heroes/mc23en_war-machine-hero.png"
   },
   {
+    "revision": "ea74f7fc61604d4715fd8edc19be5d66",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc25en_card_brunnhilde.png"
+  },
+  {
+    "revision": "97ce2a6be799b13d1adde9d0d95c2323",
+    "url": "/marvel-lcg-randomizer/images/heroes/mc25en_card_valkyrie.png"
+  },
+  {
     "revision": "fdc1e4f0f52fb6e9f924a91d6526c86d",
     "url": "/marvel-lcg-randomizer/images/missing.png"
   },
@@ -372,6 +380,42 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/images/modules/MC21en_89.jpg"
   },
   {
+    "revision": "68fa88ce9b273a22eaaee3c92f3b1fb8",
+    "url": "/marvel-lcg-randomizer/images/modules/MC24en_14.jpg"
+  },
+  {
+    "revision": "a1401481b11b83f05ea4ff148340ae8a",
+    "url": "/marvel-lcg-randomizer/images/modules/MC24en_18.jpg"
+  },
+  {
+    "revision": "c76e9a373b278788424b404c1b213dec",
+    "url": "/marvel-lcg-randomizer/images/modules/MC24en_23.jpg"
+  },
+  {
+    "revision": "dc857827cdb762361e2f439af00f479a",
+    "url": "/marvel-lcg-randomizer/images/modules/MC24en_33.png"
+  },
+  {
+    "revision": "0674df955ac9a66ef4f40e913a58abbf",
+    "url": "/marvel-lcg-randomizer/images/modules/MC24en_37.png"
+  },
+  {
+    "revision": "7b660baa998db323282487d3f2373d44",
+    "url": "/marvel-lcg-randomizer/images/modules/MC24en_42.jpg"
+  },
+  {
+    "revision": "ae99b0d19fae08cc667eaf946983525d",
+    "url": "/marvel-lcg-randomizer/images/modules/MC24en_55.jpg"
+  },
+  {
+    "revision": "7f5bd0b60707ef7fb592f7fba18c0331",
+    "url": "/marvel-lcg-randomizer/images/modules/MC24en_60.jpg"
+  },
+  {
+    "revision": "2e4b4b6a2edc13a25acad5c02c8dda19",
+    "url": "/marvel-lcg-randomizer/images/modules/MC24en_64.jpg"
+  },
+  {
     "revision": "d20d1b566329cdb9913ab47557931ad9",
     "url": "/marvel-lcg-randomizer/images/modules/gen_con_2020_ronan.jpg"
   },
@@ -468,6 +512,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/images/scenarios/MC21en_98A.jpg"
   },
   {
+    "revision": "dc857827cdb762361e2f439af00f479a",
+    "url": "/marvel-lcg-randomizer/images/scenarios/MC24en_33.png"
+  },
+  {
+    "revision": "0674df955ac9a66ef4f40e913a58abbf",
+    "url": "/marvel-lcg-randomizer/images/scenarios/MC24en_37.png"
+  },
+  {
+    "revision": "406e543564f85b026313f59ef7111544",
+    "url": "/marvel-lcg-randomizer/images/scenarios/MC24en_4A.png"
+  },
+  {
     "revision": "e4bea7d399a0400947ba22fe6ae5c6c4",
     "url": "/marvel-lcg-randomizer/images/scenarios/mc02en_card_hostile-takeover.png"
   },
@@ -480,12 +536,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-lcg-randomizer/img/logo.7184bee2.jpg"
   },
   {
-    "revision": "7949e414f86692639ba90c3d68089123",
+    "revision": "46d2d66d56a83339be53fb8f4fce3ef7",
     "url": "/marvel-lcg-randomizer/index.html"
   },
   {
-    "revision": "030d51b5a730ccc0dec9",
-    "url": "/marvel-lcg-randomizer/js/app.5ca65a5e.js"
+    "revision": "9c27067e2d4d154203d8",
+    "url": "/marvel-lcg-randomizer/js/app.89a8cfd7.js"
   },
   {
     "revision": "d15d0c2303f6a7092c36",
