@@ -1,244 +1,280 @@
 <template>
-    <div class="app">
-        <h1>
-            <img src="./assets/logo.jpg" alt="Marvel Champions" class="logo">
-        </h1>
+  <div class="app">
+    <h1>
+      <img src="./assets/logo.jpg" alt="Marvel Champions" class="logo">
+    </h1>
 
-        <button class="randomize-button" @click="randomize">Randomize</button>
+    <button class="randomize-button" @click="randomize">Randomize</button>
 
-        <div class="columns">
-          <div class="column">
-            <PlayerSelector v-model="numberOfPlayer"/>
-            <PackSelector :packs="data.packs" v-model="selectedPacks"/>
-            <DifficultySelector :difficulties="data.difficulties" v-model="randomizationOptions.selectedDifficulties" />
-            <RandomizationOptions v-model="randomizationOptions"/>
-          </div>
-          <div class="column">
-            <ScenarioDisplay v-if="randomizationOptions.scenario" :scenario="selectedScenario"/>
-          </div>
-          <div class="column">
-            <DeckList v-if="randomizationOptions.decks" :available-decks="selectedDecks" :number-of-player="numberOfPlayer"/>
-          </div>
-        </div>
-
-
-
-        <ChangeLog/>
-        <ContributeText/>
+    <div class="columns">
+      <div class="column">
+        <PlayerSelector v-model="numberOfPlayer"/>
+        <PackSelector :packs="data.packs" v-model="selectedPacks"/>
+        <DifficultySelector :difficulties="data.difficulties" v-model="randomizationOptions.selectedDifficulties"/>
+        <RandomizationOptions v-model="randomizationOptions"/>
+      </div>
+      <div class="column">
+        <ScenarioDisplay v-if="randomizationOptions.scenario" :scenario="selectedScenario"
+                         @randomize="randomizeScenario"/>
+      </div>
+      <div class="column">
+        <DeckList v-if="randomizationOptions.decks" :available-decks="selectedDecks"
+                  :number-of-player="numberOfPlayer" @randomize="randomizeDecks"/>
+      </div>
     </div>
+
+
+    <ChangeLog/>
+    <ContributeText/>
+  </div>
 </template>
 
 <script>
-    import {scenarios} from './data/scenarios';
-    import {modules} from './data/modules';
-    import {heroes} from './data/heroes';
-    import {aspects} from "@/data/aspects";
-    import PlayerSelector from "@/components/PlayerSelector";
-    import RandomizationOptions from "@/components/RandomizationOptions";
-    import PackSelector from "@/components/PackSelector";
-    import ScenarioDisplay from './components/ScenarioDisplay.vue';
-    import DeckList from "@/components/DeckList";
-    import ChangeLog from "@/components/ChangeLog.vue";
-    import Randomizer from "@/randomizer";
-    import ContributeText from "./components/ContributeText.vue";
-    import DifficultySelector from "./components/DifficultySelector";
+import {scenarios} from './data/scenarios';
+import {modules} from './data/modules';
+import {heroes} from './data/heroes';
+import {aspects} from "@/data/aspects";
+import PlayerSelector from "@/components/PlayerSelector";
+import RandomizationOptions from "@/components/RandomizationOptions";
+import PackSelector from "@/components/PackSelector";
+import ScenarioDisplay from './components/ScenarioDisplay.vue';
+import DeckList from "@/components/DeckList";
+import ChangeLog from "@/components/ChangeLog.vue";
+import Randomizer from "@/randomizer";
+import ContributeText from "./components/ContributeText.vue";
+import DifficultySelector from "./components/DifficultySelector";
 
-    const difficulties = ["standard", "expert", "nightmare", "standard II", "expert II"];
+const difficulties = ["standard", "expert", "nightmare", "standard II", "expert II"];
 
-    const dataStorage = window.localStorage;
+const dataStorage = window.localStorage;
 
-    const packs = {
-        Heroes: heroes.map(a => a.pack).filter((a, i, arr) => arr.indexOf(a) === i),
-        Scenarios: scenarios.map(a => a.pack).filter((a, i, arr) => arr.indexOf(a) === i),
-        Modules: modules.map(a => a.pack).filter((a, i, arr) => arr.indexOf(a) === i),
-    };
+const packs = {
+  Heroes: heroes.map(a => a.pack).filter((a, i, arr) => arr.indexOf(a) === i),
+  Scenarios: scenarios.map(a => a.pack).filter((a, i, arr) => arr.indexOf(a) === i),
+  Modules: modules.map(a => a.pack).filter((a, i, arr) => arr.indexOf(a) === i),
+};
 
-    const randomizer = new Randomizer();
+const randomizer = new Randomizer();
 
-    let selectedPacks = null;
-    try {
-        selectedPacks = JSON.parse(dataStorage.getItem("selectedPacks")) || ["Core Set"];
-    } catch {
-        selectedPacks = ["Core Set"];
-        dataStorage.removeItem("selectedPacks");
+let selectedPacks = null;
+try {
+  selectedPacks = JSON.parse(dataStorage.getItem("selectedPacks")) || ["Core Set"];
+} catch {
+  selectedPacks = ["Core Set"];
+  dataStorage.removeItem("selectedPacks");
+}
+
+export default {
+  name: 'app',
+  data: () => ({
+    data: {
+      scenarios,
+      modules,
+      heroes,
+      aspects,
+      packs,
+      difficulties,
+    },
+    selectedPacks: selectedPacks,
+    selectedScenario: null,
+    selectedDecks: [],
+    numberOfPlayer: 1,
+    randomizationOptions: {
+      scenario: 1,
+      decks: 1,
+      selectedDifficulties: ["standard", "expert"],
+    },
+  }),
+  watch: {
+    selectedPacks() {
+      dataStorage.setItem("selectedPacks", JSON.stringify(this.selectedPacks));
+      this.randomize();
+    },
+    randomizationOptions: {
+      handler() {
+        this.randomize();
+      },
+      deep: true,
     }
+  },
+  created() {
+    this.randomize();
+  },
+  computed: {
+    availableScenarios() {
+      return this.data.scenarios.filter(s => this.selectedPacks.indexOf(s.pack) >= 0);
+    },
+    availableModules() {
+      return this.data.modules.filter(s => this.selectedPacks.indexOf(s.pack) >= 0);
+    },
+    availableHeroes() {
+      return this.data.heroes.filter(s => this.selectedPacks.indexOf(s.pack) >= 0);
+    },
+    availableDifficulties() {
+      return this.data.difficulties.filter(s => this.randomizationOptions.selectedDifficulties.indexOf(s) >= 0);
+    },
+  },
+  methods: {
+    randomize() {
+      this.randomizeScenario();
+      this.randomizeDecks();
+    },
+    randomizeScenario() {
+      this.selectedScenario = randomizer.randomizeScenario(this.availableScenarios, this.availableModules, this.availableDifficulties, this.randomizationOptions);
+    },
+    randomizeDecks() {
+      this.selectedDecks = randomizer.randomizeHeroes(this.availableHeroes, this.data.aspects);
 
-    export default {
-        name: 'app',
-        data: () => ({
-            data: {
-                scenarios,
-                modules,
-                heroes,
-                aspects,
-                packs,
-                difficulties,
-            },
-            selectedPacks: selectedPacks,
-            selectedScenario: null,
-            selectedDecks: [],
-            numberOfPlayer: 1,
-            randomizationOptions: {
-                scenario: 1,
-                decks: 1,
-                selectedDifficulties: ["standard", "expert"],
-            },
-        }),
-        watch: {
-            selectedPacks() {
-                dataStorage.setItem("selectedPacks", JSON.stringify(this.selectedPacks));
-                this.randomize();
-            },
-            randomizationOptions: {
-                handler() {
-                    this.randomize();
-                },
-                deep: true,
-            }
-        },
-        created() {
-            this.randomize();
-        },
-        computed: {
-            availableScenarios() {
-                return this.data.scenarios.filter(s => this.selectedPacks.indexOf(s.pack) >= 0);
-            },
-            availableModules() {
-                return this.data.modules.filter(s => this.selectedPacks.indexOf(s.pack) >= 0);
-            },
-            availableHeroes() {
-                return this.data.heroes.filter(s => this.selectedPacks.indexOf(s.pack) >= 0);
-            },
-            availableDifficulties() {
-                return this.data.difficulties.filter(s => this.randomizationOptions.selectedDifficulties.indexOf(s) >= 0);
-            },
-        },
-        methods: {
-            randomize() {
-                this.selectedScenario = randomizer.randomizeScenario(this.availableScenarios, this.availableModules, this.availableDifficulties, this.randomizationOptions);
-                this.selectedDecks = randomizer.randomizeHeroes(this.availableHeroes, this.data.aspects);
-            }
-        },
-        components: {
-            DifficultySelector,
-            ContributeText,
-            ChangeLog,
-            PackSelector,
-            PlayerSelector,
-            DeckList,
-            ScenarioDisplay,
-            RandomizationOptions,
-        }
     }
+  },
+  components: {
+    DifficultySelector,
+    ContributeText,
+    ChangeLog,
+    PackSelector,
+    PlayerSelector,
+    DeckList,
+    ScenarioDisplay,
+    RandomizationOptions,
+  }
+}
 </script>
 
 <style>
-    @font-face {
-        font-family: 'FTY SPEEDY CASUAL NCV';
-        src: url('./assets/fonts/FTYSPEEDYCASUALNCV.woff2') format('woff2'),
-        url('./assets/fonts/FTYSPEEDYCASUALNCV.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
+@font-face {
+  font-family: 'FTY SPEEDY CASUAL NCV';
+  src: url('./assets/fonts/FTYSPEEDYCASUALNCV.woff2') format('woff2'),
+  url('./assets/fonts/FTYSPEEDYCASUALNCV.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
-    @font-face {
-        font-family: 'FTY SPEEDY CASUAL 001 NCV';
-        src: url('./assets/fonts/FTYSPEEDYCASUAL001NCV.woff2') format('woff2'),
-        url('./assets/fonts/FTYSPEEDYCASUAL001NCV.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-
-    .app {
-        font-family: 'FTY SPEEDY CASUAL NCV', 'Avenir', Helvetica, Arial, sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        text-align: center;
+@font-face {
+  font-family: 'FTY SPEEDY CASUAL 001 NCV';
+  src: url('./assets/fonts/FTYSPEEDYCASUAL001NCV.woff2') format('woff2'),
+  url('./assets/fonts/FTYSPEEDYCASUAL001NCV.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 
-        margin: auto;
-    }
+.app {
+  font-family: 'FTY SPEEDY CASUAL NCV', 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  margin: auto;
+}
 
-    img.logo {
-        height: 100px;
-    }
+img.logo {
+  height: 100px;
+}
 
-    .randomize-button {
-        padding: 10px;
-        margin: 10px;
-    }
+.randomize-button {
+  padding: 10px;
+  margin: 10px;
+}
 
-    .panel {
-        border: solid black 2px;
-        margin: 15px 10px;
-        background: #d0c8d2;
-        text-align: left;
-        padding: 5px;
-    }
+.panel {
+  border: solid black 2px;
+  margin: 15px 10px;
+  background: #d0c8d2;
+  text-align: left;
+  padding: 5px;
+}
 
-    .panel-insert {
-        border: solid black 2px;
-        background: #fff2bd;
-        display: inline-block;
-        text-align: center;
-        padding: 10px 5px 5px 10px;
-        margin: -7px 10px 0 -7px;
-        position: relative;
-        border-right: 0;
-        font-size: 1.5em;
-    }
+.panel-insert {
+  border: solid black 2px;
+  background: #fff2bd;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 5px 5px 10px;
+  margin: -7px 10px 0 -7px;
+  position: relative;
+  border-right: 0;
+  font-size: 1.5em;
+}
 
-    .panel-insert-content {
-        border: solid black 2px;
-        background: #fff2bd;
-        display: inline-block;
-        text-align: center;
-        padding: 5px;
-        margin: 10px;
-        position: relative;
-    }
+.panel-insert-content {
+  border: solid black 2px;
+  background: #fff2bd;
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+  position: relative;
+}
 
-    .panel-insert:before {
-        transform: skewX(-10deg);
-        border: solid black 2px;
-        border-left: 0;
-        background: #fff2bd;
-        content: " ";
-        position: absolute;
-        right: -5px;
-        top: 0;
-        bottom: 0;
-        width: 10px;
-        margin: -2px;
-    }
+.panel-insert:before {
+  transform: skewX(-10deg);
+  border: solid black 2px;
+  border-left: 0;
+  background: #fff2bd;
+  content: " ";
+  position: absolute;
+  right: -5px;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  margin: -2px;
+}
+
+.panel-footer {
+  text-align: right;
+}
+
+.panel-insert-bottom {
+  border: solid black 2px;
+  background: #fff2bd;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 10px 5px 10px;
+  margin: 0 -5px -7px 10px;
+  position: relative;
+  border-right: 0;
+  font-size: 1.5em;
+}
+
+.panel-insert-bottom:before {
+  transform: skewX(-10deg);
+  border: solid black 2px;
+  border-right: 0;
+  background: #fff2bd;
+  content: " ";
+  position: absolute;
+  left: -5px;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  margin: -2px;
+}
 
 
-    button {
-        flex-grow: 1;
-        box-sizing: border-box;
-        padding: 10px;
-        margin: 5px;
-        border: solid 1px grey;
-    }
+button {
+  font-family: 'FTY SPEEDY CASUAL NCV', 'Avenir', Helvetica, Arial, sans-serif;
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 5px;
+  border: solid 1px grey;
+}
 
-    button:disabled {
-        color: white;
-        background: green;
-        font-weight: bold;
+button:disabled {
+  color: white;
+  background: green;
+  font-weight: bold;
 
-    }
+}
 
-    .columns{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
-    .column{
-      width: 100%;
-      min-width: 360px;
-      max-width: 768px;
-    }
+.column {
+  width: 100%;
+  max-width: 768px;
+}
 
 </style>
