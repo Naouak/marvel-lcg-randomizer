@@ -1,8 +1,10 @@
 <template>
   <div class="app">
+    <UpdateNotification v-if="appStatus.updated"></UpdateNotification>
     <h1>
       <img src="./assets/logo.jpg" alt="Marvel Champions" class="logo">
     </h1>
+
 
     <button class="randomize-button" @click="randomize">Randomize</button>
 
@@ -43,6 +45,7 @@ import ChangeLog from "@/components/ChangeLog.vue";
 import Randomizer from "@/randomizer";
 import ContributeText from "./components/ContributeText.vue";
 import DifficultySelector from "./components/DifficultySelector";
+import UpdateNotification from "@/components/UpdateNotification.vue";
 
 const difficulties = ["standard", "expert", "nightmare", "standard II", "expert II"];
 
@@ -84,6 +87,7 @@ export default {
       decks: 1,
       selectedDifficulties: ["standard", "expert"],
     },
+    appStatus: {updated: false},
   }),
   watch: {
     selectedPacks() {
@@ -128,6 +132,7 @@ export default {
     }
   },
   components: {
+    UpdateNotification,
     DifficultySelector,
     ContributeText,
     ChangeLog,

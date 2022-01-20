@@ -7,6 +7,7 @@
               <h3>On january 20th 2022</h3>
               <ul>
                 <li>Add possibility to reroll scenario and decks separately</li>
+                <li>Improve updating of the cache</li>
               </ul>
               <h3>On january 17th 2022</h3>
               <ul>
