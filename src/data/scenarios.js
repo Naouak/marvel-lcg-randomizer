@@ -72,9 +72,10 @@ export const scenarios = [
         img: "images/scenarios/MC10en_61A.jpg",
         decks: [
             {
+                requiredModules: ["Experimental Weapons"],
                 minModules: 3,
             },
-        ]
+        ],
     },
     {
         name: "Absorbing Man - None Shall Pass",
@@ -85,6 +86,11 @@ export const scenarios = [
         name: "Taskmaster - Hunting Down Heroes",
         pack: "The Rise of Red Skull",
         img: "images/scenarios/MC10en_96A.jpg",
+        decks: [
+            {
+                requiredModules: ["Hydra Patrol"],
+            },
+        ],
     },
     {
         name: "Zola - The Island of Dr. Zola",
@@ -99,7 +105,7 @@ export const scenarios = [
             {
                 minModules: 2,
             },
-        ]
+        ],
     },
     {
         name: "Kang - Kang's Arrival",
@@ -110,26 +116,52 @@ export const scenarios = [
         name: "Brotherhood of Badoon",
         pack: "Galaxy's Most Wanted",
         img: "images/scenarios/MC16en_61A.jpg",
+        decks: [
+            {
+                requiredModules: ["Brotherhood of Badoon", "Ship Command"],
+            },
+        ],
+
     },
     {
         name: "Collector 1 - Infiltrate the Museum",
         pack: "Galaxy's Most Wanted",
         img: "images/scenarios/MC16en_73A.jpg",
+        decks: [
+            {
+                requiredModules: ["Galactic Artifacts"],
+            },
+        ],
     },
     {
         name: "Collector 2 - Escape the Museum",
         pack: "Galaxy's Most Wanted",
         img: "images/scenarios/MC16en_82A.jpg",
+        decks: [
+            {
+                requiredModules: ["Galactic Artifacts", "Ship Command"],
+            },
+        ],
     },
     {
         name: "Nebula",
         pack: "Galaxy's Most Wanted",
         img: "images/scenarios/MC16en_91A.jpg",
+        decks: [
+            {
+                requiredModules: ["Power Stone", "Ship Command"],
+            },
+        ],
     },
     {
         name: "Ronan",
         pack: "Galaxy's Most Wanted",
         img: "images/scenarios/MC16en_106A.jpg",
+        decks: [
+            {
+                requiredModules: ["Power Stone"],
+            },
+        ],
     },
     {
         name: "Ebony Maw - Attack on Knowhere",
@@ -152,6 +184,7 @@ export const scenarios = [
         img: "images/scenarios/MC21en_114A.jpg",
         decks: [
             {
+                requiredModules: ["Infinity Gauntlet"],
                 minModules: 2,
             },
         ]
@@ -172,6 +205,7 @@ export const scenarios = [
         img: "images/scenarios/MC21en_165A.jpg",
         decks: [
             {
+                requiredModules: ["Infinity Gauntlet"],
                 minModules: 2,
             },
         ]
@@ -182,6 +216,11 @@ export const scenarios = [
         img: "images/scenarios/MC24en_4A.png",
         decks: [
             {
+                name: "The Hood",
+                minModules: 0,
+            },
+            {
+                name: "set aside modules",
                 minModules: 7,
             },
         ]

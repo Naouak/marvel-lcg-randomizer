@@ -4,6 +4,15 @@
 
         <div v-if="shown">
             <div class="changelog-entry">
+              <h3>On march 29th 2022</h3>
+              <ul>
+                <li>Add required modules to scenarios.</li>
+                <li>Add "Power Stone" module (not randomizable).</li>
+                <li>Update scenario randomization option to include required modules.</li>
+                <li>Update The Hood to use a "set aside deck".</li>
+              </ul>
+            </div>
+            <div class="changelog-entry">
               <h3>On january 20th 2022</h3>
               <ul>
                 <li>Add possibility to reroll scenario and decks separately</li>

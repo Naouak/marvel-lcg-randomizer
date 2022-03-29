@@ -7,8 +7,31 @@ export default class Randomizer {
 
         const shuffledModules = shuffleArray(availableModules);
         const modules = encounterDecks.map((deck) => {
+            let requiredModules = [];
+            if (deck.requiredModules && deck.requiredModules.length > 0) {
+                requiredModules = deck.requiredModules.map((module) => {
+                    const modObject = shuffledModules.find((modToTest) => {
+                        return modToTest.name === module;
+                    });
+                    if(modObject){
+                        shuffledModules.splice(shuffledModules.indexOf(modObject), 1);
+                    }
+                    return modObject;
+                }).filter(mod => !!mod);
+            }
+
             const numberOfModules = (deck.minModules !== undefined ? deck.minModules : 1 ) + additionalModules;
-            return {deck, modules: shuffledModules.splice(0, numberOfModules)};
+
+            let selectedModules = [];
+
+            while(selectedModules.length < numberOfModules && shuffledModules.length > 0){
+                if(shuffledModules[0].randomize !== false){
+                    selectedModules.push(shuffledModules[0]);
+                }
+                shuffledModules.splice(0,1);
+            }
+
+            return {deck, modules: [...requiredModules, ...selectedModules]};
         });
 
         const scenarioDifficulties = (scenario.difficulties || [])

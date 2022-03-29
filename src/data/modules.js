@@ -110,6 +110,12 @@ export const modules = [
         pack: "Galaxy's Most Wanted",
     },
     {
+        name: "Power Stone",
+        img: "images/modules/power-stone.jpg",
+        pack: "Galaxy's Most Wanted",
+        randomize: false,
+    },
+    {
         name: "The Black Order",
         img: "images/modules/MC21en_85.jpg",
         pack: "The Mad Titan's Shadow",
@@ -188,5 +194,5 @@ export const modules = [
         name: "Wrecking Crew",
         img: "images/modules/MC24en_64.jpg",
         pack: "The Hood",
-    }
+    },
 ];
