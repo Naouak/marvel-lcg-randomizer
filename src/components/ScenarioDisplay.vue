@@ -5,30 +5,21 @@
       <div>
         <div class="main-scenario">
           <img :src="scenario.scenario.img" :alt="scenario.scenario.name">
-          <div class="panel-insert-content">
-            {{ scenario.scenario.name }}({{ scenario.scenario.pack }})
+          <div class="panel-insert-content scenario-title">
+            {{ scenario.scenario.name }} ({{ scenario.scenario.pack }})
           </div>
         </div>
+
+        <div class="difficulty panel-insert-content">
+          Difficulty:
+          <span class="difficulty-value">{{ scenario.difficulty }}</span>
+        </div>
+
         <div v-bind:key="index" v-for="({deck, modules}, index) in scenario.modules">
-          <div class="deck" v-if="modules.length > 0">
-            <div class="deck-name" v-if="scenario.modules.length > 1">Deck {{ deck.name }}</div>
-            <div class="modules">
-              <div class="module" :key="index2" v-for="(mod, index2) in modules">
-                <img :src="mod.img" :alt="mod.name"/>
-                <div class="panel-insert-content">
-                  {{ mod.name }}({{ mod.pack }})
-                </div>
-              </div>
-            </div>
-          </div>
+          <encounter-deck :deck="deck" :modules="modules" :show-title="scenario.modules.length > 1" v-if="modules.length > 0" />
         </div>
       </div>
-      <div class="difficulty panel-insert-content">
-        Difficulty:
-        <span class="difficulty-value">
-                    {{ scenario.difficulty }}
-                </span>
-      </div>
+
 
     </div>
     <div class="panel-footer">
@@ -39,8 +30,10 @@
 </template>
 
 <script>
+import EncounterDeck from "@/components/EncounterDeck.vue";
 export default {
   name: "ScenarioDisplay",
+  components: {EncounterDeck},
   props: {
     scenario: {
       required: true,
@@ -74,6 +67,10 @@ img {
   display: inline-block;
 }
 
+.difficulty{
+  display: block;
+}
+
 .difficulty-value {
   font-weight: bold;
 }
@@ -84,5 +81,9 @@ img {
 
 .toggle {
   text-align: right;
+}
+
+.scenario-title{
+  display: block;
 }
 </style>

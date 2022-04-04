@@ -3,7 +3,9 @@ import {shuffleArray} from "@/helpers";
 export default class Randomizer {
     randomizeScenario(scenarios, availableModules, defaultDifficulties, {additionalModules = 0 } = { additionalModules: 0}){
         const scenario = shuffleArray(scenarios).shift();
-        const encounterDecks = scenario.decks || [{name: "encounter"}];
+        const encounterDecks = scenario.decks || [{}];
+
+        encounterDecks[0].name = encounterDecks[0].name || "encounter deck";
 
         const shuffledModules = shuffleArray(availableModules);
         const modules = encounterDecks.map((deck) => {
@@ -15,8 +17,9 @@ export default class Randomizer {
                     });
                     if(modObject){
                         shuffledModules.splice(shuffledModules.indexOf(modObject), 1);
+                        return {...modObject, required: true};
                     }
-                    return modObject;
+                    return null;
                 }).filter(mod => !!mod);
             }
 
@@ -30,6 +33,8 @@ export default class Randomizer {
                 }
                 shuffledModules.splice(0,1);
             }
+
+            console.log([...requiredModules, ...selectedModules]);
 
             return {deck, modules: [...requiredModules, ...selectedModules]};
         });

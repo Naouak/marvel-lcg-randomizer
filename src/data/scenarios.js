@@ -30,19 +30,19 @@ export const scenarios = [
         pack: 'Wrecking Crew',
         decks: [
             {
-                name: "Bulldozer",
+                name: "Bulldozer's Deck",
                 minModules: 0,
             },
             {
-                name: "Piledriver",
+                name: "Piledriver's Deck",
                 minModules: 0,
             },
             {
-                name: "Thunderball",
+                name: "Thunderball's Deck",
                 minModules: 0,
             },
             {
-                name: "Wrecker",
+                name: "Wrecker's Deck",
                 minModules: 0,
             },
         ],
@@ -220,7 +220,7 @@ export const scenarios = [
                 minModules: 0,
             },
             {
-                name: "set aside modules",
+                name: "Set aside modules",
                 minModules: 7,
             },
         ]

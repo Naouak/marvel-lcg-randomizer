@@ -8,6 +8,7 @@
               <ul>
                 <li>Added Ship Command modules for some Galaxy's Most Wanted Scenarios.</li>
                 <li>Save selected difficulties in local storage.</li>
+                <li>Improve scenario display.</li>
               </ul>
             </div>
             <div class="changelog-entry">
