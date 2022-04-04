@@ -67,6 +67,15 @@ try {
   dataStorage.removeItem("selectedPacks");
 }
 
+let selectedDifficulties = null;
+try {
+  selectedDifficulties = JSON.parse(dataStorage.getItem("selectedDifficulties")) || ["standard", "expert"];
+} catch {
+  selectedDifficulties = ["standard", "expert"];
+  dataStorage.removeItem("selectedDifficulties");
+}
+
+
 export default {
   name: 'app',
   data: () => ({
@@ -78,14 +87,14 @@ export default {
       packs,
       difficulties,
     },
-    selectedPacks: selectedPacks,
+    selectedPacks,
     selectedScenario: null,
     selectedDecks: [],
     numberOfPlayer: 1,
     randomizationOptions: {
       scenario: 1,
       decks: 1,
-      selectedDifficulties: ["standard", "expert"],
+      selectedDifficulties,
     },
     appStatus: {updated: false},
   }),
@@ -96,6 +105,7 @@ export default {
     },
     randomizationOptions: {
       handler() {
+        dataStorage.setItem("selectedDifficulties", JSON.stringify(this.randomizationOptions.selectedDifficulties));
         this.randomize();
       },
       deep: true,
