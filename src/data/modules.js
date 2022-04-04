@@ -116,6 +116,12 @@ export const modules = [
         randomize: false,
     },
     {
+        name: "Ship Command",
+        img: "images/modules/ship-command.png",
+        pack: "Galaxy's Most Wanted",
+        randomize: false,
+    },
+    {
         name: "The Black Order",
         img: "images/modules/MC21en_85.jpg",
         pack: "The Mad Titan's Shadow",

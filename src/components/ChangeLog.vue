@@ -4,6 +4,12 @@
 
         <div v-if="shown">
             <div class="changelog-entry">
+              <h3>On april 4th 2022</h3>
+              <ul>
+                <li>Added Ship Command modules for some Galaxy's Most Wanted Scenarios.</li>
+              </ul>
+            </div>
+            <div class="changelog-entry">
               <h3>On march 29th 2022</h3>
               <ul>
                 <li>Add required modules to scenarios.</li>
