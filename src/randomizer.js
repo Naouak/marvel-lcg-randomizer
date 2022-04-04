@@ -34,8 +34,6 @@ export default class Randomizer {
                 shuffledModules.splice(0,1);
             }
 
-            console.log([...requiredModules, ...selectedModules]);
-
             return {deck, modules: [...requiredModules, ...selectedModules]};
         });
 
