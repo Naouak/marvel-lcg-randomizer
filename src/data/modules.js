@@ -201,4 +201,64 @@ export const modules = [
         img: "images/modules/MC24en_64.jpg",
         pack: "The Hood",
     },
+    {
+        name: "City in Chaos",
+        img: "images/modules/city-in-chaos.png",
+        pack: "Sinister Motives",
+    },
+    {
+        name: "Down to Earth",
+        img: "images/modules/down-to-earth.png",
+        pack: "Sinister Motives",
+    },
+    {
+        name: "Goblin Gear",
+        img: "images/modules/goblin-gear.png",
+        pack: "Sinister Motives",
+    },
+    {
+        name: "Guerrilla Tactics",
+        img: "images/modules/guerrilla-tactics.png",
+        pack: "Sinister Motives",
+    },
+    {
+        name: "Osborn Tech",
+        img: "images/modules/osborn-tech.png",
+        pack: "Sinister Motives",
+    },
+    {
+        name: "Personal Nightmare",
+        img: "images/modules/personal-nightmare.png",
+        pack: "Sinister Motives",
+    },
+    {
+        name: "Sinister Assault",
+        img: "images/modules/sinister-assault.png",
+        pack: "Sinister Motives",
+    },
+    {
+        name: "Symbiotic Strength",
+        img: "images/modules/symbiotic-strength.png",
+        pack: "Sinister Motives",
+    },
+    {
+        name: "Whispers of Paranoia",
+        img: "images/modules/whispers-of-paranoia.png",
+        pack: "Sinister Motives",
+    },
+    {
+        name: "Armadillo",
+        img: "images/modules/mc28_nova_cardsingles__armadillo.png",
+        pack: "Nova",
+    },
+    {
+        name: "Zzzax",
+        img: "images/modules/mc29en_feedback_loop_36.png",
+        pack: "Ironheart",
+    },
+    {
+        name: "The Inheritors",
+        img: "images/modules/mc30_spider-ham_cardsingles__bora.png",
+        pack: "Spider-Ham",
+    },
 ];

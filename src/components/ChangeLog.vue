@@ -4,6 +4,15 @@
 
         <div v-if="shown">
             <div class="changelog-entry">
+              <h3>On april 13th 2022</h3>
+              <ul>
+                <li>Add Sinister Motives</li>
+                <li>Add Nova</li>
+                <li>Add Ironheart</li>
+                <li>Add Spider-Ham</li>
+              </ul>
+            </div>
+            <div class="changelog-entry">
               <h3>On april 4th 2022</h3>
               <ul>
                 <li>Added Ship Command modules for some Galaxy's Most Wanted Scenarios.</li>

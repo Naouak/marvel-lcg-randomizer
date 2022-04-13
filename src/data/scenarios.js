@@ -224,5 +224,56 @@ export const scenarios = [
                 minModules: 7,
             },
         ]
-    }
+    },
+    {
+        name: "Sandman",
+        pack: "Sinister Motives",
+        img: "images/scenarios/sandman.png",
+        decks: [
+            {
+                requiredModules: ["City in Chaos"],
+            }
+        ]
+    },
+    {
+        name: "Venom",
+        pack: "Sinister Motives",
+        img: "images/scenarios/venom.png",
+        decks: [
+            {
+                requiredModules: ["Symbiotic Strength"],
+            }
+        ]
+    },
+    {
+        name: "Mysterio",
+        pack: "Sinister Motives",
+        img: "images/scenarios/mysterio.png",
+        decks: [
+            {
+                requiredModules: ["Personal Nightmare"],
+            }
+        ]
+    },
+    {
+        name: "The Sinister Six",
+        pack: "Sinister Motives",
+        img: "images/scenarios/sinister-six.png",
+        decks: [
+            {
+                minModules: 0,
+                requiredModules: ["Guerrilla Tactics"],
+            }
+        ]
+    },
+    {
+        name: "Venom Goblin",
+        pack: "Sinister Motives",
+        img: "images/scenarios/venom-goblin.png",
+        decks: [
+            {
+                requiredModules: ["Symbiotic Strength"],
+            }
+        ]
+    },
 ];
