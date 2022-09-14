@@ -239,4 +239,11 @@ export const heroes = [
         alterEgoImg: 'images/heroes/mc30_spider-ham_cardsingles__peterporker.png',
         pack: 'Spider-Ham',
     },
+    {
+        hero: 'SP//dr',
+        heroImg: 'images/heroes/mc31_spdr_spdrsuit.png',
+        alterEgo: 'Peni Parker',
+        alterEgoImg: 'images/heroes/mc31_spdr_peniparker.png',
+        pack: 'SP//dr',
+    },
 ];

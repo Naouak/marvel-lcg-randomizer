@@ -261,4 +261,9 @@ export const modules = [
         img: "images/modules/mc30_spider-ham_cardsingles__bora.png",
         pack: "Spider-Ham",
     },
+    {
+        name: "Iron Spider's Sinister Six",
+        img: "images/modules/mc31_spdr_isss.png",
+        pack: "SP//dr",
+    },
 ];
