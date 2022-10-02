@@ -276,4 +276,49 @@ export const scenarios = [
             }
         ]
     },
+    {
+        name: "Sabretooth",
+        pack: "Mutant Genesis",
+        img: "images/scenarios/mc32_sabretooth.png",
+        decks: [
+            {
+                minModules: 2,
+            },
+        ]
+    },
+    {
+        name: "Project Wideawake",
+        pack: "Mutant Genesis",
+        img: "images/scenarios/mc32_project_wideawake.png",
+        decks: [
+            {
+                requiredModules: ["Zero Tolerance"],
+            }
+        ]
+    },
+    {
+        name: "Master Mold",
+        pack: "Mutant Genesis",
+        img: "images/scenarios/mc32_master_mold.png",
+        decks: [
+            {
+                requiredModules: ["Sentinels"],
+            }
+        ]
+    },
+    {
+        name: "Mansion Attack",
+        pack: "Mutant Genesis",
+        img: "images/scenarios/mc32_mansion_attack.png",
+        decks: [
+            {
+                requiredModules: ["Brotherhood"],
+            }
+        ]
+    },
+    {
+        name: "Magneto",
+        pack: "Mutant Genesis",
+        img: "images/scenarios/mc32_magneto.png"
+    },    
 ];
