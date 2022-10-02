@@ -266,4 +266,34 @@ export const modules = [
         img: "images/modules/mc31_spdr_isss.png",
         pack: "SP//dr",
     },
+    {
+        name: "Acolytes",
+        img: "images/modules/mc32_acolytes.png",
+        pack: "Mutant Genesis",
+    },
+    {
+        name: "Brotherhood",
+        img: "images/modules/mc32_brotherhood.png",
+        pack: "Mutant Genesis",
+    },
+    {
+        name: "Future Past",
+        img: "images/modules/mc32_future_past.png",
+        pack: "Mutant Genesis",
+    },
+    {
+        name: "Mystique",
+        img: "images/modules/mc32_mystique.png",
+        pack: "Mutant Genesis",
+    },
+    {
+        name: "Sentinels",
+        img: "images/modules/mc32_sentinels.png",
+        pack: "Mutant Genesis",
+    },
+    {
+        name: "Zero Tolerance",
+        img: "images/modules/mc32_zero_tolerance.png",
+        pack: "Mutant Genesis",
+    },
 ];

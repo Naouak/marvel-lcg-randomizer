@@ -4,6 +4,20 @@
 
         <div v-if="shown">
             <div class="changelog-entry">
+              <h3>On october 2nd 2022</h3>
+              <ul>
+                <li>Add Mutant Genesis</li>
+                <li>Add Cyclops</li>
+                <li>Add Phoenix</li>
+              </ul>
+            </div>
+            <div class="changelog-entry">
+              <h3>On september 14th 2022</h3>
+              <ul>
+                <li>Add SP//dr</li>
+              </ul>
+            </div>
+            <div class="changelog-entry">
               <h3>On april 13th 2022</h3>
               <ul>
                 <li>Add Sinister Motives</li>

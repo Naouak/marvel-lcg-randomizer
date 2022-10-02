@@ -246,4 +246,32 @@ export const heroes = [
         alterEgoImg: 'images/heroes/mc31_spdr_peniparker.png',
         pack: 'SP//dr',
     },
+    {
+        hero: 'Colossus',
+        heroImg: 'images/heroes/mc32_colossus.png',
+        alterEgo: 'Piotr Rasputin',
+        alterEgoImg: 'images/heroes/mc32_piotr_rasputin.png',
+        pack: 'Mutant Genesis',
+    },
+    {
+        hero: 'Shadowcat',
+        heroImg: 'images/heroes/mc32_shadowcat.png',
+        alterEgo: 'Kitty Pryde',
+        alterEgoImg: 'images/heroes/mc32_kitty_pryde.png',
+        pack: 'Mutant Genesis',
+    },
+    {
+        hero: 'Cyclops',
+        heroImg: 'images/heroes/mc33_cyclops.png',
+        alterEgo: 'Scott Summers',
+        alterEgoImg: 'images/heroes/mc33_scott_summers.png',
+        pack: 'Mutant Genesis',
+    },
+    {
+        hero: 'Phoenix',
+        heroImg: 'images/heroes/mc34_phoenix.png',
+        alterEgo: 'Jean Grey',
+        alterEgoImg: 'images/heroes/mc34_jean_grey.png',
+        pack: 'Mutant Genesis',
+    },
 ];
