@@ -58,7 +58,6 @@ export default {
   emits: ["update:modelValue"],
   methods: {
     togglePack(pack, checked) {
-      console.log("test");
       const packs = this.modelValue.slice(0);
       if (checked) {
         packs.push(pack);

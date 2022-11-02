@@ -5,13 +5,13 @@
       <img src="./assets/logo.jpg" alt="Marvel Champions" class="logo">
     </h1>
 
-
     <button class="randomize-button" @click="randomize">Randomize</button>
 
     <div class="columns">
       <div class="column">
         <PlayerSelector v-model="numberOfPlayer"/>
         <PackSelector :packs="data.packs" v-model="selectedPacks"/>
+        <ScenarioSelector :available-scenarios="availableScenarios" v-model="randomizationOptions.limitToScenarios" />
         <DifficultySelector :difficulties="data.difficulties" v-model="randomizationOptions.selectedDifficulties"/>
         <RandomizationOptions v-model="randomizationOptions"/>
       </div>
@@ -40,6 +40,7 @@ import PlayerSelector from "@/components/PlayerSelector";
 import RandomizationOptions from "@/components/RandomizationOptions";
 import PackSelector from "@/components/PackSelector";
 import ScenarioDisplay from './components/ScenarioDisplay.vue';
+import ScenarioSelector from './components/ScenarioSelector.vue';
 import DeckList from "@/components/DeckList";
 import ChangeLog from "@/components/ChangeLog.vue";
 import Randomizer from "@/randomizer";
@@ -95,6 +96,7 @@ export default {
       scenario: 1,
       decks: 1,
       selectedDifficulties,
+      limitToScenarios: [],
     },
     appStatus: {updated: false},
   }),
@@ -150,6 +152,7 @@ export default {
     PlayerSelector,
     DeckList,
     ScenarioDisplay,
+    ScenarioSelector,
     RandomizationOptions,
   }
 }
@@ -172,6 +175,15 @@ export default {
   font-style: normal;
 }
 
+select {
+  width: 100%;
+
+  font-family: 'FTY SPEEDY CASUAL NCV', 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 5px;
+  margin: 5px 0;
+}
 
 .app {
   font-family: 'FTY SPEEDY CASUAL NCV', 'Avenir', Helvetica, Arial, sans-serif;

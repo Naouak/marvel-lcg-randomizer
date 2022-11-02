@@ -1,8 +1,9 @@
 import {shuffleArray} from "@/helpers";
 
 export default class Randomizer {
-    randomizeScenario(scenarios, availableModules, defaultDifficulties, {additionalModules = 0 } = { additionalModules: 0}){
-        const scenario = shuffleArray(scenarios).shift();
+    randomizeScenario(scenarios, availableModules, defaultDifficulties, {additionalModules = 0, limitToScenarios: limitToScenarios = "" } = { additionalModules: 0}){
+        const availableScenarios = limitToScenarios.length > 0 ? limitToScenarios : scenarios;
+        const scenario = shuffleArray(availableScenarios).shift();
         const encounterDecks = scenario.decks || [{}];
 
         encounterDecks[0].name = encounterDecks[0].name || "encounter deck";
