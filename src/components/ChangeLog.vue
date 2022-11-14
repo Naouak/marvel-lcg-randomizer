@@ -4,6 +4,14 @@
 
         <div v-if="shown">
             <div class="changelog-entry">
+              <h3>On november 14th 2022</h3>
+              <ul>
+                <li>Add Wolverine</li>
+                <li>Add Storm</li>
+                <li>Add Mojo</li>
+              </ul>
+            </div>
+            <div class="changelog-entry">
               <h3>On october 2nd 2022</h3>
               <ul>
                 <li>Add Mutant Genesis</li>

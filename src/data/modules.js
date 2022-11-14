@@ -296,4 +296,44 @@ export const modules = [
         img: "images/modules/mc32_zero_tolerance.png",
         pack: "Mutant Genesis",
     },
+    {
+        name: "Deathstrike",
+        img: "images/modules/mc35_deathstrike.png",
+        pack: "Wolverine",
+    },
+    {
+        name: "Shadow King",
+        img: "images/modules/mc36_shadow_king.png",
+        pack: "Storm",
+    },
+    {
+        name: "Crime",
+        img: "images/modules/mc39_crime.png",
+        pack: "Mojo",
+    },
+    {
+        name: "Fantasy",
+        img: "images/modules/mc39_fantasy.png",
+        pack: "Mojo",
+    },
+    {
+        name: "Horror",
+        img: "images/modules/mc39_horror.png",
+        pack: "Mojo",
+    },
+    {
+        name: "Sci-Fi",
+        img: "images/modules/mc39_scifi.png",
+        pack: "Mojo",
+    },
+    {
+        name: "Sitcom",
+        img: "images/modules/mc39_sitcom.png",
+        pack: "Mojo",
+    },
+    {
+        name: "Crime",
+        img: "images/modules/mc39_western.png",
+        pack: "Mojo",
+    },
 ];
