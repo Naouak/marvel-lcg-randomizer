@@ -320,5 +320,30 @@ export const scenarios = [
         name: "Magneto",
         pack: "Mutant Genesis",
         img: "images/scenarios/mc32_magneto.png"
-    },    
+    },
+    {
+        name: "Magog",
+        pack: "Mojo",
+        img: "images/scenarios/mc39_magog.png"
+    },
+    {
+        name: "Spiral",
+        pack: "Mojo",
+        img: "images/scenarios/MC39_spiral.png",
+        decks: [
+            {
+                minModules: 0,
+            },
+        ]
+    },
+    {
+        name: "Mojo",
+        pack: "Mojo",
+        img: "images/scenarios/MC39_mojo.png",
+        decks: [
+            {
+                minModules: 0,
+            },
+        ]
+    },        
 ];
