@@ -136,7 +136,13 @@ export default {
       this.randomizeDecks();
     },
     randomizeScenario() {
-      this.selectedScenario = randomizer.randomizeScenario(this.availableScenarios, this.availableModules, this.availableDifficulties, this.randomizationOptions);
+      this.selectedScenario = randomizer.randomizeScenario(
+          this.availableScenarios,
+          this.availableModules,
+          this.availableDifficulties,
+          this.randomizationOptions,
+          this.numberOfPlayer
+      );
     },
     randomizeDecks() {
       this.selectedDecks = randomizer.randomizeHeroes(this.availableHeroes, this.data.aspects);

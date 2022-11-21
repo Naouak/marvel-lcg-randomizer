@@ -309,31 +309,31 @@ export const modules = [
     {
         name: "Crime",
         img: "images/modules/mc39_crime.png",
-        pack: "Mojo",
+        pack: "MojoMania",
     },
     {
         name: "Fantasy",
         img: "images/modules/mc39_fantasy.png",
-        pack: "Mojo",
+        pack: "MojoMania",
     },
     {
         name: "Horror",
         img: "images/modules/mc39_horror.png",
-        pack: "Mojo",
+        pack: "MojoMania",
     },
     {
         name: "Sci-Fi",
         img: "images/modules/mc39_scifi.png",
-        pack: "Mojo",
+        pack: "MojoMania",
     },
     {
         name: "Sitcom",
         img: "images/modules/mc39_sitcom.png",
-        pack: "Mojo",
+        pack: "MojoMania",
     },
     {
-        name: "Crime",
+        name: "Western",
         img: "images/modules/mc39_western.png",
-        pack: "Mojo",
+        pack: "MojoMania",
     },
 ];
