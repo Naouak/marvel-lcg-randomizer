@@ -320,5 +320,41 @@ export const scenarios = [
         name: "Magneto",
         pack: "Mutant Genesis",
         img: "images/scenarios/mc32_magneto.png"
-    },    
+    },
+    {
+        name: "Magog",
+        pack: "MojoMania",
+        img: "images/scenarios/mc39_magog.png"
+    },
+    {
+        name: "Spiral",
+        pack: "MojoMania",
+        img: "images/scenarios/MC39_spiral.png",
+        decks: [
+            {
+                minModules: 3,
+                moduleRequirements: {
+                    pack: "MojoMania"
+                }
+            },
+        ]
+    },
+    {
+        name: "Mojo",
+        pack: "MojoMania",
+        img: "images/scenarios/MC39_mojo.png",
+        decks: [
+            {
+                minModules: 0,
+            },
+            {
+                name: "Set aside modules",
+                minModules: 1,
+                additionalModulesPerPlayer: 1,
+                moduleRequirements: {
+                    pack: "MojoMania"
+                }
+            }
+        ]
+    },        
 ];

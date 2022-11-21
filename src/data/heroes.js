@@ -273,5 +273,19 @@ export const heroes = [
         alterEgo: 'Jean Grey',
         alterEgoImg: 'images/heroes/mc34_jean_grey.png',
         pack: 'Phoenix',
+    },    
+    {
+        hero: 'Wolverine',
+        heroImg: 'images/heroes/mc35_wolverine_cards_wolverine.png',
+        alterEgo: 'Logan',
+        alterEgoImg: 'images/heroes/mc35_wolverine_cards_logan.png',
+        pack: 'Wolverine',
     },
+    {
+        hero: 'Storm',
+        heroImg: 'images/heroes/mc36_card_storm.png',
+        alterEgo: 'Ororo Munroe',
+        alterEgoImg: 'images/heroes/mc36_card_ororo_munroe.png',
+        pack: 'Storm',
+    },    
 ];

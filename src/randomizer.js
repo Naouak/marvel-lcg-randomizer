@@ -1,7 +1,7 @@
 import {shuffleArray} from "@/helpers";
 
 export default class Randomizer {
-    randomizeScenario(scenarios, availableModules, defaultDifficulties, {additionalModules = 0, limitToScenarios: limitToScenarios = "" } = { additionalModules: 0}){
+    randomizeScenario(scenarios, availableModules, defaultDifficulties, {additionalModules = 0, limitToScenarios: limitToScenarios = "" } = { additionalModules: 0}, playerCount = 1){
         const availableScenarios = limitToScenarios.length > 0 ? limitToScenarios : scenarios;
         const scenario = shuffleArray(availableScenarios).shift();
         const encounterDecks = scenario.decks || [{}];
@@ -24,16 +24,35 @@ export default class Randomizer {
                 }).filter(mod => !!mod);
             }
 
-            const numberOfModules = (deck.minModules !== undefined ? deck.minModules : 1 ) + additionalModules;
+            const numberOfModules =
+                (deck.minModules !== undefined ? deck.minModules : 1 )
+                + additionalModules
+                + (deck.additionalModulesPerPlayer !== undefined ? deck.additionalModulesPerPlayer * playerCount : 0);
 
             let selectedModules = [];
-
+            // Skipped modules during selection (to put them back in the pool if another deck needs to be generated for this scenario)
+            const unselectedModules = [];
             while(selectedModules.length < numberOfModules && shuffledModules.length > 0){
-                if(shuffledModules[0].randomize !== false){
-                    selectedModules.push(shuffledModules[0]);
+                const currentModule = shuffledModules.shift();
+
+                // Is the module usable for the random modules?
+                if(currentModule.randomize === false){
+                    unselectedModules.push(currentModule);
+                    continue;
                 }
-                shuffledModules.splice(0,1);
+
+                // Skip modules that are not respecting generation rules (e.g. Mojo scenarios)
+                // Module needs to be from a specific pack (e.g. Mojo Scenario Pack)
+                if(deck?.moduleRequirements?.pack && currentModule.pack !== deck?.moduleRequirements?.pack){
+                    unselectedModules.push(currentModule);
+                    continue;
+                }
+
+                selectedModules.push(currentModule);
             }
+
+            // Put back modules that were skipped
+            shuffledModules.push(...unselectedModules);
 
             return {deck, modules: [...requiredModules, ...selectedModules]};
         });
