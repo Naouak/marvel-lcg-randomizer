@@ -335,7 +335,7 @@ export const scenarios = [
     {
         name: "Spiral",
         pack: "MojoMania",
-        img: "images/scenarios/MC39_spiral.png",
+        img: "images/scenarios/mc39_spiral.png",
         decks: [
             {
                 minModules: 3,
@@ -348,7 +348,7 @@ export const scenarios = [
     {
         name: "Mojo",
         pack: "MojoMania",
-        img: "images/scenarios/MC39_mojo.png",
+        img: "images/scenarios/mc39_mojo.png",
         decks: [
             {
                 minModules: 0,
