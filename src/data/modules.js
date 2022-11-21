@@ -297,6 +297,12 @@ export const modules = [
         pack: "Mutant Genesis",
     },
     {
+        name: "Magneto (campaign cards)",
+        img: "images/scenarios/magneto-ally.png",
+        pack: "Mutant Genesis",
+        randomize: false,
+    },
+    {
         name: "Deathstrike",
         img: "images/modules/mc35_deathstrike.png",
         pack: "Wolverine",

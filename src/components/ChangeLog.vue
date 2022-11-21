@@ -4,6 +4,10 @@
 
         <div v-if="shown">
             <div class="changelog-entry">
+              <h3>On november 21st 2022</h3>
+              <ul>
+                <li>Add Magneto ally card requirement for Master Mold scenario</li>
+              </ul>
               <h3>On november 14th 2022</h3>
               <ul>
                 <li>Add Wolverine</li>

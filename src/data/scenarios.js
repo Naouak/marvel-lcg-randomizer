@@ -302,6 +302,12 @@ export const scenarios = [
         img: "images/scenarios/mc32_master_mold.png",
         decks: [
             {
+                name: "Into Play",
+                requiredModules: ["Magneto (campaign cards)"],
+                minModules: 0
+            },
+            {
+                name: "Encounter Deck",
                 requiredModules: ["Sentinels"],
             }
         ]
