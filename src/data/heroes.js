@@ -276,16 +276,16 @@ export const heroes = [
     },    
     {
         hero: 'Wolverine',
-        heroImg: 'images/heroes/mc35_wolverine.png',
+        heroImg: 'images/heroes/mc35_wolverine_cards_wolverine.png',
         alterEgo: 'Logan',
-        alterEgoImg: 'images/heroes/mc35_logan.png',
+        alterEgoImg: 'images/heroes/mc35_wolverine_cards_logan.png',
         pack: 'Wolverine',
     },
     {
         hero: 'Storm',
-        heroImg: 'images/heroes/mc36_storm.png',
+        heroImg: 'images/heroes/mc36_card_storm.png',
         alterEgo: 'Ororo Munroe',
-        alterEgoImg: 'images/heroes/mc36_ororo_munroe.png',
+        alterEgoImg: 'images/heroes/mc36_card_ororo_munroe.png',
         pack: 'Storm',
     },    
 ];
