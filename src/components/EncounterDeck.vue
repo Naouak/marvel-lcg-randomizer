@@ -38,6 +38,9 @@ export default {
 
 img{
   max-width: 480px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 10px;
 }
 
 .module-title{
