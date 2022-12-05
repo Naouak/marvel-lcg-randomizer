@@ -77,6 +77,7 @@ img {
 
 .content {
   text-align: center;
+  padding-top: 5px;
 }
 
 .toggle {

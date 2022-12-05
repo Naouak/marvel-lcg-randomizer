@@ -4,6 +4,12 @@
 
         <div v-if="shown">
             <div class="changelog-entry">
+              <h3>On december 5th 2022</h3>
+              <ul>
+                <li>Minor design updates for mobile</li>
+              </ul>
+            </div>
+            <div class="changelog-entry">
               <h3>On november 21st 2022</h3>
               <ul>
                 <li>Add Magneto ally card requirement for Master Mold scenario</li>
