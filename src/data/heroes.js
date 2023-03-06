@@ -287,5 +287,19 @@ export const heroes = [
         alterEgo: 'Ororo Munroe',
         alterEgoImg: 'images/heroes/mc36_ororo_munroe.png',
         pack: 'Storm',
-    },    
+    },
+    {
+        hero: 'Gambit',
+        heroImg: 'images/heroes/mc37_gambit.png',
+        alterEgo: 'Remy LeBeau',
+        alterEgoImg: 'images/heroes/mc37_remy_labeau.png',
+        pack: 'Gambit',
+    }, 
+    {
+        hero: 'Rogue',
+        heroImg: 'images/heroes/mc38_rogue.png',
+        alterEgo: 'Anna Marie',
+        alterEgoImg: 'images/heroes/mc38_anna_marie.png',
+        pack: 'Rogue',
+    },     
 ];

@@ -307,6 +307,16 @@ export const modules = [
         pack: "Storm",
     },
     {
+        name: "Exodus",
+        img: "images/modules/mc37_exodus.png",
+        pack: "Gambit",
+    },
+    {
+        name: "Reavers",
+        img: "images/modules/mc38_reavers.png",
+        pack: "Rogue",
+    },
+    {
         name: "Crime",
         img: "images/modules/mc39_crime.png",
         pack: "Mojo",
