@@ -342,4 +342,14 @@ export const modules = [
         img: "images/modules/mc39_western.png",
         pack: "MojoMania",
     },
+    {
+        name: "Exodus",
+        img: "images/modules/exodus.jpg",
+        pack: "Gambit",
+    },
+    {
+        name: "Reavers",
+        img: "images/modules/reavers.jpg",
+        pack: "Rogue",
+    },
 ];
