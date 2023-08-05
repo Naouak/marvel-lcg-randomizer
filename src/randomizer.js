@@ -4,7 +4,7 @@ export default class Randomizer {
     randomizeScenario(scenarios, availableModules, defaultDifficulties, {additionalModules = 0, limitToScenarios: limitToScenarios = "" } = { additionalModules: 0}, playerCount = 1){
         const availableScenarios = limitToScenarios.length > 0 ? limitToScenarios : scenarios;
         const scenario = shuffleArray(availableScenarios).shift();
-        const encounterDecks = scenario.decks || [{}];
+        const encounterDecks = scenario?.decks || [{}];
 
         encounterDecks[0].name = encounterDecks[0].name || "encounter deck";
 
@@ -57,7 +57,7 @@ export default class Randomizer {
             return {deck, modules: [...requiredModules, ...selectedModules]};
         });
 
-        const scenarioDifficulties = (scenario.difficulties || [])
+        const scenarioDifficulties = (scenario?.difficulties || [])
             // Select custom difficulties only by selected difficulties
             .filter(([diff,]) => (defaultDifficulties.indexOf(diff.toLowerCase()) >= 0))
             .map(([,d]) => d);

@@ -1,5 +1,5 @@
 <template>
-  <div class="scenario-randomizer panel" v-if="scenario">
+  <div class="scenario-randomizer panel" v-if="scenario && scenario.scenario">
     <div class="title panel-insert" @click="shown=!shown">Scenario</div>
     <div class="content" v-if="shown">
       <div>
