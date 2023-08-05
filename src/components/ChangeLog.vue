@@ -4,6 +4,13 @@
 
         <div v-if="shown">
           <div class="changelog-entry">
+            <h3>On August 5th 2023</h3>
+            <ul>
+              <li>Add X-Force wave heroes (no scenario and modules yet).</li>
+              <li>Add Pool Aspect if you have Deadpool in your list of pack selected.</li>
+            </ul>
+          </div>
+          <div class="changelog-entry">
             <h3>On march 9th 2023</h3>
             <ul>
               <li>Add Rogue and Gambit</li>

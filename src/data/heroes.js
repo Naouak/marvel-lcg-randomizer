@@ -302,4 +302,47 @@ export const heroes = [
         alterEgoImg: 'images/heroes/mc38_card_anna_marie.png',
         pack: 'Rogue',
     },
+    {
+        hero: 'Cable',
+        heroImg: 'images/heroes/mc40_cardsingles_cable.png',
+        alterEgo: 'Nathan Summers',
+        alterEgoImg: 'images/heroes/mc40_cardsingles_nathansummers.png',
+        pack: 'NeXt Evolution'
+    },
+    {
+        hero: 'Domino',
+        heroImg: 'images/heroes/mc40_cardsingles_domino.png',
+        alterEgo: 'Neena Thurman',
+        alterEgoImg: 'images/heroes/mc40_cardsingles_neenathurman.png',
+        pack: 'NeXt Evolution'
+    },
+    {
+        hero: 'Psylocke',
+        heroImg: 'images/heroes/mc41en_psylocke.png',
+        alterEgo: 'Betsy Braddock',
+        alterEgoImg: 'images/heroes/mc41en_betsy_braddock.png',
+        pack: 'Psylocke'
+    },
+    {
+        hero: 'Angel / Archangel',
+        heroImg: 'images/heroes/mc42en_card_angel.png',
+        alterEgo: 'Warren Worthington III',
+        alterEgoImg: 'images/heroes/mc42en_card_warren_worthington_iii.png',
+        pack: 'Angel'
+    },
+    {
+        hero: 'X-23',
+        heroImg: 'images/heroes/mc43_announce_cards_x-23.png',
+        alterEgo: 'Laura Kinney',
+        alterEgoImg: 'images/heroes/mc43_announce_cards_laurakinney.png',
+        pack: 'X-23'
+    },
+    {
+        hero: 'Deadpool',
+        heroImg: 'images/heroes/mc44_announce_cards_deadpool.png',
+        alterEgo: 'Wade Wilson',
+        alterEgoImg: 'images/heroes/mc44_announce_cards_wadewilson.png',
+        pack: 'Deadpool'
+    },
+
 ];

@@ -32,4 +32,9 @@ export const aspects = [
             "Doctor Strange",
         ]
     },
+    {
+        name: 'Pool',
+        img: 'images/aspects/mc44_announce_cards_igotthis.png',
+        packs: ["Deadpool"]
+    }
 ];
