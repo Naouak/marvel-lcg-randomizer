@@ -129,6 +129,12 @@ export default {
     availableDifficulties() {
       return this.data.difficulties.filter(s => this.randomizationOptions.selectedDifficulties.indexOf(s) >= 0);
     },
+    availableAspects() {
+      return this.data.aspects.filter(
+          // Aspects are in multiple packs so we need to check for any pack selected
+          s => !!s.packs.find(pack => this.selectedPacks.indexOf(pack) >= 0)
+      );
+    },
   },
   methods: {
     randomize() {
@@ -145,7 +151,7 @@ export default {
       );
     },
     randomizeDecks() {
-      this.selectedDecks = randomizer.randomizeHeroes(this.availableHeroes, this.data.aspects);
+      this.selectedDecks = randomizer.randomizeHeroes(this.availableHeroes, this.availableAspects);
 
     }
   },

@@ -72,8 +72,7 @@ export default class Randomizer {
         };
     }
 
-    randomizeHeroes(availableHeroes, availableAspects){
-        const heroes = shuffleArray(availableHeroes);
+    generateAspects(availableAspects) {
         const aspects = shuffleArray(availableAspects);
         aspects.push(...shuffleArray(availableAspects));
         // Prevents two of the same aspect in a row
@@ -82,12 +81,24 @@ export default class Randomizer {
                 [aspects[i+1], aspects[i+2]] = [aspects[i+2], aspects[i+1]];
             }
         }
+        return aspects;
+    }
+
+    randomizeHeroes(availableHeroes, availableAspects){
+        console.log(availableHeroes);
+        console.log(availableAspects);
+        const heroes = shuffleArray(availableHeroes);
+        let aspects = this.generateAspects(availableAspects)
 
         const selectedHeroes = [];
 
         for(let i = 0; i < Math.min(4, heroes.length); i++){
             const currentAspects = [];
             const numberOfAspects = heroes[i].numberOfAspects || 1;
+
+            if (aspects.length < numberOfAspects) {
+                aspects = this.generateAspects(availableAspects);
+            }
 
             for(let j = 0; j < numberOfAspects; j++){
                 currentAspects.push(aspects.shift());
@@ -98,7 +109,7 @@ export default class Randomizer {
                 aspects: currentAspects,
             });
         }
-
+        console.log(selectedHeroes);
         return selectedHeroes;
     }
 }
