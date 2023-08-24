@@ -85,8 +85,6 @@ export default class Randomizer {
     }
 
     randomizeHeroes(availableHeroes, availableAspects){
-        console.log(availableHeroes);
-        console.log(availableAspects);
         const heroes = shuffleArray(availableHeroes);
         let aspects = this.generateAspects(availableAspects)
 
@@ -109,7 +107,6 @@ export default class Randomizer {
                 aspects: currentAspects,
             });
         }
-        console.log(selectedHeroes);
         return selectedHeroes;
     }
 }
