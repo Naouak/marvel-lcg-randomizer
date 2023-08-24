@@ -362,5 +362,69 @@ export const scenarios = [
                 }
             }
         ]
-    },        
+    },
+    {
+        name: "Morlock Siege",
+        pack: "NeXt Evolution",
+        img: "images/scenarios/morlock-siege.jpg",
+        decks: [
+            {
+                name: "Villains",
+                requiredModules: ["Marauders"],
+                minModules: 0
+            },
+            {
+                name: "Encounter Deck",
+                minModules: 2,
+            }
+        ]
+    },
+    {
+        name: "On The Run",
+        pack: "NeXt Evolution",
+        img: "images/scenarios/on-the-run.jpg",
+        decks: [
+            {
+                name: "Villains",
+                requiredModules: ["Marauders"],
+                minModules: 0,
+            },
+            {
+                name: "Encounter Deck",
+                minModules: 2,
+                requiredModules: ["Mutant Slayers"],
+            }
+        ]
+    },
+    {
+        name: "Juggernaut",
+        pack: "NeXt Evolution",
+        img: "images/scenarios/juggernaut.jpg",
+        decks: [
+            {
+                requiredModules: ["Hope Summers"]
+            }
+        ]
+    },
+    {
+        name: "Mister Sinister",
+        pack: "NeXt Evolution",
+        img: "images/scenarios/mister-sinister.jpg",
+        decks: [
+            {
+                requiredModules:  ["Flight", "Super Strength", "Telepathy", "Hope Summers"]
+            }
+        ]
+    },
+    {
+        name: "Stryfe",
+        pack: "NeXt Evolution",
+        img: "images/scenarios/stryfe.jpg",
+        decks: [
+            {
+                minModules: 2,
+                requiredModules: ["Hope Summers"]
+            }
+        ]
+    },
 ];

@@ -4,6 +4,13 @@
 
     <div v-if="shown">
       <div class="changelog-entry">
+        <h3>On August 24th 2023</h3>
+        <ul>
+          <li>Add Next Evolution Scenarios and Modules.</li>
+          <li>Fix issue with pack selection after "select all" was used.</li>
+        </ul>
+      </div>
+      <div class="changelog-entry">
         <h3>On August 21st 2023</h3>
         <ul>
           <li>

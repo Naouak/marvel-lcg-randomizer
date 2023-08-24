@@ -352,4 +352,61 @@ export const modules = [
         img: "images/modules/reavers.jpg",
         pack: "Rogue",
     },
+    {
+        name: "Black Tom Cassidy",
+        img: "images/modules/black-tom-cassidy.jpg",
+        pack: "NeXt Evolution",
+    },
+    {
+        name: "Extreme Measures",
+        img: "images/modules/extreme-measures.jpg",
+        pack: "NeXt Evolution",
+    },
+    {
+        name: "Flight",
+        img: "images/modules/flight.jpg",
+        pack: "NeXt Evolution",
+    },
+    {
+        name: "Hope Summers",
+        img: "images/modules/hope-summers.jpg",
+        pack: "NeXt Evolution",
+        randomize: false,
+    },
+    {
+        name: "Marauders",
+        img: "images/modules/marauders.jpg",
+        pack: "NeXt Evolution",
+        randomize: false,
+    },
+    {
+        name: "Military Grade",
+        img: "images/modules/military-grade.jpg",
+        pack: "NeXt Evolution",
+    },
+    {
+        name: "Mutant Insurrection",
+        img: "images/modules/mutant-insurrection.jpg",
+        pack: "NeXt Evolution",
+    },
+    {
+        name: "Mutant Slayers",
+        img: "images/modules/mutant-slayers.jpg",
+        pack: "NeXt Evolution",
+    },
+    {
+        name: "Nasty Boys",
+        img: "images/modules/nasty-boys.jpg",
+        pack: "NeXt Evolution",
+    },
+    {
+        name: "Super Strength",
+        img: "images/modules/super-strength.jpg",
+        pack: "NeXt Evolution",
+    },
+    {
+        name: "Telepathy",
+        img: "images/modules/telepathy.jpg",
+        pack: "NeXt Evolution",
+    },
 ];
