@@ -58,20 +58,22 @@ export default {
   emits: ["update:modelValue"],
   methods: {
     togglePack(pack, checked) {
-      const packs = this.modelValue.slice(0);
+      // We use a Set here to de-dup packs in the list
+      const packs = [... new Set(this.modelValue)];
       if (checked) {
         packs.push(pack);
       } else {
         packs.splice(packs.indexOf(pack), 1);
       }
-
       this.$emit("update:modelValue", packs);
     },
     selectAllPacks() {
       const packs = [];
       for (const packets in this.packs) {
         this.packs[packets].forEach((pack) => {
-          packs.push(pack);
+          if(packs.indexOf(pack) < 0){
+            packs.push(pack);
+          }
         });
       }
       this.$emit("update:modelValue", packs);
