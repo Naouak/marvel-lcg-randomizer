@@ -48,7 +48,7 @@ import ContributeText from "./components/ContributeText.vue";
 import DifficultySelector from "./components/DifficultySelector";
 import UpdateNotification from "@/components/UpdateNotification.vue";
 
-const difficulties = ["standard", "expert", "nightmare", "standard II", "expert II"];
+const difficulties = ["standard", "expert", "nightmare", "standard II", "expert II", "standard III"];
 
 const dataStorage = window.localStorage;
 

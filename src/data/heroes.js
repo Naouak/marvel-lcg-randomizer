@@ -344,5 +344,33 @@ export const heroes = [
         alterEgoImg: 'images/heroes/mc44_announce_cards_wadewilson.png',
         pack: 'Deadpool'
     },
+    {
+        hero: 'Bishop',
+        heroImg: 'images/heroes/mc45_cards_bishop.png',
+        alterEgo: 'Lucas Bishop',
+        alterEgoImg: 'images/heroes/mc45_cards_lucasbishop.png',
+        pack: 'Age of Apocalypse'
+    },
+    {
+        hero: 'Magik',
+        heroImg: 'images/heroes/mc45_cards_magik.png',
+        alterEgo: 'Illiyana Rasputin',
+        alterEgoImg: 'images/heroes/mc45_cards_illyanarasputin.png',
+        pack: 'Age of Apocalypse'
+    },
+    {
+        hero: 'Iceman',
+        heroImg: 'images/heroes/mc46_announce_cards_iceman.png',
+        alterEgo: 'Bobby Drake',
+        alterEgoImg: 'images/heroes/mc46_announce_cards_bobbydrake.png',
+        pack: 'Iceman'
+    },
+    {
+        hero: 'Jubilee',
+        heroImg: 'images/heroes/mc47_announce_cards_jubilee.png',
+        alterEgo: 'Jubilation Lee',
+        alterEgoImg: 'images/heroes/mc47_announce_cards_jubilationlee.png',
+        pack: 'Jubilee'
+    }
 
 ];

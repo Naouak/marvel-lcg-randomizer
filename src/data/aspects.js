@@ -16,6 +16,8 @@ export const aspects = [
             "Mutant Genesis",
             "Wolverine",
             "X-23",
+            "Age of Apocalypse",
+            "Iceman"
         ]
     },
     {
@@ -35,7 +37,7 @@ export const aspects = [
             "Gambit",
             "NeXt Evolution",
             "Psylocke",
-
+            "Jubilee",
 
         ]
     },
@@ -54,6 +56,7 @@ export const aspects = [
             "Cyclops",
             "Storm",
             "NeXt Evolution",
+            "Age of Apocalypse"
         ]
     },
     {

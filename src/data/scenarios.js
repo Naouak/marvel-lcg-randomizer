@@ -427,4 +427,55 @@ export const scenarios = [
             }
         ]
     },
+    {
+        name: "Unus",
+        pack: "Age of Apocalypse",
+        img: "images/scenarios/unus.jpg",
+        decks: [
+            {
+                requiredModules: ["Infinites"]
+            }
+        ]
+    },
+    {
+        name: "Four Horsemen",
+        pack: "Age of Apocalypse",
+        img: "images/scenarios/four-horsemen.jpg",
+        decks: [
+            {
+                minModules: 2
+            }
+        ]
+    },
+    {
+        name: "Apocalypse",
+        pack: "Age of Apocalypse",
+        img: "images/scenarios/apocalypse.jpg",
+        decks: [
+            {
+                requiredModules: ["Prelates"],
+                minModules: 2
+            }
+        ]
+    },
+    {
+        name: "Dark Beast",
+        pack: "Age of Apocalypse",
+        img: "images/scenarios/dark-beast.jpg",
+        decks: [
+            {
+                requiredModules: ["Blue Moon", "Genosha", "Savage Land"]
+            }
+        ]
+    },
+    {
+        name: "En Sabah Nur",
+        pack: "Age of Apocalypse",
+        img: "images/scenarios/en-sabah-nur.jpg",
+        decks: [
+            {
+                minModules: 2
+            }
+        ]
+    }
 ];

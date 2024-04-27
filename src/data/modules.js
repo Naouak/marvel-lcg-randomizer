@@ -409,4 +409,64 @@ export const modules = [
         img: "images/modules/telepathy.jpg",
         pack: "NeXt Evolution",
     },
+    {
+        name: "Infinites",
+        img: "images/modules/mc45_unus_cards_infinitesoldier.png",
+        pack: "Age of Apocalypse"
+    },
+    {
+        name: "Dystopian Nightmare",
+        img: "images/modules/dystopian-nightmare.jpg",
+        pack: "Age of Apocalypse"
+    },
+    {
+        name: "Hounds",
+        img: "images/modules/mc45_fourhorsemen_cards_ahab.png",
+        pack: "Age of Apocalypse"
+    },
+    {
+        name: "Prelates",
+        img: "images/modules/mc45_apocalypse_cards_mistersinister.png",
+        pack: "Age of Apocalypse"
+    },
+    {
+        name: "Dark Riders",
+        img: "images/modules/mc45_apocalypse_cards_gauntlet.png",
+        pack: "Age of Apocalypse"
+    },
+    {
+        name: "Savage Land",
+        img: "images/modules/mc45_darkbeast_cards_thesavageland.png",
+        pack: "Age of Apocalypse"
+    },
+    {
+        name: "Genosha",
+        img: "images/modules/mc45_darkbeast_cards_genosha.png",
+        pack: "Age of Apocalypse"
+    },
+    {
+        name: "Blue Moon",
+        img: "images/modules/mc45_darkbeast_cards_blueareaofthemoon.png",
+        pack: "Age of Apocalypse"
+    },
+    {
+        name: "Celestial Tech",
+        img: "images/modules/mc45_ensabahnur_cards_celestialarmor.png",
+        pack: "Age of Apocalypse"
+    },
+    {
+        name: "Clan Akkaba",
+        img: "images/modules/mc45_ensabahnur_cards_ozymandias.png",
+        pack: "Age of Apocalypse"
+    },
+    {
+        name: "Sauron",
+        img: "images/modules/mc46_announce_cards_sauron.png",
+        pack: "Iceman"
+    },
+    {
+        name: "Arcade",
+        img: "images/modules/mc47_announce_cards_arcade.png",
+        pack: "Jubilee"
+    }
 ];

@@ -4,6 +4,13 @@
 
     <div v-if="shown">
       <div class="changelog-entry">
+        <h3>On April 27th 2024</h3>
+        <ul>
+          <li>Add Age of Apocalypse, Iceman & Jubilee.</li>
+          <li>Add Standard III.</li>
+        </ul>
+      </div>
+      <div class="changelog-entry">
         <h3>On August 24th 2023</h3>
         <ul>
           <li>Add Next Evolution Scenarios and Modules.</li>
