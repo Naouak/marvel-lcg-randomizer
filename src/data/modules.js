@@ -468,5 +468,15 @@ export const modules = [
         name: "Arcade",
         img: "images/modules/mc47_announce_cards_arcade.png",
         pack: "Jubilee"
+    },
+    {
+        name: "Crazy Gang",
+        img: "images/modules/mc48_announcement_article_the_crazy_gang_33_card_horizontal.png",
+        pack: "Nightcrawler"
+    },
+    {
+        name: "Hellfire",
+        img: "images/modules/mc49_announce_cards_sebastianshaw.png",
+        pack: "Magneto"
     }
 ];

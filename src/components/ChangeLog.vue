@@ -4,6 +4,12 @@
 
     <div v-if="shown">
       <div class="changelog-entry">
+        <h3>On October 2nd 2024</h3>
+        <ul>
+          <li>Add Nightcrawler and Magneto.</li>
+        </ul>
+      </div>
+      <div class="changelog-entry">
         <h3>On April 27th 2024</h3>
         <ul>
           <li>Add Age of Apocalypse, Iceman & Jubilee.</li>

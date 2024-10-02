@@ -371,6 +371,20 @@ export const heroes = [
         alterEgo: 'Jubilation Lee',
         alterEgoImg: 'images/heroes/mc47_announce_cards_jubilationlee.png',
         pack: 'Jubilee'
+    },
+    {
+        hero: 'Nightcrawler',
+        heroImg: 'images/heroes/mc48_announcement_article_nightcrawler_01a_card.png',
+        alterEgo: 'Kurt Wagner',
+        alterEgoImg: 'images/heroes/mc48_announcement_article_kurt_wagner_01b_card.png',
+        pack: 'Nightcrawler'
+    },
+    {
+        hero: 'Magneto',
+        heroImg: 'images/heroes/mc49_announce_cards_magneto.png',
+        alterEgo: 'Erik Lehnsherr',
+        alterEgoImg: 'images/heroes/mc49_announce_cards_eriklehnsherr.png',
+        pack: 'Magneto'
     }
 
 ];
