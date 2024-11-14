@@ -159,7 +159,7 @@ export const scenarios = [
         img: "images/scenarios/MC16en_106A.jpg",
         decks: [
             {
-                requiredModules: ["Power Stone"],
+                requiredModules: ["Power Stone", "Ship Command"],
             },
         ],
     },
