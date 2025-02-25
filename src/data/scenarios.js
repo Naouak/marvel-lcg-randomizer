@@ -477,5 +477,55 @@ export const scenarios = [
                 minModules: 2
             }
         ]
+    },
+    {
+        name: "Black Widow",
+        pack: "Agents of S.H.I.E.L.D.",
+        img: "images/scenarios/black-widow.jpg",
+        decks: [
+            {
+                minModules: 2
+            }
+        ]
+    },
+    {
+        name: "Batroc",
+        pack: "Agents of S.H.I.E.L.D.",
+        img: "images/scenarios/batroc.jpg",
+        decks: [
+            {
+                minModules: 2
+            }
+        ]
+    },
+    {
+        name: "M.O.D.O.K.",
+        pack: "Agents of S.H.I.E.L.D.",
+        img: "images/scenarios/modok.jpg"
+    },
+    {
+        name: "Thunderbolts",
+        pack: "Agents of S.H.I.E.L.D.",
+        img: "images/scenarios/thunderbolts.jpg",
+        decks: [
+            {
+                minModules: 1,
+                additionalModulesPerPlayer: 1,
+                moduleRequirements: {
+                    type: "Thunderbolt"
+                }
+            }
+        ]
+    },
+    {
+        name: "Baron Zemo",
+        pack: "Agents of S.H.I.E.L.D.",
+        img: "images/scenarios/baron-zemo.jpg",
+        decks: [
+            {
+                requiredModules: ["S.H.I.E.L.D. Executive Board", "Executive Board Evidence"],
+                minModules: 2
+            }
+        ]
     }
 ];

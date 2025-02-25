@@ -478,5 +478,78 @@ export const modules = [
         name: "Hellfire",
         img: "images/modules/mc49_announce_cards_sebastianshaw.png",
         pack: "Magneto"
+    },
+    {
+        name: "A.I.M. Abduction",
+        img: "images/modules/aim-abduction.jpg",
+        pack: "Agents of S.H.I.E.L.D."
+    },
+    {
+        name: "A.I.M. Science",
+        img: "images/modules/aim-science.jpg",
+        pack: "Agents of S.H.I.E.L.D."
+    },
+    {
+        name: "Batroc's Brigade",
+        img: "images/modules/batrocs-brigade.jpg",
+        pack: "Agents of S.H.I.E.L.D."
+    },
+    {
+        name: "Scientist Supreme",
+        img: "images/modules/scientist-supreme.jpg",
+        pack: "Agents of S.H.I.E.L.D."
+    },
+    {
+        name: "Gravitational Pull",
+        img: "images/modules/gravitational-pull.jpg",
+        pack: "Agents of S.H.I.E.L.D.",
+        types: ["Thunderbolt"]
+    },
+    {
+        name: "Hard Sound",
+        img: "images/modules/hard-sound.jpg",
+        pack: "Agents of S.H.I.E.L.D.",
+        types: ["Thunderbolt"]
+    },
+    {
+        name: "Pale Little Spider",
+        img: "images/modules/pale-little-spider.jpg",
+        pack: "Agents of S.H.I.E.L.D.",
+        types: ["Thunderbolt"]
+    },
+    {
+        name: "Power of the Atom",
+        img: "images/modules/power-of-the-atom.jpg",
+        pack: "Agents of S.H.I.E.L.D.",
+        types: ["Thunderbolt"]
+    },
+    {
+        name: "Supersonic",
+        img: "images/modules/supersonic.jpg",
+        pack: "Agents of S.H.I.E.L.D.",
+        types: ["Thunderbolt"]
+    },
+    {
+        name: "The Leaper",
+        img: "images/modules/the-leaper.jpg",
+        pack: "Agents of S.H.I.E.L.D.",
+        types: ["Thunderbolt"]
+    },
+    {
+        name: "S.H.I.E.L.D.",
+        img: "images/modules/shield.jpg",
+        pack: "Agents of S.H.I.E.L.D."
+    },
+    {
+        name: "S.H.I.E.L.D. Executive Board",
+        img: "images/modules/shield-executive-board.jpg",
+        pack: "Agents of S.H.I.E.L.D.",
+        randomize: false,
+    },
+    {
+        name: "Executive Board Evidence",
+        img: "images/modules/executive-board-evidence.jpg",
+        pack: "Agents of S.H.I.E.L.D.",
+        randomize: false,
     }
 ];

@@ -48,6 +48,12 @@ export default class Randomizer {
                     continue;
                 }
 
+                // Module needs to be from a specific type (e.g. Thunderbolts modules)
+                if(deck?.moduleRequirements?.type && (currentModule.types || []).indexOf(deck?.moduleRequirements?.type) < 0){
+                    unselectedModules.push(currentModule);
+                    continue;
+                }
+
                 selectedModules.push(currentModule);
             }
 
