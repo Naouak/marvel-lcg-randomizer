@@ -4,7 +4,7 @@
 
     <div v-if="shown">
       <div class="changelog-entry">
-        <h3>On October 2nd 2024</h3>
+        <h3>On February 25th 2025</h3>
         <ul>
           <li>Add Agents of S.H.I.E.L.D. scenarios and heroes.</li>
           <li>Add Black Panther and Silk packs.</li>
