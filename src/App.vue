@@ -113,7 +113,9 @@ export default {
       deep: true,
     },
     numberOfPlayer() {
-      this.randomizeScenario();
+      if ((this.selectedScenario?.scenario?.decks || []).find(deck => deck?.additionalModulesPerPlayer > 0)){
+        this.randomizeScenario(this.selectedScenario.scenario);
+      }
     }
   },
   created() {
@@ -144,9 +146,9 @@ export default {
       this.randomizeScenario();
       this.randomizeDecks();
     },
-    randomizeScenario() {
+    randomizeScenario(scenario = null) {
       this.selectedScenario = randomizer.randomizeScenario(
-          this.availableScenarios,
+          scenario ? [scenario] : this.availableScenarios,
           this.availableModules,
           this.availableDifficulties,
           this.randomizationOptions,

@@ -548,7 +548,7 @@ export const modules = [
     },
     {
         name: "Executive Board Evidence",
-        img: "images/modules/executive-board-evidence.jpg",
+        img: "images/modules/executive-evidence-board.jpg",
         pack: "Agents of S.H.I.E.L.D.",
         randomize: false,
     },
