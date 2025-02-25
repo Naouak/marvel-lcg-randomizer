@@ -385,6 +385,20 @@ export const heroes = [
         alterEgo: 'Erik Lehnsherr',
         alterEgoImg: 'images/heroes/mc49_announce_cards_eriklehnsherr.png',
         pack: 'Magneto'
+    },
+    {
+        hero: 'Maria Hill',
+        heroImg: 'images/heroes/mc50_mariahill_cards_mariahillhero.png',
+        alterEgo: 'Maria Hill',
+        alterEgoImg: 'images/heroes/mc50_mariahill_cards_mariahillalter.png',
+        pack: 'Agents of S.H.I.E.L.D.'
+    },
+    {
+        hero: 'Nick Fury',
+        heroImg: 'images/heroes/mc50_article_nickfury_cards_nickfury_a.png',
+        alterEgo: 'Nick Fury',
+        alterEgoImg: 'images/heroes/mc50_article_nickfury_cards_nickfury_b.png',
+        pack: 'Agents of S.H.I.E.L.D.'
     }
 
 ];
