@@ -111,6 +111,9 @@ export default {
         this.randomize();
       },
       deep: true,
+    },
+    numberOfPlayer() {
+      this.randomizeScenario();
     }
   },
   created() {

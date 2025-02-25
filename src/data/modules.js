@@ -551,5 +551,17 @@ export const modules = [
         img: "images/modules/executive-board-evidence.jpg",
         pack: "Agents of S.H.I.E.L.D.",
         randomize: false,
+    },
+    {
+        name: "Extreme Risk",
+        img: "images/modules/mc51_announce_cards_joystick.png",
+        pack: "Black Panther",
+        types: ["Thunderbolt"]
+    },
+    {
+        name: "Growing Strong",
+        img: "images/modules/mc52_announcement_article_atlas_35.png",
+        pack: "Silk",
+        types: ["Thunderbolt"]
     }
 ];

@@ -399,6 +399,20 @@ export const heroes = [
         alterEgo: 'Nick Fury',
         alterEgoImg: 'images/heroes/mc50_article_nickfury_cards_nickfury_b.png',
         pack: 'Agents of S.H.I.E.L.D.'
+    },
+    {
+        hero: 'Black Panther',
+        heroImg: 'images/heroes/mc51_announce_cards_blackpanther_1_1.png',
+        alterEgo: 'Shuri',
+        alterEgoImg: 'images/heroes/mc51_announce_cards_shuri.png',
+        pack: 'Black Panther'
+    },
+    {
+        hero: 'Silk',
+        heroImg: 'images/heroes/mc52_announcement_article_silk_1a.png',
+        alterEgo: 'Cindy Moon',
+        alterEgoImg: 'images/heroes/mc52_announcement_article_cindy_moon_1b.png',
+        pack: 'Silk'
     }
 
 ];

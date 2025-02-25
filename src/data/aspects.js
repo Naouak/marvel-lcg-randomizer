@@ -38,6 +38,8 @@ export const aspects = [
             "NeXt Evolution",
             "Psylocke",
             "Jubilee",
+            "Agents of S.H.I.E.L.D.",
+            "Black Panther"
 
         ]
     },
@@ -78,6 +80,7 @@ export const aspects = [
             "Rogue",
             "Angel",
             "Nightcrawler",
+            "Silk"
         ]
     },
     {
