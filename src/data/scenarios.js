@@ -3,31 +3,55 @@ export const scenarios = [
         name: 'Rhino - The Break In!',
         img: 'images/scenarios/MC01en_97A.jpg',
         pack: "Core Set",
+        starRating: {
+            solo: 7,
+            multiplayer: 0
+        }
     },
     {
         name: 'Klaw - Underground Distribution',
         img: 'images/scenarios/MC01en_116A.jpg',
         pack: "Core Set",
+        starRating: {
+            solo: 10,
+            multiplayer: 3
+        }
     },
     {
         name: 'Ultron - The Crimson Cowl',
         img: 'images/scenarios/MC01en_137A.jpg',
         pack: "Core Set",
+        starRating: {
+            solo: 10,
+            multiplayer: 12
+        }
     },
     {
         name: 'Green Goblin - Risky Business',
         img: 'images/scenarios/02004.jpg',
         pack: "Green Goblin",
+        starRating: {
+            solo: 0,
+            multiplayer: 0
+        }
     },
     {
         name: 'Green Goblin - Mutagen Formula',
         img: 'images/scenarios/02017.jpg',
         pack: 'Green Goblin',
+        starRating: {
+            solo: 12,
+            multiplayer: 10
+        },
     },
     {
         name: 'Wrecking Crew - Breakout',
         img: 'images/scenarios/MC03en_1A.jpg',
         pack: 'Wrecking Crew',
+        starRating: {
+            solo: -1,
+            multiplayer: 3
+        },
         decks: [
             {
                 name: "Bulldozer's Deck",
@@ -70,6 +94,10 @@ export const scenarios = [
         name: "Crossbones - Attack on Mount Athena",
         pack: "The Rise of Red Skull",
         img: "images/scenarios/MC10en_61A.jpg",
+        starRating: {
+            solo: 4,
+            multiplayer: -1
+        },
         decks: [
             {
                 requiredModules: ["Experimental Weapons"],
@@ -80,12 +108,20 @@ export const scenarios = [
     {
         name: "Absorbing Man - None Shall Pass",
         pack: "The Rise of Red Skull",
-        img: "images/scenarios/MC10en_79A.jpg"
+        img: "images/scenarios/MC10en_79A.jpg",
+        starRating: {
+            solo: 2,
+            multiplayer: -1
+        },
     },
     {
         name: "Taskmaster - Hunting Down Heroes",
         pack: "The Rise of Red Skull",
         img: "images/scenarios/MC10en_96A.jpg",
+        starRating: {
+            solo: 5,
+            multiplayer: 5
+        },
         decks: [
             {
                 requiredModules: ["Hydra Patrol"],
@@ -96,11 +132,19 @@ export const scenarios = [
         name: "Zola - The Island of Dr. Zola",
         pack: "The Rise of Red Skull",
         img: "images/scenarios/MC10en_112A.jpg",
+        starRating: {
+            solo: 14,
+            multiplayer: 9
+        },
     },
     {
         name: "Red Skull - The Rise of Red Skull",
         pack: "The Rise of Red Skull",
         img: "images/scenarios/MC10en_128A.jpg",
+        starRating: {
+            solo: 16,
+            multiplayer: 17
+        },
         decks: [
             {
                 minModules: 2,
@@ -111,11 +155,19 @@ export const scenarios = [
         name: "Kang - Kang's Arrival",
         pack: "The Once and Future Kang",
         img: "images/scenarios/MC11en_7A.jpg",
+        starRating: {
+            solo: 10,
+            multiplayer: 9
+        },
     },
     {
         name: "Brotherhood of Badoon",
         pack: "Galaxy's Most Wanted",
         img: "images/scenarios/MC16en_61A.jpg",
+        starRating: {
+            solo: 2,
+            multiplayer: 7
+        },
         decks: [
             {
                 requiredModules: ["Brotherhood of Badoon", "Ship Command"],
@@ -127,6 +179,10 @@ export const scenarios = [
         name: "Collector 1 - Infiltrate the Museum",
         pack: "Galaxy's Most Wanted",
         img: "images/scenarios/MC16en_73A.jpg",
+        starRating: {
+            solo: 14,
+            multiplayer: 11
+        },
         decks: [
             {
                 requiredModules: ["Galactic Artifacts"],
@@ -137,6 +193,10 @@ export const scenarios = [
         name: "Collector 2 - Escape the Museum",
         pack: "Galaxy's Most Wanted",
         img: "images/scenarios/MC16en_82A.jpg",
+        starRating: {
+            solo: 12,
+            multiplayer: 11
+        },
         decks: [
             {
                 requiredModules: ["Galactic Artifacts", "Ship Command"],
@@ -147,6 +207,10 @@ export const scenarios = [
         name: "Nebula",
         pack: "Galaxy's Most Wanted",
         img: "images/scenarios/MC16en_91A.jpg",
+        starRating: {
+            solo: 17,
+            multiplayer: 19
+        },
         decks: [
             {
                 requiredModules: ["Power Stone", "Ship Command"],
@@ -157,6 +221,10 @@ export const scenarios = [
         name: "Ronan",
         pack: "Galaxy's Most Wanted",
         img: "images/scenarios/MC16en_106A.jpg",
+        starRating: {
+            solo: 24,
+            multiplayer: 25
+        },
         decks: [
             {
                 requiredModules: ["Power Stone", "Ship Command"],
@@ -167,6 +235,10 @@ export const scenarios = [
         name: "Ebony Maw - Attack on Knowhere",
         pack: "The Mad Titan's Shadow",
         img: "images/scenarios/MC21en_74A.jpg",
+        starRating: {
+            solo: 6,
+            multiplayer: 5
+        },
         decks: [
             {
                 minModules: 2,
@@ -177,11 +249,19 @@ export const scenarios = [
         name: "Proxima Midnight/Corvus Glaive - Under Siege",
         pack: "The Mad Titan's Shadow",
         img: "images/scenarios/MC21en_98A.jpg",
+        starRating: {
+            solo: -1,
+            multiplayer: 0
+        },
     },
     {
         name: "Thanos - The Infinity Stones",
         pack: "The Mad Titan's Shadow",
         img: "images/scenarios/MC21en_114A.jpg",
+        starRating: {
+            solo: 8,
+            multiplayer: 8
+        },
         decks: [
             {
                 requiredModules: ["Infinity Gauntlet"],
@@ -193,6 +273,10 @@ export const scenarios = [
         name: "Hela - Odin's Torment",
         pack: "The Mad Titan's Shadow",
         img: "images/scenarios/MC21en_138A.jpg",
+        starRating: {
+            solo: 10,
+            multiplayer: 6
+        },
         decks: [
             {
                 minModules: 2,
@@ -203,6 +287,10 @@ export const scenarios = [
         name: "Loki - All Hail King Loki",
         pack: "The Mad Titan's Shadow",
         img: "images/scenarios/MC21en_165A.jpg",
+        starRating: {
+            solo: 18,
+            multiplayer: 19
+        },
         decks: [
             {
                 requiredModules: ["Infinity Gauntlet"],
@@ -214,6 +302,10 @@ export const scenarios = [
         name: "The Hood - Making Connections",
         pack: "The Hood",
         img: "images/scenarios/MC24en_4A.png",
+        starRating: {
+            solo: 5,
+            multiplayer: 6
+        },
         decks: [
             {
                 name: "The Hood",
@@ -229,6 +321,10 @@ export const scenarios = [
         name: "Sandman",
         pack: "Sinister Motives",
         img: "images/scenarios/sandman.png",
+        starRating: {
+            solo: 5,
+            multiplayer: 1
+        },
         decks: [
             {
                 requiredModules: ["City in Chaos"],
@@ -239,6 +335,10 @@ export const scenarios = [
         name: "Venom",
         pack: "Sinister Motives",
         img: "images/scenarios/venom.png",
+        starRating: {
+            solo: 10,
+            multiplayer: 3
+        },
         decks: [
             {
                 requiredModules: ["Symbiotic Strength"],
@@ -249,6 +349,10 @@ export const scenarios = [
         name: "Mysterio",
         pack: "Sinister Motives",
         img: "images/scenarios/mysterio.png",
+        starRating: {
+            solo: 2,
+            multiplayer: 0
+        },
         decks: [
             {
                 requiredModules: ["Personal Nightmare"],
@@ -259,6 +363,10 @@ export const scenarios = [
         name: "The Sinister Six",
         pack: "Sinister Motives",
         img: "images/scenarios/sinister-six.png",
+        starRating: {
+            solo: 9,
+            multiplayer: 5
+        },
         decks: [
             {
                 minModules: 0,
@@ -270,6 +378,10 @@ export const scenarios = [
         name: "Venom Goblin",
         pack: "Sinister Motives",
         img: "images/scenarios/venom-goblin.png",
+        starRating: {
+            solo: 16,
+            multiplayer: 21
+        },
         decks: [
             {
                 requiredModules: ["Symbiotic Strength"],
@@ -280,6 +392,10 @@ export const scenarios = [
         name: "Sabretooth",
         pack: "Mutant Genesis",
         img: "images/scenarios/mc32_sabretooth.png",
+        starRating: {
+            solo: 8,
+            multiplayer: 10
+        },
         decks: [
             {
                 minModules: 2,
@@ -290,6 +406,10 @@ export const scenarios = [
         name: "Project Wideawake",
         pack: "Mutant Genesis",
         img: "images/scenarios/mc32_project_wideawake.png",
+        starRating: {
+            solo: 6,
+            multiplayer: 8
+        },
         decks: [
             {
                 requiredModules: ["Zero Tolerance"],
@@ -300,6 +420,10 @@ export const scenarios = [
         name: "Master Mold",
         pack: "Mutant Genesis",
         img: "images/scenarios/mc32_master_mold.png",
+        starRating: {
+            solo: 3,
+            multiplayer: 4
+        },
         decks: [
             {
                 name: "Into Play",
@@ -316,6 +440,10 @@ export const scenarios = [
         name: "Mansion Attack",
         pack: "Mutant Genesis",
         img: "images/scenarios/mc32_mansion_attack.png",
+        starRating: {
+            solo: 7,
+            multiplayer: 3
+        },
         decks: [
             {
                 requiredModules: ["Brotherhood"],
@@ -325,17 +453,29 @@ export const scenarios = [
     {
         name: "Magneto",
         pack: "Mutant Genesis",
-        img: "images/scenarios/mc32_magneto.png"
+        img: "images/scenarios/mc32_magneto.png",
+        starRating: {
+            solo: 18,
+            multiplayer: 23
+        },
     },
     {
         name: "Magog",
         pack: "MojoMania",
-        img: "images/scenarios/mc39_magog.png"
+        img: "images/scenarios/mc39_magog.png",
+        starRating: {
+            solo: 5,
+            multiplayer: 3
+        },
     },
     {
         name: "Spiral",
         pack: "MojoMania",
         img: "images/scenarios/mc39_spiral.png",
+        starRating: {
+            solo: 6,
+            multiplayer: 12
+        },
         decks: [
             {
                 minModules: 3,
@@ -349,6 +489,10 @@ export const scenarios = [
         name: "Mojo",
         pack: "MojoMania",
         img: "images/scenarios/mc39_mojo.png",
+        starRating: {
+            solo: 7,
+            multiplayer: 10
+        },
         decks: [
             {
                 minModules: 0,
@@ -367,6 +511,10 @@ export const scenarios = [
         name: "Morlock Siege",
         pack: "NeXt Evolution",
         img: "images/scenarios/morlock-siege.jpg",
+        starRating: {
+            solo: -3,
+            multiplayer: -5
+        },
         decks: [
             {
                 name: "Villains",
@@ -383,6 +531,10 @@ export const scenarios = [
         name: "On The Run",
         pack: "NeXt Evolution",
         img: "images/scenarios/on-the-run.jpg",
+        starRating: {
+            solo: 15,
+            multiplayer: 8
+        },
         decks: [
             {
                 name: "Villains",
@@ -400,6 +552,10 @@ export const scenarios = [
         name: "Juggernaut",
         pack: "NeXt Evolution",
         img: "images/scenarios/juggernaut.jpg",
+        starRating: {
+            solo: 12,
+            multiplayer: 12
+        },
         decks: [
             {
                 requiredModules: ["Hope Summers"]
@@ -410,9 +566,13 @@ export const scenarios = [
         name: "Mister Sinister",
         pack: "NeXt Evolution",
         img: "images/scenarios/mister-sinister.jpg",
+        starRating: {
+            solo: 2,
+            multiplayer: 9
+        },
         decks: [
             {
-                requiredModules:  ["Flight", "Super Strength", "Telepathy", "Hope Summers"]
+                requiredModules: ["Flight", "Super Strength", "Telepathy", "Hope Summers"]
             }
         ]
     },
@@ -420,6 +580,10 @@ export const scenarios = [
         name: "Stryfe",
         pack: "NeXt Evolution",
         img: "images/scenarios/stryfe.jpg",
+        starRating: {
+            solo: 13,
+            multiplayer: 14
+        },
         decks: [
             {
                 minModules: 2,
@@ -431,6 +595,10 @@ export const scenarios = [
         name: "Unus",
         pack: "Age of Apocalypse",
         img: "images/scenarios/unus.jpg",
+        starRating: {
+            solo: 1,
+            multiplayer: -2
+        },
         decks: [
             {
                 requiredModules: ["Infinites"]
@@ -441,6 +609,10 @@ export const scenarios = [
         name: "Four Horsemen",
         pack: "Age of Apocalypse",
         img: "images/scenarios/four-horsemen.jpg",
+        starRating: {
+            solo: 11,
+            multiplayer: 7
+        },
         decks: [
             {
                 minModules: 2
@@ -451,6 +623,10 @@ export const scenarios = [
         name: "Apocalypse",
         pack: "Age of Apocalypse",
         img: "images/scenarios/apocalypse.jpg",
+        starRating: {
+            solo: 12,
+            multiplayer: 4
+        },
         decks: [
             {
                 requiredModules: ["Prelates"],
@@ -462,6 +638,10 @@ export const scenarios = [
         name: "Dark Beast",
         pack: "Age of Apocalypse",
         img: "images/scenarios/dark-beast.jpg",
+        starRating: {
+            solo: 8,
+            multiplayer: 11
+        },
         decks: [
             {
                 requiredModules: ["Blue Moon", "Genosha", "Savage Land"]
@@ -472,6 +652,10 @@ export const scenarios = [
         name: "En Sabah Nur",
         pack: "Age of Apocalypse",
         img: "images/scenarios/en-sabah-nur.jpg",
+        starRating: {
+            solo: 9,
+            multiplayer: 8
+        },
         decks: [
             {
                 minModules: 2
@@ -482,6 +666,10 @@ export const scenarios = [
         name: "Black Widow",
         pack: "Agents of S.H.I.E.L.D.",
         img: "images/scenarios/black-widow.jpg",
+        starRating: {
+            solo: 13,
+            multiplayer: 8
+        },
         decks: [
             {
                 minModules: 2
@@ -492,6 +680,10 @@ export const scenarios = [
         name: "Batroc",
         pack: "Agents of S.H.I.E.L.D.",
         img: "images/scenarios/batroc.jpg",
+        starRating: {
+            solo: 8,
+            multiplayer: 4
+        },
         decks: [
             {
                 minModules: 2
@@ -501,12 +693,20 @@ export const scenarios = [
     {
         name: "M.O.D.O.K.",
         pack: "Agents of S.H.I.E.L.D.",
-        img: "images/scenarios/modok.jpg"
+        img: "images/scenarios/modok.jpg",
+        starRating: {
+            solo: -4,
+            multiplayer: 4
+        },
     },
     {
         name: "Thunderbolts",
         pack: "Agents of S.H.I.E.L.D.",
         img: "images/scenarios/thunderbolts.jpg",
+        starRating: {
+            solo: 3,
+            multiplayer: 11 
+        },
         decks: [
             {
                 minModules: 1,
@@ -521,6 +721,10 @@ export const scenarios = [
         name: "Baron Zemo",
         pack: "Agents of S.H.I.E.L.D.",
         img: "images/scenarios/baron-zemo.jpg",
+        starRating: {
+            solo: 22,
+            multiplayer: 7
+        },
         decks: [
             {
                 requiredModules: ["S.H.I.E.L.D. Executive Board", "Executive Board Evidence"],

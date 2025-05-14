@@ -36,6 +36,7 @@ import {scenarios} from './data/scenarios';
 import {modules} from './data/modules';
 import {heroes} from './data/heroes';
 import {aspects} from "@/data/aspects";
+import { starRatingDifficultyRange } from "@/data/starRatingDifficultyRange.js";
 import PlayerSelector from "@/components/PlayerSelector";
 import RandomizationOptions from "@/components/RandomizationOptions";
 import PackSelector from "@/components/PackSelector";
@@ -76,6 +77,21 @@ try {
   dataStorage.removeItem("selectedDifficulties");
 }
 
+let selectedStarRating = null;
+try {
+  selectedStarRating = JSON.parse(dataStorage.getItem("selectedStarRating")) || {
+      useStarRating: false,
+      starRating: 2,
+      starRatingRange: starRatingDifficultyRange[2]
+    };
+} catch {
+  selectedStarRating = {
+      useStarRating: false,
+      starRating: 2,
+      starRatingRange: starRatingDifficultyRange[2]
+    };
+  dataStorage.removeItem("selectedStarRating");
+}
 
 export default {
   name: 'app',
@@ -97,6 +113,7 @@ export default {
       decks: 1,
       selectedDifficulties,
       limitToScenarios: [],
+      ...selectedStarRating
     },
     appStatus: {updated: false},
   }),
@@ -108,6 +125,8 @@ export default {
     randomizationOptions: {
       handler() {
         dataStorage.setItem("selectedDifficulties", JSON.stringify(this.randomizationOptions.selectedDifficulties));
+        const {useStarRating, starRating, starRatingRange } = this.randomizationOptions;
+        dataStorage.setItem("selectedStarRating", JSON.stringify({useStarRating, starRating, starRatingRange}));
         this.randomize();
       },
       deep: true,
