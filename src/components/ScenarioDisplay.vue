@@ -3,6 +3,11 @@
     <div class="title panel-insert" @click="shown=!shown">Scenario</div>
     <div class="content" v-if="shown">
       <div>
+        <div v-if="scenario.useStarRating" class="difficulty panel-insert-content">
+          Star Rating Difficulty: 
+          <span class="difficulty-value">{{ scenario.starRatingDifficulty }}</span>
+        </div>
+
         <div class="main-scenario">
           <img :src="scenario.scenario.img" :alt="scenario.scenario.name">
           <div class="panel-insert-content scenario-title">
