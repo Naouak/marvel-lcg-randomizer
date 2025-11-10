@@ -545,14 +545,18 @@ export const scenarios = [
         decks: [
             {
                 name: "Villains",
-                requiredModules: ["Resistance Leader"],
-                minModules: 0,
+                moduleRequirements: {
+                    type: "Resistance Leader"
+                },
+                minModules: 1,
             },
             {
                 name: "Encounter Deck",
                 minModules: 3,
                 maxModules: 4,
-                excludedModules: ["Registration"],
+                moduleRequirements: {
+                    excludedTypes: ["Registration"],
+                }
             }
         ]
     },
@@ -563,14 +567,18 @@ export const scenarios = [
                 decks: [
             {
                 name: "Villains",
-                requiredModules: ["Registration Leader"],
-                minModules: 0,
+                moduleRequirements: {
+                    type: "Registration Leader"
+                },
+                minModules: 1,
             },
             {
                 name: "Encounter Deck",
                 minModules: 3,
                 maxModules: 4,
-                excludedModules: ["Resistance"],
+                moduleRequirements: {
+                    excludedTypes: ["Resistance"],
+                }
             }
         ]
     }

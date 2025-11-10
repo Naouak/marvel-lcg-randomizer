@@ -1,6 +1,7 @@
 import {shuffleArray} from "@/helpers";
 
 export default class Randomizer {
+
     randomizeScenario(scenarios, availableModules, defaultDifficulties, {additionalModules = 0, limitToScenarios: limitToScenarios = "" } = { additionalModules: 0}, playerCount = 1){
         const availableScenarios = limitToScenarios.length > 0 ? limitToScenarios : scenarios;
         const scenario = shuffleArray(availableScenarios).shift();
@@ -25,9 +26,7 @@ export default class Randomizer {
             }
 
             const numberOfModules =
-                (deck.minModules !== undefined ? deck.minModules : 1 )
-                + additionalModules
-                + (deck.additionalModulesPerPlayer !== undefined ? deck.additionalModulesPerPlayer * playerCount : 0);
+                this.getNumberOfModules(deck, additionalModules, playerCount);
 
             let selectedModules = [];
             // Skipped modules during selection (to put them back in the pool if another deck needs to be generated for this scenario)
@@ -35,8 +34,16 @@ export default class Randomizer {
             while(selectedModules.length < numberOfModules && shuffledModules.length > 0){
                 const currentModule = shuffledModules.shift();
 
+                // Module needs to be from a specific type (e.g. Thunderbolts modules)
+                if(deck?.moduleRequirements?.type){
+                    if ((currentModule.types || []).indexOf(deck?.moduleRequirements?.type) < 0) {
+                        unselectedModules.push(currentModule);
+                        continue;
+                    }
+                }
                 // Is the module usable for the random modules?
-                if(currentModule.randomize === false){
+                // Note: We don't skip non randomizable modules when a type of module is specified in the deck (workaround for pvp leaders)
+                else if(currentModule.randomize === false){
                     unselectedModules.push(currentModule);
                     continue;
                 }
@@ -48,10 +55,16 @@ export default class Randomizer {
                     continue;
                 }
 
-                // Module needs to be from a specific type (e.g. Thunderbolts modules)
-                if(deck?.moduleRequirements?.type && (currentModule.types || []).indexOf(deck?.moduleRequirements?.type) < 0){
-                    unselectedModules.push(currentModule);
-                    continue;
+                // Module can't be from a given type (e.g. PVP modules, Registration vs Resistance)
+                if(deck?.moduleRequirements?.excludedTypes && currentModule.types){
+                    const shouldRemove = deck?.moduleRequirements?.excludedTypes.reduce((shouldRemove, type) => {
+                        return shouldRemove || currentModule.types.indexOf(type) >= 0;
+                    }, false);
+
+                    if(shouldRemove){
+                        unselectedModules.push(currentModule);
+                        continue;
+                    }
                 }
 
                 selectedModules.push(currentModule);
@@ -76,6 +89,16 @@ export default class Randomizer {
             modules,
             difficulty,
         };
+    }
+
+    getNumberOfModules(deck, additionalModules, playerCount) {
+        const minModules = deck.minModules !== undefined ? deck.minModules : 1;
+        const maxModules = deck.maxModules !== undefined ? deck.maxModules : minModules;
+        const moduleCount = Math.round(Math.random() * (maxModules - minModules)) + minModules;
+
+        return moduleCount
+            + additionalModules
+            + (deck.additionalModulesPerPlayer !== undefined ? deck.additionalModulesPerPlayer * playerCount : 0);
     }
 
     generateAspects(availableAspects) {
