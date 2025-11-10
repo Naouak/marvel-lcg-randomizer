@@ -4,6 +4,14 @@
 
     <div v-if="shown">
       <div class="changelog-entry">
+        <h3>On November 11th 2025</h3>
+        <ul>
+          <li>Add Civil War scenarios and heroes.</li>
+          <li>Add Falcon, Winter Soldier, Wonder Man, Hercules and Trickster Takeover packs.</li>
+          <li>Add support for Leaders from PVP</li>
+        </ul>
+      </div>
+       <div class="changelog-entry">
         <h3>On February 25th 2025</h3>
         <ul>
           <li>Add Agents of S.H.I.E.L.D. scenarios and heroes.</li>
