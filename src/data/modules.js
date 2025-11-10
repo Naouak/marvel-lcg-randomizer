@@ -563,5 +563,151 @@ export const modules = [
         img: "images/modules/mc52_announcement_article_atlas_35.png",
         pack: "Silk",
         types: ["Thunderbolt"]
+    },
+    {
+        name: "Techno",
+        img: "images/modules/mc53_announcement_article_fixer_38.png",
+        pack: "Falcon",
+        types: ["Thunderbolt"]
+    },
+    {
+        name: "Whiteout",
+        img: "images/modules/mc54_announce_cards_blizzard.png",
+        pack: "Winter Soldier",
+        types: ["Thunderbolt"]
+    },
+    {
+        name: "Trickster Magic",
+        img: "images/modules/mc55_announce_cards_absorbingman_minion.png",
+        pack: "Trickster Takeover"
+    },
+    {
+        name: "Iron Man",
+        img: "images/modules/mc56_article_announce_cards_registration_ironman.png",
+        pack: "Civil War",
+        types: ["Registration Leader"],
+        randomize: false
+    },
+    {
+        name: "Captain Marvel",
+        img: "images/modules/mc56_article_announce_cards_registration_captainmarvel.png",
+        pack: "Civil War",
+        types: ["Registration Leader"],
+        randomize: false
+    },
+    {
+        name: "Captain America",
+        img: "images/modules/mc56_article_announce_cards_resistance_captainamerica.png",
+        pack: "Civil War",
+        types: ["Resistance Leader"],
+        randomize: false
+    },
+    {
+        name: "Spider-Woman",
+        img: "images/modules/mc56_article_announce_cards_resistance_spiderwoman.png",
+        pack: "Civil War",
+        types: ["Resistance Leader"],
+        randomize: false
+    },
+    {
+        name: "Cloak & Dagger",
+        img: "images/modules/cloak-and-dagger.jpg",
+        pack: "Civil War",
+        types: ["Resistance"]
+    },
+    {
+        name: "Hell's Kitchen",
+        img: "images/modules/hells-kitchen.jpg",
+        pack: "Civil War",
+        types: ["Resistance"]
+    },
+    {
+        name: "Atlanteans",
+        img: "images/modules/atlanteans.jpg",
+        pack: "Civil War",
+        types: ["Resistance"]
+    },
+    {
+        name: "Namor",
+        img: "images/modules/namor.jpg",
+        pack: "Civil War",
+        types: ["Resistance"]
+    },
+    {
+        name: "New Avengers",
+        img: "images/modules/mc56_article_announce_cards_resistance_falcon.png",
+        pack: "Civil War",
+        types: ["Resistance"]
+    },
+    {
+        name: "Secret Avengers",
+        img: "images/modules/mc56_article_announce_cards_resistance_blackpanther.png",
+        pack: "Civil War",
+        types: ["Resistance"]
+    },
+    {
+        name: "Spider-Man",
+        img: "images/modules/mc56_article_announce_cards_resistance_spider-man.png",
+        pack: "Civil War",
+        types: ["Resistance"]
+    },
+    {
+        name: "Defenders",
+        img: "images/modules/mc56_article_announce_cards_resistance_lukecage.png",
+        pack: "Civil War",
+        types: ["Resistance"]
+    },
+    {
+        name: "Cape-Killer",
+        img: "images/modules/mc56_article_announce_cards_registration_cape-killer.png",
+        pack: "Civil War",
+        types: ["Registration"]
+    },
+    {
+        name: "The Initiative",
+        img: "images/modules/mc56_article_announce_cards_registration_docsamson.png",
+        pack: "Civil War",
+        types: ["Registration"]
+    },
+    {
+        name: "Maria Hill",
+        img: "images/modules/mc56_article_announce_cards_registration_mariahill.png",
+        pack: "Civil War",
+        types: ["Registration"]
+    },
+    {
+        name: "Martial Law",
+        img: "images/modules/mc56_article_announce_cards_registration_shieldsoldier.png",
+        pack: "Civil War",
+        types: ["Registration"]
+    },
+    {
+        name: "Mighty Avengers",
+        img: "images/modules/mc56_article_announce_cards_registration_yellowjacket.png",
+        pack: "Civil War",
+        types: ["Registration"]
+    },
+    {
+        name: "Heroes for Hire",
+        img: "images/modules/heroes-for-hire.jpg",
+        pack: "Civil War",
+        types: ["Registration"]
+    },
+    {
+        name: "Paladin",
+        img: "images/modules/paladin.jpg",
+        pack: "Civil War",
+        types: ["Registration"]
+    },
+    {
+        name: "Dangerous Recruits",
+        img: "images/modules/dangerous-recruits.jpg",
+        pack: "Civil War",
+        types: ["Registration"]
+    },
+    {
+        name: "All Versus All",
+        img: "images/modules/mc59_announce_cards_allversusall.png",
+        pack: "Hercules"
     }
 ];

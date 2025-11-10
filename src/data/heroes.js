@@ -413,6 +413,47 @@ export const heroes = [
         alterEgo: 'Cindy Moon',
         alterEgoImg: 'images/heroes/mc52_announcement_article_cindy_moon_1b.png',
         pack: 'Silk'
+    },
+    {
+        hero: 'Falcon',
+        heroImg: 'images/heroes/mc53_announcement_article_falcon_1a.png',
+        alterEgo: 'Sam Wilson',
+        alterEgoImg: 'images/heroes/mc53_announcement_article_sam_wilson_1b.png',
+        pack: 'Falcon'
+    },
+    {
+        hero: 'Winter Soldier',
+        heroImg: 'images/heroes/mc54_announce_cards_wintersoldier.png',
+        alterEgo: 'Bucky Barnes',
+        alterEgoImg: 'images/heroes/mc54_announce_cards_buckybarnes.png',
+        pack: 'Winter Soldier'
+    },
+    {
+        hero: 'Tigra',
+        heroImg: 'images/heroes/mc56_tigra_preview_article_card_tigra_1a.png',
+        alterEgo: 'Greer Nelson',
+        alterEgoImg: 'images/heroes/mc56_tigra_preview_article_card_greer_nelson_1b.png',
+        pack: 'Civil War'
+    },
+    {
+        hero: 'Hulkling',
+        heroImg: 'images/heroes/mc56_hulkling_preview_article_card_hulkling_29a.png',
+        alterEgo: 'Teddy Altman',
+        alterEgoImg: 'images/heroes/mc56_hulkling_preview_article_card_teddy_altman_card_29b.png',
+        pack: 'Civil War'
+    },
+    {
+        hero: 'Wonder Man',
+        heroImg: 'images/heroes/mc58_cards_wonderman.png',
+        alterEgo: 'Simon Williams',
+        alterEgoImg: 'images/heroes/mc58_cards_simonwilliams.png',
+        pack: 'Wonder Man'
+    },
+    {
+        hero: 'Hercules',
+        heroImg: 'images/heroes/mc59_announce_cards_hercules_hero.png',
+        alterEgo: 'Hercules',
+        alterEgoImg: 'images/heroes/mc59_announce_cards_hercules_alterego.png',
+        pack: 'Hercules'
     }
-
 ];

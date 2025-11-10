@@ -527,5 +527,51 @@ export const scenarios = [
                 minModules: 2
             }
         ]
+    },
+    {
+        name: "Enchantress",
+        pack: "Trickster Takeover",
+        img: "images/scenarios/enchantress.jpg",
+    },
+    {
+        name: "God of Lies",
+        pack: "Trickster Takeover",
+        img: "images/scenarios/god-of-lies.jpg",
+    },
+    {
+        name: "Resistance",
+        pack: "Civil War",
+        img: "images/scenarios/resistance.jpg",
+        decks: [
+            {
+                name: "Villains",
+                requiredModules: ["Resistance Leader"],
+                minModules: 0,
+            },
+            {
+                name: "Encounter Deck",
+                minModules: 3,
+                maxModules: 4,
+                excludedModules: ["Registration"],
+            }
+        ]
+    },
+    {
+        name: "Registration",
+        pack: "Civil War",
+        img: "images/scenarios/registration.jpg",
+                decks: [
+            {
+                name: "Villains",
+                requiredModules: ["Registration Leader"],
+                minModules: 0,
+            },
+            {
+                name: "Encounter Deck",
+                minModules: 3,
+                maxModules: 4,
+                excludedModules: ["Resistance"],
+            }
+        ]
     }
 ];

@@ -17,7 +17,9 @@ export const aspects = [
             "Wolverine",
             "X-23",
             "Age of Apocalypse",
-            "Iceman"
+            "Iceman",
+            "Winter Soldier",
+            "Civil War"
         ]
     },
     {
@@ -39,7 +41,8 @@ export const aspects = [
             "Psylocke",
             "Jubilee",
             "Agents of S.H.I.E.L.D.",
-            "Black Panther"
+            "Black Panther",
+            "Wonder Man"
 
         ]
     },
@@ -59,7 +62,9 @@ export const aspects = [
             "Storm",
             "NeXt Evolution",
             "Age of Apocalypse",
-            "Magneto"
+            "Magneto",
+            "Falcon",
+            "Hercules"
         ]
     },
     {
@@ -80,7 +85,8 @@ export const aspects = [
             "Rogue",
             "Angel",
             "Nightcrawler",
-            "Silk"
+            "Silk",
+            "Civil War"
         ]
     },
     {
