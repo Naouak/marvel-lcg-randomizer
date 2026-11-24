@@ -19,7 +19,8 @@ export const aspects = [
             "Age of Apocalypse",
             "Iceman",
             "Winter Soldier",
-            "Civil War"
+            "Civil War",
+            "Elektra",
         ]
     },
     {
@@ -42,7 +43,9 @@ export const aspects = [
             "Jubilee",
             "Agents of S.H.I.E.L.D.",
             "Black Panther",
-            "Wonder Man"
+            "Wonder Man",
+            "Fear No Evil",
+            "Jessica Jones",
 
         ]
     },
@@ -64,7 +67,8 @@ export const aspects = [
             "Age of Apocalypse",
             "Magneto",
             "Falcon",
-            "Hercules"
+            "Hercules",
+            'Luke Cage'
         ]
     },
     {
@@ -86,7 +90,9 @@ export const aspects = [
             "Angel",
             "Nightcrawler",
             "Silk",
-            "Civil War"
+            "Civil War",
+            "Fear No Evil",
+            "Iron Fist",
         ]
     },
     {

@@ -709,5 +709,153 @@ export const modules = [
         name: "All Versus All",
         img: "images/modules/mc59_announce_cards_allversusall.png",
         pack: "Hercules"
-    }
+    },
+    {
+        name: "Cops",
+        img: "images/modules/cops.webp",
+        pack: "Fear No Evil"
+    },
+    {
+        name: "Drive",
+        img: "images/modules/drive.webp",
+        pack: "Fear No Evil"
+    },
+    {
+        name: "Tracksuit Mafia",
+        img: "images/modules/tracksuit-mafia.webp",
+        pack: "Fear No Evil"
+    },
+    {
+        name: "Tombstone",
+        img: "images/modules/tombstone.webp",
+        pack: "Fear No Evil"
+    },
+    {
+        name: "The Owl",
+        img: "images/modules/the-owl.webp",
+        pack: "Fear No Evil"
+    },
+    {
+        name: "Disasters",
+        img: "images/modules/disasters.webp",
+        pack: "Fear No Evil"
+    },
+    {
+        name: "Bullseye",
+        img: "images/modules/bullseye.webp",
+        pack: "Fear No Evil",
+        types: ["Underling"],
+        randomize: false
+    },
+    {
+        name: "Electro",
+        img: "images/modules/electro.webp",
+        pack: "Fear No Evil",
+        types: ["Underling"],
+        randomize: false
+    },
+    {
+        name: "Hammerhead",
+        img: "images/modules/hammerhead.webp",
+        pack: "Fear No Evil",
+        types: ["Underling"],
+        randomize: false
+    },
+    {
+        name: "Purple Man",
+        img: "images/modules/purple-man.webp",
+        pack: "Fear No Evil",
+        types: ["Underling"],
+        randomize: false
+    },
+    {
+        name: "Typhoid Mary",
+        img: "images/modules/typhoid-mary.webp",
+        pack: "Fear No Evil",
+        types: ["Underling"],
+        randomize: false
+    },
+    {
+        name: "Thunderbolts",
+        img: "images/modules/thunderbolts.webp",
+        pack: "Synthezoid Smackdown",
+        types: ["Registration"]
+    },
+    {
+        name: "S.H.I.E.L.D. Ops",
+        img: "images/modules/shield-ops.webp",
+        pack: "Synthezoid Smackdown",
+        types: ["Registration"]
+    },
+    {
+        name: "Deadly Duo",
+        img: "images/modules/deadly-duo.webp",
+        pack: "Synthezoid Smackdown",
+        types: ["Registration"]
+    },
+    {
+        name: "Taskmaster",
+        img: "images/modules/taskmaster.webp",
+        pack: "Synthezoid Smackdown",
+        types: ["Registration", "Thunderbolt"]
+    },
+    {
+        name: "Scarlet Twins",
+        img: "images/modules/scarlet-twins.webp",
+        pack: "Synthezoid Smackdown",
+        types: ["Resistance"]
+    },
+    {
+        name: "Young Avengers",
+        img: "images/modules/young-avengers.webp",
+        pack: "Synthezoid Smackdown",
+        types: ["Resistance"]
+    },
+    {
+        name: "Royal Guard",
+        img: "images/modules/royal-guard.webp",
+        pack: "Synthezoid Smackdown",
+        types: ["Resistance"]
+    },
+    {
+        name: "Moon Knight",
+        img: "images/modules/moon-knight.webp",
+        pack: "Synthezoid Smackdown",
+        types: ["Resistance"]
+    },
+    {
+        name: "She-Hulk",
+        img: "images/modules/she-hulk.webp",
+        pack: "Synthezoid Smackdown",
+        types: ["Registration Leader"],
+        randomize: false
+    },
+    {
+        name: "Vision",
+        img: "images/modules/vision.webp",
+        pack: "Synthezoid Smackdown",
+        types: ["Resistance Leader"],
+        randomize: false
+    },
+    {
+        name: "Dark Protégé",
+        img: "images/modules/dark-protege.webp",
+        pack: "Shadowlands",
+        randomize: false
+    },
+    {
+        name: "Ninja Swarm",
+        img: "images/modules/ninja-swarm.webp",
+        pack: "Shadowlands",
+    },
+    {
+        name: "Black Flower",
+        img: "images/modules/black-flower.webp",
+        pack: "Shadowlands",
+    },
+    {
+        name: "Deadly Contraptions",
+        img: "images/modules/deadly-contraptions.webp",
+        pack: "Shadowlands",
+    },
 ];

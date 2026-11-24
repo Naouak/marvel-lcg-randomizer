@@ -4,6 +4,13 @@
 
     <div v-if="shown">
       <div class="changelog-entry">
+        <h3>On November 24th 2026</h3>
+        <ul>
+          <li>Add Synthezoid Smackdown scenarios.</li>
+          <li>Add Fear No Evil wave.</li>
+        </ul>
+      </div>
+      <div class="changelog-entry">
         <h3>On November 11th 2025</h3>
         <ul>
           <li>Add Civil War scenarios and heroes.</li>

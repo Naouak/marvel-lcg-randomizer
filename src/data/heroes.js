@@ -455,5 +455,47 @@ export const heroes = [
         alterEgo: 'Hercules',
         alterEgoImg: 'images/heroes/mc59_announce_cards_hercules_alterego.png',
         pack: 'Hercules'
+    },
+    {
+        hero: 'Daredevil',
+        heroImg: 'images/heroes/mc60_card_daredevil.webp',
+        alterEgo: 'Matt Murdock',
+        alterEgoImg: 'images/heroes/mc60_card_matt-murdoch.webp',
+        pack: 'Fear No Evil'
+    },
+    {
+        hero: 'Echo',
+        heroImg: 'images/heroes/mc60_card_echo.webp',
+        alterEgo: 'Maya Lopez',
+        alterEgoImg: 'images/heroes/mc60_card_maya-lopez.webp',
+        pack: 'Fear No Evil'
+    },
+    {
+        hero: 'Jessica Jones',
+        heroImg: 'images/heroes/mc61_cards_jessica-jones_hero.webp',
+        alterEgo: 'Jessica Jones',
+        alterEgoImg: 'images/heroes/mc61_cards_jessica-jones_alter-ego.webp',
+        pack: 'Jessica Jones'
+    },
+    {
+        hero: 'Luke Cage',
+        heroImg: 'images/heroes/mc62_luke-cage_hero.webp',
+        alterEgo: 'Luke Cage',
+        alterEgoImg: 'images/heroes/mc62_luke-cage_alter-ego.webp',
+        pack: 'Luke Cage'
+    },
+    {
+        hero: 'Elektra',
+        heroImg: 'images/heroes/mc63_elektra_hero.webp',
+        alterEgo: 'Elektra Natchios',
+        alterEgoImg: 'images/heroes/mc63_elektra-natchios_alter-ego.webp',
+        pack: 'Elektra'
+    },
+    {
+        hero: 'Iron Fist',
+        heroImg: 'images/heroes/MC64_Iron-Fist_Iron-Fist.webp',
+        alterEgo: 'Danny Rand',
+        alterEgoImg: 'images/heroes/MC64_Iron-Fist_Danny-Rand.webp',
+        pack: 'Iron Fist'
     }
 ];

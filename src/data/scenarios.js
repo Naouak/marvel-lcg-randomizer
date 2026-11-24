@@ -581,5 +581,195 @@ export const scenarios = [
                 }
             }
         ]
-    }
+    },
+    {
+        name: "Resistance",
+        pack: "Synthezoid Smackdown",
+        img: "images/scenarios/resistance.jpg",
+        decks: [
+            {
+                name: "Villains",
+                moduleRequirements: {
+                    type: "Resistance Leader"
+                },
+                minModules: 1,
+            },
+            {
+                name: "Encounter Deck",
+                minModules: 3,
+                maxModules: 4,
+                moduleRequirements: {
+                    excludedTypes: ["Registration"],
+                }
+            }
+        ]
+    },
+    {
+        name: "Registration",
+        pack: "Synthezoid Smackdown",
+        img: "images/scenarios/registration.jpg",
+        decks: [
+            {
+                name: "Villains",
+                moduleRequirements: {
+                    type: "Registration Leader"
+                },
+                minModules: 1,
+            },
+            {
+                name: "Encounter Deck",
+                minModules: 3,
+                maxModules: 4,
+                moduleRequirements: {
+                    excludedTypes: ["Resistance"],
+                }
+            }
+        ]
+    },
+    {
+        name: "The Getaway",
+        pack: "Fear No Evil",
+        img: "images/scenarios/the-getaway.webp",
+                decks: [
+            {
+                name: "Villains",
+                moduleRequirements: {
+                    type: "Underling"
+                },
+                minModules: 1,
+            },
+            {
+                name: "Encounter Deck",
+                minModules: 2,
+            }
+        ]
+    },
+    {
+        name: "Art Museum Heist",
+        pack: "Fear No Evil",
+        img: "images/scenarios/art-museum-heist.webp",
+                decks: [
+            {
+                name: "Villains",
+                moduleRequirements: {
+                    type: "Underling"
+                },
+                minModules: 1,
+            },
+            {
+                name: "Encounter Deck",
+                minModules: 2,
+            }
+        ]
+    },
+    {
+        name: "The Raft Breakout",
+        pack: "Fear No Evil",
+        img: "images/scenarios/the-raft-breakout.webp",
+                decks: [
+            {
+                name: "Villains",
+                moduleRequirements: {
+                    type: "Underling"
+                },
+                minModules: 1,
+            },
+            {
+                name: "Encounter Deck",
+                minModules: 2,
+            }
+        ]
+    },
+    {
+        name: "Stop the Presses!",
+        pack: "Fear No Evil",
+        img: "images/scenarios/stop-the-presses.webp",
+                decks: [
+            {
+                name: "Villains",
+                moduleRequirements: {
+                    type: "Underling"
+                },
+                minModules: 1,
+            },
+            {
+                name: "Encounter Deck",
+                minModules: 2,
+            }
+        ]
+    },
+    {
+        name: "Protection Racket",
+        pack: "Fear No Evil",
+        img: "images/scenarios/protection-racket.webp",
+                decks: [
+            {
+                name: "Villains",
+                moduleRequirements: {
+                    type: "Underling"
+                },
+                minModules: 1,
+            },
+            {
+                name: "Encounter Deck",
+                minModules: 2,
+            }
+        ]
+    },
+    {
+        name: "Kingpin",
+        pack: "Fear No Evil",
+        img: "images/scenarios/kingpin.webp",
+                decks: [
+            {
+                name: "Encounter Deck (no standard set)",
+                minModules: 2,
+            }
+        ]
+    },
+    {
+        name: "Shadows in the Night",
+        pack: "Shadowlands",
+        img: "images/scenarios/shadows-in-the-night.webp",
+        decks: [
+            {
+                name: "Villains",
+                requiredModules: ["Dark Protégé"],
+                minModules: 0,
+            },
+            {
+                name: "Encounter Deck",
+                minModules: 1,
+            }
+        ]
+    },
+    {
+        name: "Shadow Labyrinth",
+        pack: "Shadowlands",
+        img: "images/scenarios/shadow-labyrinth.webp",
+        decks: [
+            {
+                name: "Villains",
+                requiredModules: ["Dark Protégé"],
+                minModules: 0,
+            },
+            {
+                name: "Encounter Deck",
+                requiredModules: ["Deadly Contraptions"],
+                minModules: 1,
+            }
+        ]
+    },
+    {
+        name: "Heart of Shadow",
+        pack: "Shadowlands",
+        img: "images/scenarios/heart-of-shadow.webp",
+        decks: [
+            {
+                name: "Encounter Deck",
+                requiredModules: ["Black Flower"],
+                minModules: 1,
+            }
+        ]
+    },
 ];
